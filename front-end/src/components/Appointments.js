@@ -44,7 +44,7 @@ const Appointments = () => {
                 <p className="card-title">Name: {request.first_name} {request.last_name} </p>
                 <p className="card-text">Email Address: {request.email_address} </p>
                 <p className="card-text">Phone Number: {request.phone_number} </p>
-                <p className="card-text">Typeeeeee: {request.service_type} </p>
+                <p className="card-text">Type: {request.service_type} </p>
                 <p className="card-text">Message: {request.message} </p>
                 {/* Add more request details as needed */}
               </div>
