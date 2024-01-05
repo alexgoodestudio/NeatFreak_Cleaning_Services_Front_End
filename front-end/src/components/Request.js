@@ -48,14 +48,14 @@ function Request() {
     <div className="container mt-5 ">
       <div className="row ">
         <div className="col-lg-6 ">
-          <hr className="mb-4"></hr>
+          {/* <hr className="mb-4"></hr> */}
           <form className="" onSubmit={handleSubmit}>
             <h3 className="fontLight ">
               <span className="bold">Schedule your in-home estimate today</span>{" "}
               and take the first step towards a happier, cleaner home!
             </h3>
             <p className="fontLight mt-5">
-              Ready for a cleaner space? I offer easy and quick in-home
+              Ready for a cleaner space? We offer easy and quick in-home
               estimates that fit into your busy schedule. Just fill out a short
               form with your contact details and a preferred time for the
               estimate. I'll be in and out in just 15 minutes, ensuring a fast,
@@ -118,7 +118,7 @@ function Request() {
         What Type of Service?
       </label>
       <select
-        className="form-control select-style"
+        className="form-select  "
         id="serviceType"
         name="service_type"
         value={formData.service_type}
@@ -132,7 +132,7 @@ function Request() {
     </div>
            
             <label for="message" class="form-label mt-2">
-              Leave a date and time that could work?
+              Please leave two potential for 15 min estimate? Check email for confirmation.
             </label>
             <textarea
               className="form-control "
@@ -162,6 +162,7 @@ function Request() {
             alt="..."
           />
         </div>
+
       </div>
       <div className="row">
         <div className="col-lg-12 sizeIncrease">

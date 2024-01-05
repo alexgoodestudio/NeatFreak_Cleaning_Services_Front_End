@@ -24,7 +24,12 @@ function NavBar() {
                 <Link to="/request" className="link ms-5">In Home Estimate</Link>
                 <Link to="/ourservices" className="link ms-5 ">What We Offer</Link>
                 <Link to="/reviews" className="link ms-5 ">Reviews</Link>
-                <img src={Image5} onClick={goToHome} className=" mt-1 ms-5 me-5  widthSmaller2" alt="..." />
+                <img src={Image5} className=" mt-1 ms-5 me-5  widthSmaller2" alt="..." />
+
+                {/* <a href="https://www.facebook.com/getneatfreakclean" target="_blank" rel="noopener noreferrer">
+                    <img src={Image5} className="mt-1 ms-5 me-5 widthSmaller2" alt="..." />
+                </a> */}
+
             </section>
 
         </div>

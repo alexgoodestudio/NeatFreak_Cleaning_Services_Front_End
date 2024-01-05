@@ -62,7 +62,7 @@ function Offer() {
                 <div className="card-body tan2 ">
                   <h5 className="card-title cardTitleFont">Exceptional Quality</h5>
                   <p className="card-text">
-                  "Spotless Excellence: Every clean, meticulous and pristine. Quality at its finest."                  </p>
+                  "Each clean, done with careful attention, leaves your space looking pristine and beautiful."                  </p>
                   <a href="/request" className="btn-custom ">
                     Exceptional Quality
                   </a>
@@ -76,7 +76,7 @@ function Offer() {
         </div>
         
       </div>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-12">
           <Footer/>
       </div>

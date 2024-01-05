@@ -28,7 +28,7 @@ const Login = () => {
           {error && <p>{error}</p>}
         </form>
       )}
-      <Footer/>
+ 
     </>
   );
 };
