@@ -34,18 +34,16 @@ const Appointments = () => {
   return (
     <div className="container mt-3">
       <div className="row">
-        <div className='display-3 mb-3'> Appointments</div>
+        <div className='display-3 mb-3'> Email List</div>
         {requests.map((request, index) => (
           <div className="col-md-12 mb-3" key={index}>
             <div className="card">
               <div className="card-body">
                 {/* Display your request data here */}
                 
-                <p className="card-title">Name: {request.first_name} {request.last_name} </p>
+                <p className="card-title">Name: {request.name} </p>
                 <p className="card-text">Email Address: {request.email_address} </p>
-                <p className="card-text">Phone Number: {request.phone_number} </p>
                 <p className="card-text">Type: {request.service_type} </p>
-                <p className="card-text">Message: {request.message} </p>
                 {/* Add more request details as needed */}
               </div>
             </div>

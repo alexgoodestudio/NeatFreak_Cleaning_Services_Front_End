@@ -23,6 +23,7 @@ function NavBar() {
                 <Link to="/" className="link ">Home</Link>
                 <Link to="/request" className="link ms-5">In Home Estimate</Link>
                 <Link to="/ourservices" className="link ms-5 ">What We Offer</Link>
+                <Link to="/subscribe" className="link ms-5 ">Subscribe</Link>
                 <Link to="/reviews" className="link ms-5 ">Reviews</Link>
                 <img src={Image5} className=" mt-1 ms-5 me-5  widthSmaller2" alt="..." />
 

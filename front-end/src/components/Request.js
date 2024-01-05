@@ -1,47 +1,48 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import "./Dashboard.css";
-import { createEntry } from "../utils/api";
-import { useNavigate } from "react-router-dom";
+// import { createEntry } from "../utils/api";
+// import { useNavigate } from "react-router-dom";
 import ErrorAlert from "./ErrorAlert";
 import Image5 from "./Images/7.png";
+import CalendlyEmbed from "./Calendly";
 import Footer from "./Footer"
 
 function Request() {
-  const history = useNavigate();
+  // const history = useNavigate();
 
-  function cancelAndReturn() {
-    history(-1);
-  }
+  // function cancelAndReturn() {
+  //   history(-1);
+  // }
 
-  const keyValues = {
-    first_name: "",
-    last_name: "",
-    email_address: "",
-    phone_number: "",
-    message: "",
-  };
-  const [formData, setFormData] = useState(keyValues);
-  const [error, setError] = useState(null);
+  // const keyValues = {
+  //   first_name: "",
+  //   last_name: "",
+  //   email_address: "",
+  //   phone_number: "",
+  //   message: "",
+  // };
+  // const [formData, setFormData] = useState(keyValues);
+  // const [error, setError] = useState(null);
 
-  function handleChange(event) {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  }
+  // function handleChange(event) {
+  //   setFormData({
+  //     ...formData,
+  //     [event.target.name]: event.target.value,
+  //   });
+  // }
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const abortController = new AbortController();
-    try {
-      await createEntry(formData, abortController.signal);
-      // Reset formData to initial state after successful submission
-      setFormData(keyValues);
-    } catch (err) {
-      setError(err.message);
-    }
-  };
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const abortController = new AbortController();
+  //   try {
+  //     await createEntry(formData, abortController.signal);
+  //     // Reset formData to initial state after successful submission
+  //     setFormData(keyValues);
+  //   } catch (err) {
+  //     setError(err.message);
+  //   }
+  // };
   
 
   return (
@@ -49,7 +50,7 @@ function Request() {
       <div className="row ">
         <div className="col-lg-6 ">
           {/* <hr className="mb-4"></hr> */}
-          <form className="" onSubmit={handleSubmit}>
+          {/* <form className="" onSubmit={handleSubmit}> */}
             <h3 className="fontLight ">
               <span className="bold">Schedule your in-home estimate today</span>{" "}
               and take the first step towards a happier, cleaner home!
@@ -62,9 +63,9 @@ function Request() {
               efficient process tailored just for you.
             </p>
             <hr className="mt-4"></hr>
-            <ErrorAlert error={error} />
+            {/* <ErrorAlert error={error} />
             <label for="firstName" class="form-label mt-3">
-              First Name
+              Name:
             </label>
             <input
               className="form-control "
@@ -73,9 +74,9 @@ function Request() {
               id="firstName"
               value={formData.first_name}
               name="first_name"
-              // placeholder="First Name"
-            />
-            <label for="lastName" class="form-label mt-3">
+         
+            /> */}
+            {/* <label for="lastName" class="form-label mt-3">
               Last Name
             </label>
             <input
@@ -86,8 +87,8 @@ function Request() {
               value={formData.last_name}
               name="last_name"
               // placeholder="Last Name"
-            />
-            <label for="emailAddress" class="form-label mt-3">
+            /> */}
+            {/* <label for="emailAddress" class="form-label mt-3">
               Email Address
             </label>
             <input
@@ -97,7 +98,7 @@ function Request() {
               id="emailAddress"
               value={formData.email_address}
               name="email_address"
-              // placeholder="Email Address"
+           
             />
             <label for="phoneNumber" class="form-label mt-3">
               Phone Number
@@ -129,9 +130,9 @@ function Request() {
         <option value="recurring">Recurring</option>
         <option value="moveInOut">Move In/Out</option>
       </select>
-    </div>
+    </div> */}
            
-            <label for="message" class="form-label mt-2">
+            {/* <label for="message" class="form-label mt-2">
               Please leave two potential for 15 min estimate? Check email for confirmation.
             </label>
             <textarea
@@ -142,9 +143,11 @@ function Request() {
               value={formData.message}
               name="message"
               // placeholder="What date and time could work for you?"
-            />
-
-            <button type="submit" className="btn btn-outline-primary mt-2">
+            /> */}
+   <div >
+          <CalendlyEmbed/>
+      </div>
+          {/*  <button type="submit" className="btn btn-outline-primary mt-2">
               Submit
             </button>
             <button
@@ -153,7 +156,7 @@ function Request() {
             >
               Cancel
             </button>
-          </form>
+          </form> */}
         </div>
         <div className="col-lg-6">
           <img
@@ -164,6 +167,7 @@ function Request() {
         </div>
 
       </div>
+
       <div className="row">
         <div className="col-lg-12 sizeIncrease">
           <Footer/>

@@ -7,7 +7,7 @@ const Login = () => {
   const [error, setError] = useState("");
 
   const checkPw = (event) => {
-    event.preventDefault(); // Prevents the default form submission behavior
+    event.preventDefault(); 
     const answer = document.getElementById("password").value;
 
     if (answer === "qw") {

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Outfit:wght@200&family=Playfair+Display&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
-
-
 .border{
     border: solid;
     padding-left: 10px;
@@ -12,14 +10,12 @@
     border-radius: 10px;
 }
 .bold{
-
   font-weight: 700;
 }
 
 .center{
   display: flex;
   margin-left: 30%;
-
 }
 
 .cardBody1{
@@ -50,12 +46,12 @@
 
 
 .fadeout {
-  animation: fadeOut 1s 2s forwards;
+  animation: fadeOut 1s .5s forwards;
 }
 .fadein{
   opacity: 0;
   animation: fadeInBubble 1s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 @keyframes fadeOut {
   from {

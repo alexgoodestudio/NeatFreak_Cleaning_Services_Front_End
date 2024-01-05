@@ -5,10 +5,12 @@ import Dashboard from "./Dashboard";
 import Reviews from "./Reviews";
 import Login from "./Login";
 import { Route, Routes } from "react-router-dom";
+import Subscribe from "./Subscribe";
 
 function AppRoutes() {
   return (
     <Routes>
+      <Route path="/subscribe" element={<Subscribe/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/reviews" element={<Reviews/>} />
       <Route path="/ourservices" element={<Offer/>} />

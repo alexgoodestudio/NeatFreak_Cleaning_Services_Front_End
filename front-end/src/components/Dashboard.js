@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Image5 from "./Images/sparkles.png";
 import Image6 from "./Images/Screenshot 2023-12-30 at 11.16.18 PM.png";
 
-
 import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -39,7 +38,7 @@ function Dashboard() {
                 <h1 className="display-6 d-flex">
                   <span className="italics2">Clean&nbsp; </span>Space,&nbsp;
                   <br />
-                  <span className="underline "> Happy Mind</span>
+                  <span className="underline ">Happy Mind</span>
                 </h1>
               </div>
             </div>
