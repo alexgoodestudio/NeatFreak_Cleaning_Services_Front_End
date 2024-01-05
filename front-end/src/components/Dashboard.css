@@ -12,6 +12,9 @@
 .bold{
   font-weight: 700;
 }
+.bold2{
+  font-weight: 500;
+}
 
 .center{
   display: flex;
@@ -154,16 +157,19 @@
   background-color: #ffffff;
   padding: 4%;
 }
+.thin{
+  font-weight: 300;
+}
 .btn2{
   border-radius: 12px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #c3448f;
+  background-color: #3eb5d2;
   color: #ffffff;
   border: none;
   text-decoration: none;
-  font-size: 12pt;
+  font-size: 13pt;
 }
 .formBorder{
   border: #0d6efd;
@@ -205,6 +211,9 @@
   position:relative;
   bottom:8%;
 }
+.italics3{
+  font-style: italic;
+}
 .select-style {
   appearance: auto;
   -webkit-appearance: menulist-button;
@@ -235,7 +244,7 @@
 } */
 
 .logoWidth{
-  width: 15%;
+  width: 22%;
   margin-top: 5%;;
 }
 
@@ -253,16 +262,33 @@
   width: 16%;
 }
 
-.marginLeft{
-  margin-left:20%;
-}
-
 .widthSmaller2{
   width: 10%;
 }
 
+/* Add your existing styles here */
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the height to take the full space of the parent */
+}
+
+.text-container > div {
+  text-align: left; /* Left-align the text within the centered container */
+  max-width: fit-content; /* Fit the width to its content */
+}
+
+
 .squiggle{
     width: 17%;
+}
+
+.marginLeft{
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .sparkleMargin{
@@ -274,14 +300,22 @@
 
 }
 .logo{
-    width: 25%;
-    
+    width: 7%;
 }
+.navRight{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.link-hover:hover {
+  text-decoration: underline;
+}
+
 .sparkles{
     width: 5%;
 }
-
-
 
 .cutHeight{
     height: auto;
@@ -294,10 +328,6 @@
 .nav{
     background-color: #ffffff;
     color: #1f1f1e;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     box-shadow: 10px 5px 5px rgb(206, 206, 206);
     margin-bottom: 0px;
 }
@@ -317,18 +347,41 @@
     width: 40%;
     top:25% ;
   }
+  .marginNav{
+    margin-left: 9%;
+    margin-right: 9%;
+  }
 
   @media only screen and (max-width: 600px) {
+    .pic {
+      /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
+      visibility: hidden;
+    }
+    .logoWidth{
+      width: 70%;
+      margin-top: 5%;;
+    }
+.footerText{
+  font-size: 70%;
+}
+
+
+    .mobilePadding{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
     .innerColumn{
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     
     .white{
       background-color: #ffffff;
     }
+
     .card{
       margin-top: 10px;
     }
@@ -336,15 +389,15 @@
     .widthSmaller2{
       visibility: hidden;
     }
-
-    .logo{
-      width: 30%;
+    .marginNav{
+      margin-left: 9%;;
     }
+
     .link{
       margin-top: 10px;
       font-size: 11px;
-
     }
+
   }
   
   /* Media query for phones (landscape) */

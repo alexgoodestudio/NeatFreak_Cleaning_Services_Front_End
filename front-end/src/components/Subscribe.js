@@ -43,16 +43,16 @@ function Subscribe() {
   return (
     <div className="container mt-5 ">
       <div className="row ">
+      <div className="col-lg-3 "></div>
         <div className="col-lg-6 ">
           {/* <hr className="mb-4"></hr> */}
           <form className="" onSubmit={handleSubmit}>
-            <h3 className="fontLight ">
+            <h3 className="fontLight bg-secondary text-light p-3 br">
               <span className="bold">
-                Join Our Exclusive Cleaning Tips Newsletter,
-              </span>{" "}
-              and take a first step towards a happier, cleaner home!
+                Join Our <span className=" underline">Exclusive</span> <span className="italics3"> Cleaning </span>Tips Newsletter
+              </span>
             </h3>
-            <p className="fontLight mt-5">
+            <p className="fontLight mt-3">
               Stay ahead in the game of cleanliness! Subscribe to our exclusive
               newsletter and receive monthly insights straight to your inbox.
               From expert cleaning hacks to eco-friendly solutions, we cover it
@@ -111,11 +111,11 @@ function Subscribe() {
               </select>
             </div>
 
-            <button type="submit" className="btn btn-outline-primary mt-2">
+            <button type="submit" className="btn btn-outline-primary mt-4">
               Submit
             </button>
             <button
-              className="btn btn-outline-secondary mt-2"
+              className="btn btn-outline-secondary mt-4"
               onClick={cancelAndReturn}
             >
               Cancel
@@ -129,6 +129,7 @@ function Subscribe() {
             alt="..."
           />
         </div> */}
+        <div className="col-lg-3 "></div>
       </div>
 
       <div className="row">

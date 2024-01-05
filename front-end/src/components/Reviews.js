@@ -9,11 +9,12 @@ function Reviews() {
     return (
       <div className="container">
         <div className="row mt-3 d-flex ms-5 me-5">
-            <div className="col-lg-3"></div>
-            <div className="col-lg-6">
+            <div className="col-lg-1"></div>
+            <div className="display-6 mt-5">Reviews</div>
+            <div className="col-lg-10 border mt-2">
 
 
-               <figure className="p-5 mt-5">
+               <figure className="p-2 mt-5">
                 <blockquote className="blockquote">
                   <p>
                     {" "}
@@ -27,7 +28,7 @@ function Reviews() {
                 </figcaption>
               </figure> 
               <hr></hr>
-              <figure className="p-5">
+              <figure className="p-2">
                 <blockquote className="blockquote">
                   <p>
                     {" "}
@@ -39,7 +40,7 @@ function Reviews() {
                 </figcaption>
               </figure> 
               <hr></hr>
-              <figure className="p-5">
+              <figure className="p-2">
                 <blockquote className="blockquote">
                   <p>
                     {" "}
@@ -52,7 +53,7 @@ function Reviews() {
               </figure> 
 
             </div>
-            
+            <div className="col-lg-1"></div>
             <div className="row">
         <div className="col-lg-12">
           <Footer/>

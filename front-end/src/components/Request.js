@@ -3,8 +3,8 @@ import React from "react";
 import "./Dashboard.css";
 // import { createEntry } from "../utils/api";
 // import { useNavigate } from "react-router-dom";
-import ErrorAlert from "./ErrorAlert";
-import Image5 from "./Images/7.png";
+// import ErrorAlert from "./ErrorAlert";
+import Image5 from "./Images/9.png";
 import CalendlyEmbed from "./Calendly";
 import Footer from "./Footer"
 
@@ -144,7 +144,7 @@ function Request() {
               name="message"
               // placeholder="What date and time could work for you?"
             /> */}
-   <div >
+   <div className="mb-5">
           <CalendlyEmbed/>
       </div>
           {/*  <button type="submit" className="btn btn-outline-primary mt-2">
@@ -161,15 +161,16 @@ function Request() {
         <div className="col-lg-6">
           <img
             src={Image5}
-            class="img-fluid  right-aligned-img pic bounce-in handMargin"
+            class="img-fluid slide-in right-aligned-img pic bounce-in handMargin"
             alt="..."
           />
         </div>
 
       </div>
-
+      <hr className="mt-5"></hr>
       <div className="row">
-        <div className="col-lg-12 sizeIncrease">
+
+        <div className="col-lg-12 ">
           <Footer/>
       </div>
       </div>

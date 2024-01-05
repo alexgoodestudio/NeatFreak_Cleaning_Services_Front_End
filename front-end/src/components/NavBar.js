@@ -1,40 +1,35 @@
-import React from "react"
+import React from "react";
 import "./Dashboard.css";
-import Image4 from "./Images/short.png";
-import Image5 from "./Images/585e5071cb11b227491c33a2.png";
+import Image4 from "./Images/2NeatFreaklogo-A3.jpg";
 import { Link, useNavigate } from "react-router-dom";
-import "./Dashboard.css"
 
 function NavBar() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
+  function goToHome() {
+    navigate("/");
+  }
 
-    function goToHome() {
-        navigate('/'); // Navigates to the home page
-    }
+  return (
+    <div className="nav row mt-1">
+      <section className="d-flex justify-content-between align-items-center col-lg-12">
+        <img
+          src={Image4}
+          onClick={goToHome}
+          className="logo mt-3 ms-5 mb-2"
+          alt="Company Logo"
+        />
 
-    return (
-        <div className="nav row mt-3 d-flex">
-            <div className="col-lg-5">
-                <img src={Image4} onClick={goToHome} className="logo mt-1 ms-5 mb-3" alt="..." />
-            </div>
-
-            <section className="d-flex  col-lg-7 justify-content-end">
-                <Link to="/" className="link ">Home</Link>
-                <Link to="/request" className="link ms-5">In Home Estimate</Link>
-                <Link to="/ourservices" className="link ms-5 ">What We Offer</Link>
-                <Link to="/subscribe" className="link ms-5 ">Subscribe</Link>
-                <Link to="/reviews" className="link ms-5 ">Reviews</Link>
-                <img src={Image5} className=" mt-1 ms-5 me-5  widthSmaller2" alt="..." />
-
-                {/* <a href="https://www.facebook.com/getneatfreakclean" target="_blank" rel="noopener noreferrer">
-                    <img src={Image5} className="mt-1 ms-5 me-5 widthSmaller2" alt="..." />
-                </a> */}
-
-            </section>
-
+        <div className="d-flex align-items-center justify-content-end">
+          <Link to="/" className="link link-hover ">Home</Link>
+          <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
+          <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>
+          <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>
+          <Link to="/reviews" className="link marginNav  link-hover ">Reviews</Link>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
 
 export default NavBar;

@@ -9,18 +9,17 @@ import Footer from "./Footer"
 
 function Offer() {
   return (
-    <div className="container mt-5">
+    <div className="container mobilePadding mt-5 slide-in">
       <div className="row">
         <div className="col-lg-6">
           <div className="row">
-        
             <h1 className="display-6 ">
             <span className="italics">Clean&nbsp;</span>Space,&nbsp;
-            <span className="underline">Happy Mind</span>
+            <span className="slide-in">Happy Mind</span>
           </h1>
-      
+      <hr></hr>
               
-              <p className=" body  blue mt-3 mb-3">
+              <p className=" body  blue mt-1 mb-3">
                 At <span className="bold">NeatFreak,</span> we specialize in providing
                 top-tier house cleaning that caters to the unique needs of each
                 client, transforming your space into a pristine, welcoming
@@ -76,6 +75,7 @@ function Offer() {
         </div>
         
       </div>
+      
       <div className="row mt-5">
         <div className="col-12">
           <Footer/>
