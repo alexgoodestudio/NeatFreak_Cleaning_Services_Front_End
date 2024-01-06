@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Appointments from "./Appointments";
-import Footer from "./Footer"
+
 
 const Login = () => {
   const [isVerified, setIsVerified] = useState(false);
