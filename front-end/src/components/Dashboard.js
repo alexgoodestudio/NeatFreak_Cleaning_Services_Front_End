@@ -1,16 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Image6 from "./Images/Screenshot 2023-12-30 at 11.16.18 PM.png";
-import { useState, useEffect } from "react";
 import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Dashboard() {
-  const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
 
   return (
  
