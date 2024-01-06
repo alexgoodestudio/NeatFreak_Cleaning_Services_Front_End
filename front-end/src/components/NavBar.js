@@ -1,6 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
-import Image4 from "./Images/2NeatFreaklogo-A3.jpg";
+import Image4 from "./Images/NeatFreakShort.png";
 import { Link, useNavigate } from "react-router-dom";
 
 function NavBar() {
@@ -21,7 +21,7 @@ function NavBar() {
         />
 
         <div className="d-flex align-items-center justify-content-end">
-          <Link to="/" className="link link-hover ">Home</Link>
+          <Link to="/" className="link link-hover marginNav ">Home</Link>
           <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
           <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>
           <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>

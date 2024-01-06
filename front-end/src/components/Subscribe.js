@@ -47,11 +47,11 @@ function Subscribe() {
         <div className="col-lg-6 ">
           {/* <hr className="mb-4"></hr> */}
           <form className="" onSubmit={handleSubmit}>
-            <h3 className="fontLight bg-secondary text-light p-3 br">
-              <span className="bold">
-                Join Our <span className=" underline">Exclusive</span> <span className="italics3"> Cleaning </span>Tips Newsletter
+            <h2 className="fontLight bg2 text-light p-3 br mb-3">
+              <span className="">
+                Join Our <span className=" underline">Exclusive</span> <span className=""> Cleaning </span>Tips Newsletter
               </span>
-            </h3>
+            </h2>
             <p className="fontLight mt-3">
               Stay ahead in the game of cleanliness! Subscribe to our exclusive
               newsletter and receive monthly insights straight to your inbox.
