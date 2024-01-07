@@ -47,7 +47,7 @@ function Request() {
 
   return (
     <div className="container mt-5 ">
-      <div className="row ">
+      <div className="row mobilePadding">
         <div className="col-lg-6 ">
           {/* <hr className="mb-4"></hr> */}
           {/* <form className="" onSubmit={handleSubmit}> */}
@@ -161,7 +161,7 @@ function Request() {
         <div className="col-lg-6">
           <img
             src={Image5}
-            class="img-fluid slide-in right-aligned-img pic bounce-in handMargin"
+            class="bounce-in  img-fluid slide-in right-aligned-img pic bounce-in handMargin"
             alt="..."
           />
         </div>

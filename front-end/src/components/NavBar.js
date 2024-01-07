@@ -16,11 +16,11 @@ function NavBar() {
         <img
           src={Image4}
           onClick={goToHome}
-          className="logo mt-3 ms-5 mb-2"
+          className="logo mt-3 ms-5 mb-2 "
           alt="Company Logo"
         />
 
-        <div className="d-flex align-items-center justify-content-end">
+        <div className="d-flex align-items-center justify-content-end mobileUp">
           <Link to="/" className="link link-hover marginNav ">Home</Link>
           <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
           <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>

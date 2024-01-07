@@ -10,15 +10,15 @@ function Reviews() {
       <div className="container">
         <div className="row mt-3 d-flex ms-5 me-5">
             <div className="col-lg-1"></div>
-            <div className="display-6 mt-5">Reviews</div>
-            <div className="col-lg-10 border mt-2">
-
-
-               <figure className="p-2 mt-5">
+        
+            <div className="col-lg-7  mt-2">
+            <div className="display-6  br p-3 mt-5 mb-2"> Our <span className="underline">Awesome</span> <span className="italics">Customers</span> love us :-)</div>
+               <figure className="p-2 mt-1">
+               <hr></hr>
                 <blockquote className="blockquote">
                   <p>
                     {" "}
-                    "Love NeatFreak Cleaning Services! They use eco-friendly
+                    "Love NeatFreak Cleaning Services! They use awesome eco-friendly
                     products and are super flexible with scheduling – my home's
                     never looked better."
                   </p>
@@ -32,7 +32,7 @@ function Reviews() {
                 <blockquote className="blockquote">
                   <p>
                     {" "}
-                    "I've been using NeatFreak Cleaning Services for a few months now, and it's been a game changer. The team is always on time, incredibly professional, and they do a thorough job every single time. I opted for the bi-weekly service, and it's perfect for keeping my place in tip-top shape. Plus, their commitment to using sustainable products? A big win in my book!"
+                    "I've been using NeatFreak Cleaning Services for a few months now, and it's been a game changer. Incredibly professional, and they do a thorough job every single time. "
                   </p>
                 </blockquote>
                 <figcaption className="blockquote-footer">
@@ -44,7 +44,7 @@ function Reviews() {
                 <blockquote className="blockquote">
                   <p>
                     {" "}
-                    "I booked a one-time cleaning service after a big party, and they turned my chaotic space into a spotless haven. The attention to detail is impressive, and their eco-friendly approach makes me feel good about choosing them. Planning to set up a monthly cleaning schedule now. Highly recommend!"
+                    "I booked a one-time cleaning service after a big party, and they made it spotless. Their attention to detail is impressive, and eco-friendly products makes me feel good about choosing them. Planning to set up a monthly cleaning schedule now. Highly recommend!"
                   </p>
                 </blockquote>
                 <figcaption className="blockquote-footer">
@@ -53,7 +53,7 @@ function Reviews() {
               </figure> 
 
             </div>
-            <div className="col-lg-1"></div>
+            <div className="col-lg-4"></div>
             <div className="row">
         <div className="col-lg-12">
           <Footer/>

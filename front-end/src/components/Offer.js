@@ -9,8 +9,8 @@ import Footer from "./Footer"
 
 function Offer() {
   return (
-    <div className="container mobilePadding mt-5 slide-in">
-      <div className="row">
+    <div className="container  mt-5 slide-in">
+      <div className="row mobilePadding">
         <div className="col-lg-6">
           <div className="row">
             <h1 className="display-6 ">
@@ -55,10 +55,10 @@ function Offer() {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 ">
               <div className="card  w-100 ">
                 <img src={Image3} className="card-img-top " alt="..." />
-                <div className="card-body tan2 ">
+                <div className="card-body ">
                   <h5 className="card-title cardTitleFont">Exceptional Quality</h5>
                   <p className="card-text">
                   "Each clean, done with careful attention, leaves your space looking pristine and beautiful."                  </p>

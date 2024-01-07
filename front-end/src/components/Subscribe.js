@@ -5,6 +5,8 @@ import { createEntry } from "../utils/api";
 import { useNavigate } from "react-router-dom";
 import ErrorAlert from "./ErrorAlert";
 import Footer from "./Footer";
+import Video from "./Video";
+import Logo from "./Images/NeatFreaklogo-A2.jpg"
 
 function Subscribe() {
   const history = useNavigate();
@@ -41,29 +43,24 @@ function Subscribe() {
   };
 
   return (
-    <div className="container mt-5 ">
+    <div className="container mt-3 ">   
       <div className="row ">
-      <div className="col-lg-3 "></div>
-        <div className="col-lg-6 ">
-          {/* <hr className="mb-4"></hr> */}
+        <h2 className="fontLight bold mb-3 ">
+             <span className=" ">Join </span>Our Exclusive<span className="italics"> Cleaning </span>Tips Newsletter
+          </h2>
+        <Video />
+          <p className="fontLight mt-3 mb-2">
+            Stay ahead in the game of cleanliness! Subscribe to our exclusive
+            newsletter and receive monthly insights straight to your inbox.
+            From expert cleaning hacks to eco-friendly solutions, we cover it
+            all to help you maintain a sparkling home with ease. Plus, subscribers get first dibs on
+            special offers and updates about our services. Sign up now and
+            transform the way you clean!
+          </p>
+          <div className="col-lg-3"></div>
+        <div className="col-lg-6 mt-5">
+          {/* <img src={Logo} className="w-50" alt="..."/> */}
           <form className="" onSubmit={handleSubmit}>
-            <h2 className="fontLight bg2 text-light p-3 br mb-3">
-              <span className="">
-                Join Our <span className=" underline">Exclusive</span> <span className=""> Cleaning </span>Tips Newsletter
-              </span>
-            </h2>
-            <p className="fontLight mt-3">
-              Stay ahead in the game of cleanliness! Subscribe to our exclusive
-              newsletter and receive monthly insights straight to your inbox.
-              From expert cleaning hacks to eco-friendly solutions, we cover it
-              all to help you maintain a sparkling home with ease. Whether
-              you're tackling stubborn stains or seeking ways to organize your
-              space more efficiently, our tips are tailored to make your
-              cleaning routine a breeze. Plus, subscribers get first dibs on
-              special offers and updates about our services. Sign up now and
-              transform the way you clean!
-            </p>
-            <hr className="mt-4"></hr>
             <ErrorAlert error={error} />
 
             <label for="name" class="form-label mt-3">
@@ -121,15 +118,9 @@ function Subscribe() {
               Cancel
             </button>
           </form>
+
         </div>
-        {/* <div className="col-lg-6">
-          <img
-            src={Image5}
-            class="img-fluid  right-aligned-img pic bounce-in handMargin"
-            alt="..."
-          />
-        </div> */}
-        <div className="col-lg-3 "></div>
+        <div className="col-lg-3"></div>
       </div>
 
       <div className="row">

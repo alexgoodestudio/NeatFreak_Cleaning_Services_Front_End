@@ -4,11 +4,13 @@ import Image6 from "./Images/Screenshot 2023-12-30 at 11.16.18 PM.png";
 import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function Dashboard() {
   return (
     <div>
       <div className="fadeout">
-        <div className="innerColumn ">
+    
+        <div className="innerColumn mobileBringLeft">
           <h1 className="display-6">
             <span className="italics">Clean&nbsp;</span>Space,&nbsp;
             <span className="underline">Happy Mind</span>
@@ -17,9 +19,9 @@ function Dashboard() {
       </div>
       <div className="fadein">
         <div className="slide-in row gx-0">
-          <div className="col-xl-6 paddingDashText ">
+          <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
-              <div>
+              <div>    
                 <h1 className="display-6">
                   <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
                   <span className="underline">Happy Mind</span>
@@ -36,16 +38,15 @@ function Dashboard() {
           </div>
           <div className="col-xl-6 ">
             <img src={Image6} className="img-fluid bathroom" alt="..." />
+            
           </div>
         </div>
         {/* ------------------------------------ */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12">
-            <div className="p-5">
-                
-            </div>
+            <Video/>
           </div>
-        </div>
+        </div> */}
         {/* ------------------------------------ */}
       </div>
     </div>

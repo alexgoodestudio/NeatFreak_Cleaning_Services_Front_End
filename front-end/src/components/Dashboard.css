@@ -25,17 +25,14 @@
   background-color:  #ffffff;
  color: #1f1f1e;
 }
-.tan2{
-  background-color:  #ffffff;
-  color: #bc4a90;
-}
+
 .br2{
   border-radius: 20px;;
 }
 .cleanSpace{
   max-width: 10%;
   margin-top: 16%;;
-  
+
 }
 
 .innerColumn{
@@ -76,6 +73,7 @@
   }
 }
 
+
 .home{
   height: 100vh;
   display:flex;
@@ -84,9 +82,6 @@
 }
 
 
-.circle{
-  border-radius: 100px;
-}
 .btn-custom{
     /* background-color:  #a672e9; */
     border-radius: 5px;
@@ -99,7 +94,7 @@
       fadeIn 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
-  /* @keyframes bounceInRight {
+  @keyframes bounceInRight {
     0% {
       transform: translateX(100%) scale(0.7);
       opacity: 0;
@@ -124,7 +119,7 @@
   
   .bounce-in {
     animation: bounceInRight 1s ease-out;
-  } */
+  }
 
 .body{
     color: #1f1f1e;
@@ -297,7 +292,7 @@ justify-content: center;
 
 }
 .logo{
-    width: 7%;
+    width: 11%;
 }
 .navRight{
   display: flex;
@@ -349,7 +344,7 @@ justify-content: center;
     margin-right: 9%;
   }
   .paddingDashText{
-    padding: 150px;
+    padding: 120px;
   }
   .bg2{
     background-color: #bc4a90;;
@@ -360,26 +355,40 @@ justify-content: center;
       /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
       visibility: hidden;
     }
+    
+    /* .mobileUp{
+      margin-top: 20%;
+     
+    } */
+
+    .mobileBringLeft{
+      margin-left: -18%;
+    }
+    
+    .paddingDashText{
+      padding: 150px;
+    }
+
     .logoWidth{
       width: 70%;
-      margin-top: 5%;;
+      margin-top: 5%;
     }
     .text-container {
       display: flex;
       justify-content: center;
       align-items: start;
-      height: 100%; /* Set the height to take the full space of the parent */
+      height: 100%; 
     }
-    
+  
+
 
     .footerText{
       font-size: 70%;
     }
 
-
     .mobilePadding{
-      margin-left: 10px;
-      margin-right: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .innerColumn{
@@ -389,7 +398,8 @@ justify-content: center;
     }
 
     .logo{
-      display:inline-block;
+     
+      
     }
     
     .white{
@@ -400,7 +410,6 @@ justify-content: center;
       margin-top: 10px;
     }
 
-    
     .widthSmaller2{
       visibility: hidden;
     }
