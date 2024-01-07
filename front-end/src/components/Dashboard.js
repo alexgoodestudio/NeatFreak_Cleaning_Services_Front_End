@@ -41,13 +41,6 @@ function Dashboard() {
             
           </div>
         </div>
-        {/* ------------------------------------ */}
-        {/* <div className="row">
-          <div className="col-12">
-            <Video/>
-          </div>
-        </div> */}
-        {/* ------------------------------------ */}
       </div>
     </div>
   );
