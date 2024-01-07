@@ -11,23 +11,26 @@ function NavBar() {
   }
 
   return (
-    <div className="nav row mt-1">
-      <section className="d-flex justify-content-between align-items-center col-lg-12">
+    <div className="nav row">
+     
+        <div className="col-sm-6  align-items-center   ">
         <img
           src={Image4}
           onClick={goToHome}
-          className="logo mt-3 ms-5 mb-2 "
+          className="logo "
           alt="Company Logo"
         />
+        </div>
 
-        <div className="d-flex align-items-center justify-content-end mobileUp">
+        <div className="d-flex col-sm-6    ">
           <Link to="/" className="link link-hover marginNav ">Home</Link>
           <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
           <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>
           <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>
           <Link to="/reviews" className="link marginNav  link-hover ">Reviews</Link>
         </div>
-      </section>
+        
+  
     </div>
   );
 }

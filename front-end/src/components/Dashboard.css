@@ -292,7 +292,10 @@ justify-content: center;
 
 }
 .logo{
-    width: 11%;
+    width: 22%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
 }
 .navRight{
   display: flex;
@@ -340,8 +343,8 @@ justify-content: center;
     top:25% ;
   }
   .marginNav{
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-left: 10%;
+   
   }
   .paddingDashText{
     padding: 120px;
@@ -356,10 +359,6 @@ justify-content: center;
       visibility: hidden;
     }
     
-    /* .mobileUp{
-      margin-top: 20%;
-     
-    } */
 
     .mobileBringLeft{
       margin-left: -18%;
@@ -373,6 +372,7 @@ justify-content: center;
       width: 70%;
       margin-top: 5%;
     }
+
     .text-container {
       display: flex;
       justify-content: center;
@@ -380,7 +380,6 @@ justify-content: center;
       height: 100%; 
     }
   
-
 
     .footerText{
       font-size: 70%;
@@ -398,8 +397,8 @@ justify-content: center;
     }
 
     .logo{
-     
-      
+      width: 30%;
+     margin-top: 5%;
     }
     
     .white{
@@ -414,12 +413,14 @@ justify-content: center;
       visibility: hidden;
     }
     .marginNav{
-      margin-left: 3%;
+      margin-left: 7%;
+      
     }
 
     .link{
       margin-top: 10px;
       font-size: 11px;
+      font-size: 8pt;
     }
 
   }
