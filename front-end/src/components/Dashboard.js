@@ -38,6 +38,15 @@ function Dashboard() {
             <img src={Image6} className="img-fluid bathroom" alt="..." />
           </div>
         </div>
+        {/* ------------------------------------ */}
+        <div className="row">
+          <div className="col-12">
+            <div className="p-5">
+                
+            </div>
+          </div>
+        </div>
+        {/* ------------------------------------ */}
       </div>
     </div>
   );

@@ -351,6 +351,9 @@ justify-content: center;
   .paddingDashText{
     padding: 150px;
   }
+  .bg2{
+    background-color: #bc4a90;;
+  }
 
   @media only screen and (max-width: 600px) {
     .pic {
@@ -396,9 +399,7 @@ justify-content: center;
     .card{
       margin-top: 10px;
     }
-    .bg2{
-      background-color: #bc4a90;;
-    }
+
     
     .widthSmaller2{
       visibility: hidden;
