@@ -8,7 +8,7 @@ function Dashboard() {
   return (
     <div>
       <div className="fadeout">
-        <div className="innerColumn d-flex justify-content-center align-items-center">
+        <div className="innerColumn ">
           <h1 className="display-6">
             <span className="italics">Clean&nbsp;</span>Space,&nbsp;
             <span className="underline">Happy Mind</span>
@@ -17,7 +17,7 @@ function Dashboard() {
       </div>
       <div className="fadein">
         <div className="slide-in row gx-0">
-          <div className="col-xl-6 paddingDashText mt-3 blue2">
+          <div className="col-xl-6 paddingDashText ">
             <div className="text-container d-flex justify-content-center align-items-center">
               <div>
                 <h1 className="display-6">

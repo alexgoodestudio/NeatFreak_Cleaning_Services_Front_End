@@ -153,10 +153,7 @@
   border-radius: 10px;
 }
 
-.blue2{
-  background-color: #ffffff;
-  padding: 4%;
-}
+
 .thin{
   font-weight: 300;
 }
@@ -352,7 +349,7 @@ justify-content: center;
     margin-right: 9%;
   }
   .paddingDashText{
-    padding: 150px;;
+    padding: 150px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -364,7 +361,12 @@ justify-content: center;
       width: 70%;
       margin-top: 5%;;
     }
-   
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      height: 100%; /* Set the height to take the full space of the parent */
+    }
     
 
     .footerText{
@@ -402,7 +404,7 @@ justify-content: center;
       visibility: hidden;
     }
     .marginNav{
-      margin-left: 9%;
+      margin-left: 3%;
     }
 
     .link{
