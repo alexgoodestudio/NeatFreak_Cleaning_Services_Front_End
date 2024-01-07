@@ -9,7 +9,7 @@ function Video() {
         Your browser does not support the video tag.
       </video>
     </div>
-  );
+  ); 
 }
 
 export default Video;

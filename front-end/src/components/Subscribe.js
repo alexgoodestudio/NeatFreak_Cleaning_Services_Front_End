@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorAlert from "./ErrorAlert";
 import Footer from "./Footer";
 import Video from "./Video";
-import Logo from "./Images/NeatFreaklogo-A2.jpg"
+
 
 function Subscribe() {
   const history = useNavigate();
@@ -43,22 +43,22 @@ function Subscribe() {
   };
 
   return (
-    <div className="container mt-3 ">   
+    <div className="container mt-5 ">   
       <div className="row ">
-        <h2 className="fontLight bold mb-3 ">
-             <span className=" ">Join </span>Our Exclusive<span className="italics"> Cleaning </span>Tips Newsletter
+        <h2 className="fontLight space display-6 bold mb-4 ">
+             <span className="bold">Join </span>Our Exclusive<span className="italics"> Cleaning </span>Tips <span className=" "> Newsletter</span>
           </h2>
         <Video />
-          <p className="fontLight mt-3 mb-2">
+          <h4 className="fontLight space2 mt-5 mb-2">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
             newsletter and receive monthly insights straight to your inbox.
             From expert cleaning hacks to eco-friendly solutions, we cover it
             all to help you maintain a sparkling home with ease. Plus, subscribers get first dibs on
             special offers and updates about our services. Sign up now and
             transform the way you clean!
-          </p>
+          </h4>
           <div className="col-lg-3"></div>
-        <div className="col-lg-6 mt-5">
+        <div className="col-lg-6 mt-3">
           {/* <img src={Logo} className="w-50" alt="..."/> */}
           <form className="" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />

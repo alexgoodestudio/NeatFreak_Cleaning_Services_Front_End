@@ -242,7 +242,7 @@
 
 .underline{
   text-decoration: underline 2px;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 
@@ -327,6 +327,16 @@ justify-content: center;
     margin-bottom: 0px;
     padding:1%;
 }
+.space{
+  letter-spacing: 2px;
+  
+}
+.space2{
+  
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
 
 .link{
   text-decoration: none;
@@ -356,6 +366,7 @@ justify-content: center;
   .bg2{
     background-color: #bc4a90;;
   }
+
 
   @media only screen and (max-width: 600px) {
     .pic {
