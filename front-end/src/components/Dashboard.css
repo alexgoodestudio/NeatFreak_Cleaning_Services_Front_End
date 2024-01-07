@@ -46,14 +46,11 @@
   transform-origin: top left; 
   transform: scale(0.8);
 }
-.bg2{
-  background-color: #bc4a90;;
-}
+
 
 .fadeout {
   animation: fadeOut 1s .5s forwards;
 }
-
 .fadein{
   opacity: 0;
   animation: fadeInBubble 1s ease forwards;
@@ -303,7 +300,7 @@ justify-content: center;
 
 }
 .logo{
-    width: 11%;
+    width: 7%;
 }
 .navRight{
   display: flex;
@@ -388,7 +385,10 @@ justify-content: center;
     .card{
       margin-top: 10px;
     }
-
+    .bg2{
+      background-color: #bc4a90;;
+    }
+    
     .widthSmaller2{
       visibility: hidden;
     }
