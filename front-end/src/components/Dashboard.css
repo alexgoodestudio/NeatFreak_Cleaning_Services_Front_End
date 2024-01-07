@@ -351,6 +351,9 @@ justify-content: center;
     margin-left: 9%;
     margin-right: 9%;
   }
+  .paddingDashText{
+    padding: 150px;;
+  }
 
   @media only screen and (max-width: 600px) {
     .pic {
@@ -361,9 +364,12 @@ justify-content: center;
       width: 70%;
       margin-top: 5%;;
     }
-.footerText{
-  font-size: 70%;
-}
+   
+    
+
+    .footerText{
+      font-size: 70%;
+    }
 
 
     .mobilePadding{
@@ -377,6 +383,9 @@ justify-content: center;
       align-items: center;
     }
 
+    .logo{
+      display:inline-block;
+    }
     
     .white{
       background-color: #ffffff;
@@ -393,7 +402,7 @@ justify-content: center;
       visibility: hidden;
     }
     .marginNav{
-      margin-left: 9%;;
+      margin-left: 9%;
     }
 
     .link{

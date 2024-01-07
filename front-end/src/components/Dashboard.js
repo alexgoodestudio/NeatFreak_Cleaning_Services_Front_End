@@ -17,7 +17,7 @@ function Dashboard() {
       </div>
       <div className="fadein">
         <div className="slide-in row gx-0">
-          <div className="col-lg-6 mt-3 blue2">
+          <div className="col-xl-6 paddingDashText mt-3 blue2">
             <div className="text-container d-flex justify-content-center align-items-center">
               <div>
                 <h1 className="display-6">
@@ -34,7 +34,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-xl-6 ">
             <img src={Image6} className="img-fluid bathroom" alt="..." />
           </div>
         </div>
