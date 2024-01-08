@@ -9,7 +9,7 @@ import CalendlyEmbed from "./Calendly";
 import Footer from "./Footer"
 
 function Request() {
-  
+
   return (
     <div className="container mt-5 ">
       <div className="row mobilePadding">
@@ -25,20 +25,10 @@ function Request() {
             estimate. I'll be in and out in just 15 minutes, ensuring a fast,
             efficient process tailored just for you.
           </p>
-          <form>
-            <label></label>
-            <input></input>
-            <label></label>
-            <input></input>
-            <label></label>
-            <input></input>
-          </form>
           <hr className="mt-4"></hr>
-
           <div className="mb-5">
             <CalendlyEmbed />
           </div>
-
         </div>
         <div className="col-lg-6">
           <img
