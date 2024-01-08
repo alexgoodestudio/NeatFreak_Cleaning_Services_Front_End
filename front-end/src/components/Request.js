@@ -33,7 +33,7 @@ function Request() {
         <div className="col-lg-6">
           <img
             src={Image5}
-            class="bounce-in  img-fluid slide-in right-aligned-img pic bounce-in handMargin"
+            class="bounce-in img-fluid slide-in right-aligned-img pic bounce-in handMargin"
             alt="..."
           />
         </div>

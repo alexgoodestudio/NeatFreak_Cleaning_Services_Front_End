@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Outfit:wght@200&family=Playfair+Display&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat&family=Poppins&display=swap');
 .border{
     border: solid;
     padding-left: 10px;
@@ -15,7 +15,9 @@
 .bold2{
   font-weight: 500;
 }
-
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
 .center{
   display: flex;
   margin-left: 30%;
@@ -116,7 +118,9 @@
       opacity: 1;
     }
   }
-  
+  .inter{
+    font-family: 'Inter', sans-serif;
+  }
   .bounce-in {
     animation: bounceInRight 1s ease-out;
   }
@@ -147,14 +151,28 @@
   padding: 1%;
   border-radius: 10px;
 }
-
-
+.space2{
+  letter-spacing: .5px;
+}
+.fontIncrease{
+  font-size: 21pt;
+}
 .thin{
   font-weight: 300;
+
 }
+
+.text-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn2{
   border-radius: 12px;
   padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #3eb5d2;
@@ -293,9 +311,9 @@ justify-content: center;
 }
 .logo{
     width: 22%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .navRight{
   display: flex;
@@ -322,10 +340,10 @@ justify-content: center;
 
 .nav{
     background-color: #ffffff;
-    color: #1f1f1e;
+    color: #ffffff;
     box-shadow: 10px 5px 5px rgb(206, 206, 206);
-    margin-bottom: 0px;
-    padding:1%;
+    margin-bottom: 2%;
+   
 }
 .space{
   letter-spacing: 2px;
@@ -341,6 +359,7 @@ justify-content: center;
 .link{
   text-decoration: none;
   color: #1f1f1e;
+  font-size: 13pt;
 }
 
 .right-aligned-img {
@@ -366,7 +385,10 @@ justify-content: center;
   .bg2{
     background-color: #bc4a90;;
   }
-
+  .bg3{
+    background-color: #e1e9f6;
+    
+  }
 
   @media only screen and (max-width: 600px) {
     .pic {

@@ -24,7 +24,7 @@ function Dashboard() {
               <div>    
                 <h1 className="display-6">
                   <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
-                  <span className="underline">Happy Mind</span>
+                  <span className="underline ">Happy Mind</span>
                 </h1>
                 <h4 className="thin">Let us handle the cleaning</h4>
                 <div className="mt-4">

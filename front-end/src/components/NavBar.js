@@ -11,26 +11,32 @@ function NavBar() {
   }
 
   return (
+
     <div className="nav row">
-     
-        <div className="col-sm-6  align-items-center   ">
+      <div className="row">
+        <div className="col-12 bg3  text-black text-center">
+        <h6 className="mt-2 mb-2 pt-1 pb-2 space underline">Cleaning Services in <span className="italics">Richmond, Virginia</span></h6>
+        </div>
+      </div>
+      <div className="row mt-3">
+      <div className="col-sm-6  align-items-center">
         <img
           src={Image4}
           onClick={goToHome}
           className="logo "
           alt="Company Logo"
         />
-        </div>
+      </div>
 
-        <div className="d-flex col-sm-6    ">
-          <Link to="/" className="link link-hover marginNav ">Home</Link>
-          <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
-          <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>
-          <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>
-          <Link to="/reviews" className="link marginNav  link-hover ">Reviews</Link>
-        </div>
-        
-  
+      <div className="d-flex col-sm-6">
+        <Link to="/" className="link link-hover marginNav ">Home</Link>
+        <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
+        <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>
+        <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>
+        <Link to="/reviews" className="link marginNav  link-hover ">Reviews</Link>
+      </div>
+      </div>
+
     </div>
   );
 }

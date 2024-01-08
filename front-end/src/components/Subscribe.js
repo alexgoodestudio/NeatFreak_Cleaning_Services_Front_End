@@ -45,7 +45,7 @@ function Subscribe() {
   return (
     <div className="container mt-5 ">   
       <div className="row ">
-        <h2 className="fontLight space display-6 bold mb-4 ">
+        <h2 className="fontLight space  bold mb-3 ">
              <span className="bold">Join </span>Our Exclusive<span className="italics"> Cleaning </span>Tips <span className=" "> Newsletter</span>
           </h2>
         <Video />
