@@ -1,5 +1,5 @@
 import React from 'react';
-import myVideo from './Images/trim.mp4'; 
+import myVideo from './Images/trim.webm'; 
 
 function Video() {
   return (
