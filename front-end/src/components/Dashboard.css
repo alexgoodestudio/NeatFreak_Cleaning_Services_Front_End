@@ -46,7 +46,9 @@
   transform: scale(0.8);
 }
 
-
+.down{
+  margin-top: 5%;
+}
 .fadeout {
   animation: fadeOut 1s .5s forwards;
 }

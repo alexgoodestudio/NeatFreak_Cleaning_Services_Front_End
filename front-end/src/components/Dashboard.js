@@ -26,9 +26,9 @@ function Dashboard() {
                   <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
                   <span className="underline ">Happy Mind</span>
                 </h1>
-                <h4 className="thin">Let us handle the cleaning</h4>
+                <h4 className="thin mt-3">Let us handle the cleaning</h4>
                 <div className="mt-4">
-                  <Link to="/request" className="btn2 mt-2">
+                  <Link to="/request" className="btn2 mt-3">
                     <span className="bold">Request </span>
                     <span className="spacing1">Estimate</span>
                   </Link>

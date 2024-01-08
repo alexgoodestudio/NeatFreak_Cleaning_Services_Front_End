@@ -70,8 +70,8 @@ function Offer() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 mt-4">
-          <img src={Image4} className="img-fluid br" alt="..." />
+        <div className="col-lg-6 mt-4 ">
+          <img src={Image4} className="img-fluid down br" alt="..." />
         </div>
         
       </div>
