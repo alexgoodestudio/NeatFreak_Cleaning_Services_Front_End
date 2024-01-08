@@ -13,8 +13,8 @@ function NavBar() {
   return (
 
     <div className="nav row">
-      <div className="row">
-        <div className="col-12 bg3  text-black text-center">
+      <div className="row bg3 ">
+        <div className="col-12  text-black text-center">
         <h6 className="mt-2 mb-2 pt-1 pb-2 space underline">Cleaning Services in <span className="italics">Richmond, Virginia</span></h6>
         </div>
       </div>

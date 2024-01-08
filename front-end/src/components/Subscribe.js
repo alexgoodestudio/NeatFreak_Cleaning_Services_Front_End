@@ -43,24 +43,22 @@ function Subscribe() {
   };
 
   return (
-    <div className="container mt-5 ">   
+    <div className=" ">   
       <div className="row ">
-        <h2 className="fontLight space  bold mb-3 ">
-             <span className="bold">Join </span>Our Exclusive<span className="italics"> Cleaning </span>Tips <span className=" "> Newsletter</span>
-          </h2>
+\
         <Video />
-          <h4 className="fontLight space2 mt-5 mb-2">
+          <div className="col-lg-3"></div>
+        <div className="col-lg-6">
+        <h5 className="   p-3  space2 lineHeight">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
             newsletter and receive monthly insights straight to your inbox.
             From expert cleaning hacks to eco-friendly solutions, we cover it
             all to help you maintain a sparkling home with ease. Plus, subscribers get first dibs on
             special offers and updates about our services. Sign up now and
             transform the way you clean!
-          </h4>
-          <div className="col-lg-3"></div>
-        <div className="col-lg-6 mt-3">
-          {/* <img src={Logo} className="w-50" alt="..."/> */}
-          <form className="" onSubmit={handleSubmit}>
+          </h5>
+        
+          <form className="mt-4 p-5" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />
 
             <label for="name" class="form-label mt-3">
