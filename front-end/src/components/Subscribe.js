@@ -45,11 +45,11 @@ function Subscribe() {
   return (
     <div className=" ">   
       <div className="row ">
-\
+
         <Video />
           <div className="col-lg-3"></div>
         <div className="col-lg-6">
-        <h5 className="   p-3  space2 lineHeight">
+        <h5 className="   p-3 mt-4  space2 lineHeight">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
             newsletter and receive monthly insights straight to your inbox.
             From expert cleaning hacks to eco-friendly solutions, we cover it
@@ -58,10 +58,10 @@ function Subscribe() {
             transform the way you clean!
           </h5>
         
-          <form className="mt-4 p-5" onSubmit={handleSubmit}>
+          <form className=" p-5" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />
 
-            <label for="name" class="form-label mt-3">
+            <label for="name" class="form-label">
               Name:
             </label>
             <input

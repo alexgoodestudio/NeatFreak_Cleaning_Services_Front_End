@@ -38,7 +38,6 @@ function Dashboard() {
           </div>
           <div className="col-xl-6 ">
             <img src={Image6} className="img-fluid bathroom" alt="..." />
-            
           </div>
         </div>
       </div>
