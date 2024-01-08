@@ -5,7 +5,7 @@ function Video() {
   return (
     <div>
       <video className='img-fluid vid' autoPlay muted loop preload="metadata" playsinline>
-        <source src={myVideo} type="video/mp4" />
+        <source src={myVideo} type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
