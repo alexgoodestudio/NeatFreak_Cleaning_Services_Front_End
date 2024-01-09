@@ -19,7 +19,7 @@ function Offer() {
           </h1>
       <hr></hr>
               
-              <p className=" body  blue mt-1 mb-3">
+              <p className=" body subscribePara  blue mt-1 mb-3">
                 At <span className="bold">NeatFreak,</span> we specialize in providing
                 top-tier house cleaning that caters to the unique needs of each
                 client, transforming your space into a pristine, welcoming

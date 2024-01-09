@@ -18,7 +18,7 @@ function Request() {
             <span className="bold">Schedule your in-home estimate today</span>{" "}
             and take the first step towards a happier, cleaner home!
           </h3>
-          <p className="fontLight mt-5">
+          <p className="fontLight subscribePara mt-4">
             Ready for a cleaner space? We offer easy and quick in-home
             estimates that fit into your busy schedule. Just fill out a short
             form with your contact details and a preferred time for the

@@ -438,6 +438,11 @@ justify-content: center;
   font-size: 9pt;
 }
 
+
+  .subscribePara{
+    font-size: 10pt;
+  }
+
     .vid{
       max-width: 100%;
       height: auto;
@@ -448,7 +453,7 @@ justify-content: center;
     }
 
     .mobileBringLeft{
-      margin-left: -18%;
+      margin-left: -20%;
     }
     
     .paddingDashText{
