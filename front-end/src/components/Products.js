@@ -9,7 +9,7 @@ function Products(){
                 <li>1. Biodegradable Cleaning Wipes</li>
                 <li>2. Eco-Friendly Multi-Surface Cleaner</li>
                 <li>3. Non-Toxic Glass Cleaner</li>
-                <li>4. Plant-Based Dish Soap</li>
+                <li>4. Plant-Based Meyers Dish Soap</li>
                 <li>6. Natural Toilet Bowl Cleaner</li>
                 <li>9. Sustainable Sponges</li>
             </ul>
