@@ -9,9 +9,9 @@ function Reviews() {
     return (
       <div className="container">
         <div className="row mt-3 d-flex ms-5 me-5">
-            <div className="col-lg-1"></div>
+            <div className="col-lg-2"></div>
         
-            <div className="col-lg-7  mt-2">
+            <div className="col-lg-8  mt-2">
             <div className="display-6  br p-3 mt-5 mb-2"> Our <span className="underline">Awesome</span> <span className="italics">Customers</span> love us :-)</div>
                <figure className="p-2 mt-1">
                <hr></hr>
@@ -52,7 +52,7 @@ function Reviews() {
                   review by: <cite title="Source Title">Alex G</cite>
                 </figcaption>
               </figure> 
-              <div className="col-lg-4">
+              <div className="col-lg-2">
             </div>
             </div>
 

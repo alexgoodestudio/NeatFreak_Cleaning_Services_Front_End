@@ -6,10 +6,12 @@ import Reviews from "./Reviews";
 import Login from "./Login";
 import { Route, Routes } from "react-router-dom";
 import Subscribe from "./Subscribe";
+import Products from "./Products";
 
 function AppRoutes() {
   return (
     <Routes>
+      <Route path="/products" element={<Products/>} />
       <Route path="/subscribe" element={<Subscribe/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/reviews" element={<Reviews/>} />

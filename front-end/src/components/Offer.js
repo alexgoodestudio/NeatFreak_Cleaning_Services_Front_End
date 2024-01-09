@@ -14,8 +14,8 @@ function Offer() {
         <div className="col-lg-6">
           <div className="row">
             <h1 className="display-6 ">
-            <span className="italics">Clean&nbsp;</span>Space,&nbsp;
-            <span className="slide-in">Happy Mind</span>
+            <span className="italics">Our&nbsp;</span>
+            <span className="slide-in">Services</span>
           </h1>
       <hr></hr>
               
@@ -43,12 +43,12 @@ function Offer() {
               <div className="card  w-100 d-flex">
                 <img src={Image1} className="card-img-top" alt="..." />
                 <div className="card-body cardBody1 ">
-                  <h5 className="card-title cardTitleFont">Eco Friendly</h5>
+                  <h5 className="card-title underline mb-3">Eco Friendly Products</h5>
                   <p className="card-text">
                   "Green Clean: Safe, sustainable, spotless. Your home, our planet-friendly touch."
                   
             </p>
-                  <a href="/request" className="btn-custom ">
+                  <a href="/products" className="btn btn-secondary btn-custom ">
                     Eco Friendly
                   </a>
                 </div>
@@ -59,10 +59,10 @@ function Offer() {
               <div className="card  w-100 ">
                 <img src={Image3} className="card-img-top " alt="..." />
                 <div className="card-body ">
-                  <h5 className="card-title cardTitleFont">Exceptional Quality</h5>
+                  <h5 className="card-title underline mb-3">Exceptional Quality</h5>
                   <p className="card-text">
                   "Each clean, done with careful attention, leaves your space looking pristine and beautiful."                  </p>
-                  <a href="/request" className="btn-custom ">
+                  <a href="/reviews" className="btn btn-secondary  ">
                     Exceptional Quality
                   </a>
                 </div>
