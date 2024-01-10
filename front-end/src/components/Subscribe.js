@@ -43,7 +43,7 @@ function Subscribe() {
   };
 
   return (
-    <div className=" ">   
+    <div className="">   
       <div className="row ">
 
         <Video />

@@ -498,4 +498,7 @@
     /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
     visibility: hidden;
   }
+  .paddingDashText{
+    scale: 70%;
+  }
 }

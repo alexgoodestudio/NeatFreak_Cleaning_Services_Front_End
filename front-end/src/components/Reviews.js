@@ -12,7 +12,7 @@ function Reviews() {
             <div className="col-lg-2"></div>
         
             <div className="col-lg-8  mt-2">
-            <div className="display-6  br p-3 mt-5 mb-2"> Our <span className="underline">Awesome</span> <span className="italics">Customers</span> love us :-)</div>
+            <div className="display-6  br p-3 mt-5 mb-2"> Our <span className="">Awesome</span> <span className="italics">Customers</span> love us!</div>
                <figure className="p-2 mt-1">
                <hr></hr>
                 <blockquote className="blockquote">

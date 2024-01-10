@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 
 function Offer() {
   return (
-    <div className="container  mt-5 slide-in">
+    <div className="container fade-in  mt-5 ">
       <div className="row mobilePadding">
         <div className="col-lg-6">
           <div className="row">
             <h1 className="display-6 ">
               <span className="italics">Our&nbsp;</span>
-              <span className="slide-in">Services</span>
+              <span className="">Services</span>
             </h1>
             <hr></hr>
 
@@ -40,7 +40,7 @@ function Offer() {
               <div className="card  w-100 d-flex">
                 <img src={Image1} className="card-img-top" alt="..." />
                 <div className="card-body cardBody1 ">
-                  <h5 className="card-title underline mb-3">
+                  <h5 className="card-title  mb-3">
                     Eco Friendly Products
                   </h5>
                   <p className="card-text">
@@ -59,7 +59,7 @@ function Offer() {
               <div className="card  w-100 ">
                 <img src={Image3} className="card-img-top " alt="..." />
                 <div className="card-body ">
-                  <h5 className="card-title underline mb-3">
+                  <h5 className="card-title  mb-3">
                     Exceptional Quality
                   </h5>
                   <p className="card-text">

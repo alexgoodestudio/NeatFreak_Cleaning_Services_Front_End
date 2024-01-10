@@ -1,9 +1,6 @@
 import React from "react";
-// import { useState } from "react";
 import "./Dashboard.css";
-// import { createEntry } from "../utils/api";
-// import { useNavigate } from "react-router-dom";
-// import ErrorAlert from "./ErrorAlert";
+import { BsCalendar3 } from "react-icons/bs";
 import Image5 from "./Images/9.png";
 import CalendlyEmbed from "./Calendly";
 import Footer from "./Footer"
@@ -14,6 +11,7 @@ function Request() {
     <div className="container mt-5 ">
       <div className="row mobilePadding">
         <div className="col-lg-6 ">
+        <BsCalendar3 />
           <h3 className="fontLight ">
             <span className="bold">Schedule your in-home estimate today</span>{" "}
             and take the first step towards a happier, cleaner home!
