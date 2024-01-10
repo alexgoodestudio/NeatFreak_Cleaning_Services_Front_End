@@ -182,12 +182,12 @@
 }
 
 .btn2 {
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
   background-color: #3eb5d2;
   color: #ffffff;
   border: none;
@@ -270,7 +270,9 @@
   width: 22%;
   margin-top: 5%;
 }
-
+.btnMarg{
+  margin-top: 7.35%;
+}
 .underline {
   text-decoration: underline 2px;
   text-underline-offset: 4px;
@@ -386,6 +388,7 @@
 }
 .paddingDashText {
   padding: 120px;
+  margin-bottom: 5%;
 }
 .bg2 {
   background-color: #bc4a90;
@@ -406,7 +409,9 @@
   .topNav {
     font-size: 9pt;
   }
-
+  .btnScale{
+    font-size: 10pt;
+  }
   .subscribePara {
     font-size: 10pt;
   }

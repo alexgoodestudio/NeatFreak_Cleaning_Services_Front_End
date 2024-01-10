@@ -22,13 +22,13 @@ function Dashboard() {
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
               <div>    
-                <h1 className="display-6">
+                <h1 className="display-5">
                   <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
-                  <span className="underline ">Happy Mind</span>
+                  <span className="">Happy Mind.</span>
                 </h1>
                 <h4 className="thin mt-3">Let us handle the cleaning</h4>
-                <div className="mt-4">
-                  <Link to="/request" className="btn2 mt-3">
+                <div className="btnMarg ">
+                  <Link to="/request" className="btn2 btnScale mt-3">
                     <span className="bold">Request </span>
                     <span className="spacing1">Estimate</span>
                   </Link>
