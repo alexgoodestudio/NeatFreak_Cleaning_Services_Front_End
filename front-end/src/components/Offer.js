@@ -4,6 +4,7 @@ import Image1 from "./Images/markus-spiske-6MB_jBwteIg-unsplash.jpg";
 import Image3 from "./Images/point3d-commercial-imaging-ltd-dsh1MmzaMcw-unsplash.jpg";
 import Image4 from "./Images/Screenshot 2023-12-31 at 12.19.49 PM.png";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 function Offer() {
   return (
