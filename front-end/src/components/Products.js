@@ -11,7 +11,7 @@ function Products(){
                 <li>3. Non-Toxic Glass Cleaner</li>
                 <li>4. Recycled Paper Towels </li>
                 <li>6. Natural Toilet Bowl Cleaner</li>
-                <li>9. Sustainable Sponges</li>
+                <li>7. Sustainable Sponges</li>
             </ul>
         </div>
     )
