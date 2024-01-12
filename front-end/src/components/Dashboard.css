@@ -136,7 +136,7 @@
   /* font-family: 'Poppins', sans-serif; */
   text-align: justify;
   text-justify: inter-word;
-  font-size: 15pt;
+  font-size: 14pt;
 }
 
 .green {
@@ -206,6 +206,20 @@
   border: none;
   text-decoration: none;
   font-size: 13pt;
+}
+
+.btn4 {
+  border-radius: 8px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #3eb5d2;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  font-size: 13pt;
+  
 }
 
 .displayFlex{
@@ -449,8 +463,8 @@ font-size: 34pt;
   .btnScale{
     font-size: 10pt;
   }
-  .subscribePara {
-    font-size: 10pt;
+  .para {
+    font-size: 11pt;
   }
 
   .vid {

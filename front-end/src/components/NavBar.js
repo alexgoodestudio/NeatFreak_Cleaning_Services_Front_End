@@ -36,8 +36,6 @@ function NavBar() {
         <div className="link marginNav link-hover ">
         <Dropdown/>
         </div>
-
-        <Link to="/ourservices" className="link marginNav link-hover">Services</Link>
         <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>
         <Link to="/reviews" className="link marginNav  link-hover ">Reviews</Link>
       </div>

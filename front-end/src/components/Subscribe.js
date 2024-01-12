@@ -49,7 +49,7 @@ function Subscribe() {
         <Video />
           <div className="col-lg-3"></div>
         <div className="col-lg-6">
-        <h5 className="   p-3 mt-4 subscribePara space2 lineHeight">
+        <h5 className="   p-3 mt-4 para space2 lineHeight">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
             newsletter and receive monthly insights straight to your inbox.
             From expert cleaning hacks to eco-friendly solutions, we cover it
