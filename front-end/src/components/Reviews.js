@@ -8,12 +8,12 @@ function Reviews() {
 
     return (
       <div className="container">
-        <div className="row mt-3 d-flex ms-5 me-5">
-            <div className="col-lg-2"></div>
+        <div className="row mt-3 d-flex ms-2 me-2">
+            <div className="col-lg-1"></div>
         
-            <div className="col-lg-8  mt-2">
-            <div className="display-6  br p-3 mt-5 mb-2"> Our <span className="">Awesome</span> <span className="italics">Customers</span> love us!</div>
-               <figure className="p-2 mt-1">
+            <div className="col-lg-10  mt-2">
+            <div className="display-6 br mt-5 mb-2"> Our <span className="">Awesome</span> <span className="italics">Customers</span> love us!</div>
+               <figure className="mt-1">
                <hr></hr>
                 <blockquote className="blockquote">
                   <p>
@@ -28,7 +28,7 @@ function Reviews() {
                 </figcaption>
               </figure> 
               <hr></hr>
-              <figure className="p-2">
+              <figure >
                 <blockquote className="blockquote">
                   <p>
                     {" "}
@@ -40,7 +40,7 @@ function Reviews() {
                 </figcaption>
               </figure> 
               <hr></hr>
-              <figure className="p-2">
+              <figure >
                 <blockquote className="blockquote">
                   <p>
                     {" "}
@@ -52,12 +52,12 @@ function Reviews() {
                   review by: <cite title="Source Title">Alex G</cite>
                 </figcaption>
               </figure> 
-              <div className="col-lg-2">
+              <div className="col-lg-1">
             </div>
             </div>
 
             <div className="row">
-        <div className="col-lg-12">
+        <div className="col-lg-12 scale">
           <Footer/>
       </div>
       </div>

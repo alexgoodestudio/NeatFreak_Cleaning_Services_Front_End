@@ -2,6 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import Image4 from "./Images/NeatFreakShort.png";
 import { Link, useNavigate } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -31,7 +32,12 @@ function NavBar() {
       <div className="d-flex col-sm-6">
         <Link to="/" className="link link-hover marginNav ">Home</Link>
         <Link to="/request" className="link marginNav link-hover ">Estimates</Link>
-        <Link to="/ourservices" className="link marginNav link-hover ">Services</Link>
+
+        <div className="link marginNav link-hover ">
+        <Dropdown/>
+        </div>
+
+        <Link to="/ourservices" className="link marginNav link-hover">Services</Link>
         <Link to="/subscribe" className="link marginNav link-hover ">Subscribe</Link>
         <Link to="/reviews" className="link marginNav  link-hover ">Reviews</Link>
       </div>

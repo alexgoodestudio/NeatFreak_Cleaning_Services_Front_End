@@ -122,7 +122,7 @@ function Subscribe() {
       </div>
 
       <div className="row">
-        <div className="col-lg-12 sizeIncrease">
+        <div className="col-lg-12 scaleDown">
           <Footer />
         </div>
       </div>

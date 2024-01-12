@@ -6,12 +6,16 @@ import Reviews from "./Reviews";
 import Login from "./Login";
 import { Route, Routes } from "react-router-dom";
 import Subscribe from "./Subscribe";
-import Products from "./Products";
+import OneTime from "./OneTime";
+import Moving from "./Moving";
+import Recurring from "./Recurring";
 
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/products" element={<Products/>} />
+      <Route path="/recurring" element={<Recurring/>} />
+      <Route path="/moving" element={<Moving/>} />
+      <Route path="/onetime" element={<OneTime/>} />
       <Route path="/subscribe" element={<Subscribe/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/reviews" element={<Reviews/>} />

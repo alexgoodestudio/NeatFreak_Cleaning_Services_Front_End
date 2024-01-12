@@ -136,6 +136,7 @@
   /* font-family: 'Poppins', sans-serif; */
   text-align: justify;
   text-justify: inter-word;
+  font-size: 15pt;
 }
 
 .green {
@@ -234,9 +235,25 @@
   position: relative;
   bottom: 8%;
 }
+
+.scaleDown{
+  scale: 80%;
+}
+
+.dropdown{
+  text-decoration: none;
+  color: black;
+}
+
 .italics3 {
   font-style: italic;
 }
+
+.italics4{
+font-style: italic;
+font-size: 34pt;
+}
+
 .select-style {
   appearance: auto;
   -webkit-appearance: menulist-button;
