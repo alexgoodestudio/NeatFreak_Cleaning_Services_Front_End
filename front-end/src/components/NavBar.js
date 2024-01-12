@@ -12,7 +12,6 @@ function NavBar() {
   }
 
   return (
-
     <div className="nav row">
       <div className="row bg3 ">
         <div className="col-12  text-black topNav text-center">
