@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./Dashboard.css";
 
 const Dropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
-    const toggleDropdown = (event) => {
+    const handleOurServicesClick = (event) => {
         event.preventDefault(); // Prevents the default link behavior
         setIsOpen(!isOpen);
+        navigate('/ourservices');
     };
 
     return (
         <div className="dropdown">
             <Link 
-                className="dropdown-toggle link marginNav link-hover " 
-                to="#"
-                onClick={toggleDropdown}
+                className="dropdown-toggle link marginNav link-hover" 
+                to="/ourservices"
+                onClick={handleOurServicesClick}
             >
                 Our Services
             </Link>
