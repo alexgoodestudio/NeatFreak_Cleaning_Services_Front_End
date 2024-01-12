@@ -195,6 +195,23 @@
   text-decoration: none;
   font-size: 13pt;
 }
+.btn3 {
+  border-radius: 8px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #3eb5d2;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  font-size: 13pt;
+}
+
+.displayFlex{
+  display: flex;
+}
+
 .formBorder {
   border: #0d6efd;
 }
@@ -422,6 +439,9 @@ font-size: 34pt;
   .pic {
     /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
     visibility: hidden;
+  }
+  .displayFlex{
+    display: block;
   }
   .topNav {
     font-size: 9pt;

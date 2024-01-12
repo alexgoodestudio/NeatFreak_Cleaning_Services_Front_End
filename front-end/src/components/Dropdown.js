@@ -22,9 +22,9 @@ const Dropdown = () => {
             </Link>
 
             <div className={`dropdown-menu${isOpen ? ' show' : ''}`} aria-labelledby="dropdownMenuButton">
-                <a className="dropdown-item" href="#">One-Time Clean</a>
-                <a className="dropdown-item" href="#">Move In/Out Clean</a>
-                <a className="dropdown-item" href="#">Recurring Service</a>
+                <a className="dropdown-item" href="onetime">One-Time Clean</a>
+                <a className="dropdown-item" href="moving">Move In/Out Clean</a>
+                <a className="dropdown-item" href="recurring">Recurring Service</a>
             </div>
         </div>
     );

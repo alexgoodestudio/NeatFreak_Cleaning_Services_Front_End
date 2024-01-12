@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function OneTime(){
     return(
@@ -13,6 +14,12 @@ function OneTime(){
                 <li>4. Flexible scheduling to suit your convenience. </li>
                 <li>6. Perfect for pre-event preparation or seasonal refreshes.</li>
             </ul>
+            <div className="btnMarg ">
+                  <Link to="/request" className="btn3 btnScale mt-3">
+                    <span className="bold">Request </span>
+                    <span className="spacing1">Estimate</span>
+                  </Link>
+                </div>
         </div>
     )
 }
