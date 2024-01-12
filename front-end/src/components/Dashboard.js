@@ -22,7 +22,7 @@ function Dashboard() {
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
               <div>    
-                <h1 className="display-5">
+                <h1 className="display-6">
                   <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
                   <span className="">Happy Mind.</span>
                 </h1>
