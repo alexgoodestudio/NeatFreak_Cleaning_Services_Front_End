@@ -34,7 +34,7 @@ function Recurring() {
           </div>
         </div>
         <div className="col-lg-6 col-12">
-        <img src={Image1} className="img-fluid br p-lg-5 m-lg-3" alt="..." />
+        <img src={Image1} className="img-fluid br mt-4 p-lg-5 m-lg-3" alt="..." />
         </div>
       </div>
       <Footer/>

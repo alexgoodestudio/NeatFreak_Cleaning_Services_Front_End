@@ -5,6 +5,9 @@ import Image4 from "./Images/1.png";
 import Footer from "./Footer";
 import Image5 from "./Images/5.png"
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 function Offer() {
   return (
@@ -12,10 +15,14 @@ function Offer() {
       <div className="container fade-in  mt-5 ">
         <div className="row mobilePadding">
           <h1 className="display-6 ">
+            
+            <FontAwesomeIcon icon={['far', 'face-smile']} className="ms-3 me-4 increase"/>
             <span className="italics">Our&nbsp;</span>
             <span className="">Services</span>
+
           </h1>
           <hr></hr>
+
           <div className="col-lg-9">
             <p className=" body para pe-2  blue ">
               At <span className="bold">NeatFreak,</span> we specialize in
@@ -24,7 +31,11 @@ function Offer() {
               environment. We pride ourselves on our commitment to eco-friendly
               cleaning practices, utilizing environmentally safe and sustainable
               products to ensure not only the cleanliness but also the health
-              and safety of your home. Our services are designed to accommodate
+              and safety of your home.
+            </p>
+            
+            <p className=" body para pe-2  blue ">
+            Our services are designed to accommodate
               various schedules and preferences, offering flexible options like
               one-time cleanings, as well as weekly, bi-weekly, or monthly
               appointments. At NeatFreak Cleaning Services, our goal is to

@@ -2,20 +2,24 @@ import React from "react"
 import Footer from "./Footer"
 import "./Dashboard.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Reviews() {
 
 
     return (
       <div className="container">
-        <div className="row mt-3 d-flex ms-2 me-2">
-            <div className="col-lg-1"></div>
+        <div className="row d-flex ms-2 me-2">
+            
         
-            <div className="col-lg-10  mt-2">
-            <div className="display-6 br mt-5 mb-2"> We Love Our Amazing <span className="italics">Customers</span>!</div>
+            <div className="col-lg-5  mt-2">
+        <div className="d-flex mt-4">
+         <FontAwesomeIcon icon={['far', 'face-smile']} className=" increase2 mt-4 me-5 ms-4"/>
+        <div className="display-4 mb-2"> We Love Our<span className="italics">&nbsp;Customers</span>!</div>
+         </div>
                <figure className="mt-1">
                <hr></hr>
-                <blockquote className="blockquote">
+                <blockquote className="blockquote ">
                   <p>
                     {" "}
                     "Love NeatFreak Cleaning Services! They use awesome eco-friendly

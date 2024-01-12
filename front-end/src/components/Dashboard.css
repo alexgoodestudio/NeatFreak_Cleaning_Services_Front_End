@@ -24,7 +24,12 @@
   position: relative;
   display: inline-block;
 }
-
+.increase{
+  scale: 120%;
+}
+.increase2{
+  scale: 300%;
+}
 .image-container {
   display: block;
   width: 100%;
