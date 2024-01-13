@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Appointments from "./Appointments";
+const Password = process.env.REACT_APP_Password;
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -11,7 +12,7 @@ const Login = () => {
     event.preventDefault(); 
     const answer = document.getElementById("password").value;
 
-    if (answer === "qw") {
+    if (answer === Password) {
       setIsVerified(true);
     } else {
       setError("Sorry, that's not it");
