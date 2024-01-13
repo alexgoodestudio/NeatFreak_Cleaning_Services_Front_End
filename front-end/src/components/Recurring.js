@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Image1 from "./Images/Screenshot2024-01-12at10.20.12AM.png"
+import "./Dashboard.css";
 import Footer from "./Footer";
 
 function Recurring() {
   return (
-    <div className="container mt-5">
+    <div className=" mt-5 container">
       <div className="row">
         <div className="col-lg-6 col-12">
           <h1 className="display-6 ">
