@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Appointments from "./Appointments";
-const Password = process.env.REACT_APP_Password;
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const Password = process.env.REACT_APP_Password;
 
 const Login = () => {
   const [isVerified, setIsVerified] = useState(false);
