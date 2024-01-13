@@ -12,6 +12,8 @@ const Dropdown = () => {
         navigate('/ourservices');
     };
 
+    const toggleDropdown = () => setIsOpen(!isOpen);
+
     return (
         <div className="dropdown">
             <Link 
@@ -23,9 +25,9 @@ const Dropdown = () => {
             </Link>
 
             <div className={`dropdown-menu${isOpen ? ' show' : ''}`} aria-labelledby="dropdownMenuButton">
-                <Link className="dropdown-item" to="/onetime">One-Time Clean</Link>
-                <Link className="dropdown-item" to="/moving">Move In/Out Clean</Link>
-                <Link className="dropdown-item" to="/recurring">Recurring Service</Link>
+                <Link className="dropdown-item" to="/onetime" onClick={toggleDropdown}>One-Time Clean</Link>
+                <Link className="dropdown-item" to="/moving" onClick={toggleDropdown}>Move In/Out Clean</Link>
+                <Link className="dropdown-item" to="/recurring" onClick={toggleDropdown}>Recurring Service</Link>
             </div>
         </div>
     );
