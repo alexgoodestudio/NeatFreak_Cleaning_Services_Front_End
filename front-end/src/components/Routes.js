@@ -13,15 +13,15 @@ import Recurring from "./Recurring";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/recurring" element={<Recurring/>} />
-      <Route path="/moving" element={<Moving/>} />
-      <Route path="/onetime" element={<OneTime/>} />
-      <Route path="/subscribe" element={<Subscribe/>} />
-      <Route path="/login" element={<Login/>} />
-      <Route path="/reviews" element={<Reviews/>} />
-      <Route path="/ourservices" element={<Offer/>} />
-      <Route path="/request" element={<Request/>} />
-      <Route path="/" element={<Dashboard/>} />
+      <Route path="/recurring" element={<Recurring />} />
+      <Route path="/moving" element={<Moving />} />
+      <Route path="/onetime" element={<OneTime />} />
+      <Route path="/subscribe" element={<Subscribe />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/reviews" element={<Reviews />} />
+      <Route path="/ourservices" element={<Offer />} />
+      <Route path="/request" element={<Request />} />
+      <Route path="/" element={<Dashboard />} />
     </Routes>
   );
 }

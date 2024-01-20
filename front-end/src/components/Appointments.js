@@ -7,6 +7,14 @@ const Appointments = () => {
 //   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // useEffect(() => {
+  //   readReservation(reservation_id).then((data) => setFormData({
+  //     ...data,
+  //     reservation_date: formatAsDate(data.reservation_date),
+  //     reservation_time: formatAsTime(data.reservation_time)
+  //   }))
+  // }, [reservation_id])
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -45,6 +53,7 @@ const Appointments = () => {
                 <p className="card-text">Email Address: {request.email_address} </p>
                 <p className="card-text">Type: {request.service_type} </p>
                 {/* Add more request details as needed */}
+                <button>HEllo</button>
               </div>
             </div>
           </div>

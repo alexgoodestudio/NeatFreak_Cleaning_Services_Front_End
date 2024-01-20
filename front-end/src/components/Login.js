@@ -16,6 +16,7 @@ const Login = () => {
       setIsVerified(true);
     } else {
       setError("Sorry, that's not it");
+      console.log("Password from env:", process.env.REACT_APP_Password);
     }
   };
 

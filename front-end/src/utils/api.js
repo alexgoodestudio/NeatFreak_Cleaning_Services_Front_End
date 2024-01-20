@@ -43,3 +43,19 @@ export async function listRequests(signal) {
   const url = `${API_BASE_URL}/request`;
   return await fetchJson(url, { headers, signal });
 }
+
+// export async function updateEstimate(estimate_id, formData, signal) {
+//   const url = `${API_BASE_URL}/request/${estimate_id}`;
+//   const options = {
+//     method: "PUT",
+//     headers,
+//     body: JSON.stringify({ data: formData }),
+//     signal,
+//   };
+//   return await fetchJson(url, options);
+// }
+
+// export async function readEstimate(reservationId, signal) {
+//   const url = `${API_BASE_URL}/request/${reservationId}`;
+//   return await fetchJson(url, { headers, signal }, {});
+// }

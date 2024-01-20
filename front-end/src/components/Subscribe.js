@@ -7,7 +7,6 @@ import ErrorAlert from "./ErrorAlert";
 import Footer from "./Footer";
 import Video from "./Video";
 
-
 function Subscribe() {
   const history = useNavigate();
 
@@ -84,7 +83,6 @@ function Subscribe() {
               value={formData.email_address}
               name="email_address"
             />
-
 
             <div className="form-group">
               <label for="serviceType" className="form-label mt-3 w-100">
