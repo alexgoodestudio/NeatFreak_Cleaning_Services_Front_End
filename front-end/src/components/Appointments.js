@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Footer from "./Footer"
 import { listRequests } from '../utils/api';
+import { Link } from 'react-router-dom';
 
 const Appointments = () => {
   const [requests, setRequests] = useState([]);
 //   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // useEffect(() => {
-  //   readReservation(reservation_id).then((data) => setFormData({
-  //     ...data,
-  //     reservation_date: formatAsDate(data.reservation_date),
-  //     reservation_time: formatAsTime(data.reservation_time)
-  //   }))
-  // }, [reservation_id])
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -53,7 +48,9 @@ const Appointments = () => {
                 <p className="card-text">Email Address: {request.email_address} </p>
                 <p className="card-text">Type: {request.service_type} </p>
                 {/* Add more request details as needed */}
-                <button>HEllo</button>
+                <Link to="/request" className="btn btn-secondary ">Edit</Link>
+                  <Link to="/request" className="btn btn-danger ms-3">Delete</Link>
+
               </div>
             </div>
           </div>

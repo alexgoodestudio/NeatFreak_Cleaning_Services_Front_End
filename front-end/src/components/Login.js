@@ -10,13 +10,12 @@ const Login = () => {
 
   const checkPw = (event) => {
     event.preventDefault(); 
-    const answer = document.getElementById("password").value;
+    const answer = document.getElementById("password").value.trim();
 
     if (answer === Password) {
       setIsVerified(true);
     } else {
       setError("Sorry, that's not it");
-      console.log("Password from env:", process.env.REACT_APP_Password);
     }
   };
 

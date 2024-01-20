@@ -19,6 +19,7 @@ function Subscribe() {
     email_address: "",
     service_type: "",
   };
+
   const [formData, setFormData] = useState(keyValues);
   const [error, setError] = useState(null);
 
@@ -36,15 +37,17 @@ function Subscribe() {
       await createEntry(formData, abortController.signal);
       // Reset formData to initial state after successful submission
       setFormData(keyValues);
-    } catch (err) {
-      setError(err.message);
+
+    } catch (error) {
+
+      setError(error.message);
+
     }
   };
 
   return (
-    <div className="">   
+    <div>   
       <div className="row ">
-
         <Video />
           <div className="col-lg-3"></div>
         <div className="col-lg-6">
