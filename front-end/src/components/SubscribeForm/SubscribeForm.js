@@ -1,4 +1,9 @@
 function SubscribeForm(){
+  const history = useNavigate();
+
+  function cancelAndReturn() {
+    history(-1);
+  }
     return(
         <div>
             <form className=" p-5" onSubmit={handleSubmit}>

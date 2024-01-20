@@ -48,7 +48,7 @@ const Appointments = () => {
                 <p className="card-text">Email Address: {request.email_address} </p>
                 <p className="card-text">Type: {request.service_type} </p>
                 {/* Add more request details as needed */}
-                <Link to="/request" className="btn btn-primary ">Edit</Link>
+                <Link to="/request" className="btn btn-secondary ">Edit</Link>
                   <Link to="/request" className="btn btn-danger ms-2">Delete</Link>
               </div>
             </div>
