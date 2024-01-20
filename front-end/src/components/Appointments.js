@@ -50,7 +50,6 @@ const Appointments = () => {
                 {/* Add more request details as needed */}
                 <Link to="/request" className="btn btn-secondary ">Edit</Link>
                   <Link to="/request" className="btn btn-danger ms-3">Delete</Link>
-
               </div>
             </div>
           </div>
