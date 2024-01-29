@@ -1,4 +1,8 @@
-function SubscribeForm(){
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+
+function SubscribeForm({ title, error, formData, handleChange,handleSubmit }){
   const history = useNavigate();
 
   function cancelAndReturn() {
@@ -6,6 +10,7 @@ function SubscribeForm(){
   }
     return(
         <div>
+            <h2>{title}</h2>
             <form className=" p-5" onSubmit={handleSubmit}>
             <ErrorAlert error={error} className="alert alert-danger"/>
 

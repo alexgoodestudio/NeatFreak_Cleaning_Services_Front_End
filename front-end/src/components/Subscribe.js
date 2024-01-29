@@ -37,11 +37,8 @@ function Subscribe() {
       await createEntry(formData, abortController.signal);
       // Reset formData to initial state after successful submission
       setFormData(keyValues);
-
     } catch (error) {
-
       setError(error.message);
-
     }
   };
 

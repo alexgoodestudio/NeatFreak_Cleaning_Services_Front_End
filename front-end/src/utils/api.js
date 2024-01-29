@@ -7,9 +7,7 @@ headers.append("Content-Type", "application/json");
 async function fetchJson(url, options, onCancel) {
   
   try {
-    
     const response = await fetch(url, options);
-
     if (response.status === 204) {
       return null;
     }
@@ -46,18 +44,18 @@ export async function listRequests(signal) {
   return await fetchJson(url, { headers, signal });
 }
 
-// export async function updateEstimate(estimate_id, formData, signal) {
-//   const url = `${API_BASE_URL}/request/${estimate_id}`;
-//   const options = {
-//     method: "PUT",
-//     headers,
-//     body: JSON.stringify({ data: formData }),
-//     signal,
-//   };
-//   return await fetchJson(url, options);
-// }
+export async function updateEstimate(estimate_id, formData, signal) {
+  const url = `${API_BASE_URL}/request/${estimate_id}`;
+  const options = {
+    method: "PUT",
+    headers,
+    body: JSON.stringify({ data: formData }),
+    signal,
+  };
+  return await fetchJson(url, options);
+}
 
-// export async function readEstimate(reservationId, signal) {
-//   const url = `${API_BASE_URL}/request/${reservationId}`;
-//   return await fetchJson(url, { headers, signal }, {});
-// }
+export async function readEstimate(estimateId, signal) {
+  const url = `${API_BASE_URL}/request/${estimateId}`;
+  return await fetchJson(url, { headers, signal }, {});
+}
