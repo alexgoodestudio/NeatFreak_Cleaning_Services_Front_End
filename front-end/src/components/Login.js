@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Appointments from "./Appointments";
+import EmployeeHome from "./EmployeeHome";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Password = process.env.REACT_APP_Password;
@@ -22,7 +22,7 @@ const Login = () => {
   return (
     <>
       {isVerified ? (
-        <Appointments />
+        <EmployeeHome />
       ) : (
         <form onSubmit={checkPw} className="mt-5 d-flex align-items-center justify-content-center">
           <label for="password" className=" me-3">Password: </label>

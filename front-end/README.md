@@ -5,7 +5,7 @@ I am currently working on a full-stack development project for **NeatFreak Clean
 
 ## Technologies Used
 - **Backend**: Node.js, Express, Knex.js, PostgreSQL
-- **Frontend**: React, React Router, CORS, Bootstrap
+- **Frontend**: React, State management, Reusable Components, CORS, Bootstrap
 - **Design Tools**: Adobe Photoshop, After Effects
 
 ## Key Features

@@ -13,9 +13,6 @@ import Recurring from "./Recurring";
 function AppRoutes() {
   return (
     <Routes>
-      {/* <Route exact path="/request/:estimate_id/edit">
-        <EditForm />
-      </Route> */}
       <Route path="/recurring" element={<Recurring />} />
       <Route path="/moving" element={<Moving />} />
       <Route path="/onetime" element={<OneTime />} />

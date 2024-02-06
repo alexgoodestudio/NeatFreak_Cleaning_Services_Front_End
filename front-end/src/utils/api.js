@@ -5,7 +5,6 @@ const headers = new Headers();
 headers.append("Content-Type", "application/json");
 
 async function fetchJson(url, options, onCancel) {
-  
   try {
     const response = await fetch(url, options);
     if (response.status === 204) {
@@ -27,16 +26,16 @@ async function fetchJson(url, options, onCancel) {
   }
 }
 
-export async function createEntry(estimate, signal) {
-  console.log("CREATE ENTRY CALLED", estimate);
+export async function createEntry(subscriber, signal) {
+  console.log("CREATE ENTRY CALLED", subscriber);
   const url = `${API_BASE_URL}/request`;
   const options = {
     method: "POST",
     headers,
-    body: JSON.stringify({ data: estimate }),
+    body: JSON.stringify({ data: subscriber }),
     signal,
   };
-  return await fetchJson(url, options, estimate);
+  return await fetchJson(url, options, subscriber);
 }
 
 export async function listRequests(signal) {
@@ -44,18 +43,17 @@ export async function listRequests(signal) {
   return await fetchJson(url, { headers, signal });
 }
 
-export async function updateEstimate(estimate_id, formData, signal) {
-  const url = `${API_BASE_URL}/request/${estimate_id}`;
+export async function deleteSubscriber(subscriber_id, formData, signal) {
+  const url = `${API_BASE_URL}/request/${subscriber_id}`;
   const options = {
-    method: "PUT",
+    method: "DELETE",
     headers,
-    body: JSON.stringify({ data: formData }),
     signal,
   };
   return await fetchJson(url, options);
 }
 
-export async function readEstimate(estimateId, signal) {
-  const url = `${API_BASE_URL}/request/${estimateId}`;
+export async function readEstimate(subscriberId, signal) {
+  const url = `${API_BASE_URL}/request/${subscriberId}`;
   return await fetchJson(url, { headers, signal }, {});
 }
