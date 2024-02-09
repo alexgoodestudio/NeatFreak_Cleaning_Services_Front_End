@@ -71,14 +71,14 @@ function Offer() {
                       A thorough, one-off cleaning service using eco-friendly
                       products for a sparkling, healthy home.
                     </p>
-                    <Link to="/onetime" className=" btn4">
+                    <Link to="/onetime" className=" ">
                       One-Time Clean
                     </Link>
                   </div>
                 </div>
               </div>
 
-              <div className="col-lg-4 col-12 p-2 d-flex">
+              <div className="col-lg-4 col-12 p-2 d-flex ">
                 <div className="card  w-100 ">
                   <img src={Image3} className="card-img-top " alt="..." />
                   <div className="card-body ">
@@ -87,14 +87,14 @@ function Offer() {
                       Comprehensive cleaning for hassle-free moving, ensuring
                       your new or old space is immaculate.
                     </p>
-                    <Link to="/moving" className=" btn4">
+                    <Link to="/moving" className=" ">
                       Schedule Moving Clean
                     </Link>
                   </div>
                 </div>
               </div>
 
-              <div className="col-lg-4 col-12 p-2 d-flex">
+              <div className="col-lg-4 col-12 p-2 d-flex ">
                 <div className="card  w-100 ">
                   <img src={Image4} className="card-img-top " alt="..." />
                   <div className="card-body ">
@@ -103,7 +103,7 @@ function Offer() {
                       Regular cleaning schedules tailored to your needs,
                       maintaining cleanliness with eco-safe products.
                     </p>
-                    <Link to="/recurring" className=" btn4">
+                    <Link to="/recurring" className="">
                       Recurring Service
                     </Link>
                   </div>
