@@ -60,7 +60,7 @@ function Subscribe() {
           <form className=" p-5" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />
 
-            <label for="name" class="form-label">
+            <label htmlFor="name" class="form-label">
               Name:
             </label>
             <input
@@ -72,7 +72,7 @@ function Subscribe() {
               name="name"
             />
 
-            <label for="emailAddress" class="form-label mt-3">
+            <label htmlFor="emailAddress" class="form-label mt-3">
               Email Address
             </label>
             <input
@@ -85,7 +85,7 @@ function Subscribe() {
             />
 
             <div className="form-group">
-              <label for="serviceType" className="form-label mt-3 w-100">
+              <label htmlFor="serviceType" className="form-label mt-3 w-100">
                 How did you hear about us?
               </label>
               <select
@@ -95,12 +95,12 @@ function Subscribe() {
                 value={formData.service_type}
                 onChange={handleChange}
               >
-                <option value="default">select an option</option>
-                <option value="google">Google</option>
-                <option value="facebook">Facebook</option>
-                <option value="instagram">Instagram</option>
-                <option value="friend">Friend</option>
-                <option value="other">Other</option>
+                <option value="Default">select an option</option>
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Friend">Friend</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
