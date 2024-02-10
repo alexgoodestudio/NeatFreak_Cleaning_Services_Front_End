@@ -9,7 +9,6 @@ function Dashboard() {
   return (
     <div>
       <div className="fadeout">
-    
         <div className="innerColumn mobileBringLeft">
           <h1 className="display-6">
             <span className="italics">Clean&nbsp;</span>Space,&nbsp;
@@ -21,7 +20,7 @@ function Dashboard() {
         <div className="slide-in row gx-0">
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
-              <div>    
+              <div>
                 <h1 className="display-6">
                   <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
                   <span className="">Happy Mind.</span>

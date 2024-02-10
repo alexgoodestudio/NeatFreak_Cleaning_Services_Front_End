@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import Image5 from "./Images/5.png"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Chatbot from "./Chatbot"
 
 
 function Offer() {
@@ -47,8 +47,8 @@ function Offer() {
           <div className="col-lg-3 mt-lg-3 mt-1 mb-lg-4 mb-1">
             
             <div className="card">
-              <div class="card-header">Our Services</div>
-              <ul class="list-group list-group-flush">
+              <div className="card-header">Our Services</div>
+              <ul className="list-group list-group-flush">
                 <li className=" list-group-item">One Time Clean</li>
                 <li className=" list-group-item">Moving In/ Moving Out</li>
                 <li className=" list-group-item">Recurring Service</li>
@@ -110,16 +110,19 @@ function Offer() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3"></div>
+            <div className="col-lg-3 ">
+            
+            </div>
           </div>
         </div>
       </div>
 
       {/* ------------------------------------------------------------------ */}
-
+<Chatbot/>
       <div className="scaleDown">
         <Footer />
       </div>
+      
     </div>
   );
 }

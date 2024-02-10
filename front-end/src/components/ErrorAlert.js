@@ -1,13 +1,15 @@
 import React from "react";
 
 function ErrorAlert({ error }) {
-  console.log("Error received in ErrorAlert:", error);
-  return (
-    error && (
+  if (error) {
+    console.log("Error received in ErrorAlert:", error);
+    return (
       <div className="alert alert-danger m-2">{error}</div>
-    )
-  );
+    );
+  }
+  return null;
 }
 
-
 export default ErrorAlert;
+
+

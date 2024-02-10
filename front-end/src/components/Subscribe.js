@@ -60,7 +60,7 @@ function Subscribe() {
           <form className=" p-5" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />
 
-            <label htmlFor="name" class="form-label">
+            <label htmlFor="name" className="form-label">
               Name:
             </label>
             <input
@@ -72,7 +72,7 @@ function Subscribe() {
               name="name"
             />
 
-            <label htmlFor="emailAddress" class="form-label mt-3">
+            <label htmlFor="emailAddress" className="form-label mt-3">
               Email Address
             </label>
             <input

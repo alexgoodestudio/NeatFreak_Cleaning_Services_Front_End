@@ -1,6 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Outfit:wght@200&family=Playfair+Display&family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat&family=Poppins&display=swap");
+
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050; /* Ensure it's above most other content */
+}
+
+.chatbot-toggle {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.chatbot-interface {
+  position: absolute;
+  bottom: 50px; 
+  right: 0;
+  width: 300px; 
+  height: 400px; 
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+.chatbot-interface p {
+  padding: 10px;
+}
+
 .border {
   border: solid;
   padding-left: 10px;
