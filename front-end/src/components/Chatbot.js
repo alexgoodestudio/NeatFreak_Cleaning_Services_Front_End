@@ -18,6 +18,9 @@ function Chatbot() {
         {isOpen && (
           <div className="chatbot-interface">
             <p> WIP Chat Feature Coming Soon!</p>
+            <hr></hr>
+            <input className='chatInput' placeholder='Hello'>
+            </input>
           </div>
         )}
       </div>

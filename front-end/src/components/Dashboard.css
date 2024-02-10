@@ -3,11 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat&family=Poppins&display=swap");
 
 
+.home{
+  background-color: #e1e9f6;
+}
+
 .chatbot-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1050; /* Ensure it's above most other content */
+  z-index: 1050; 
 }
 
 .chatbot-toggle {
@@ -34,6 +38,15 @@
 
 .chatbot-interface p {
   padding: 10px;
+}
+
+.chatInput {
+  position: absolute;
+  bottom: 30px;
+  left: 50%; /* Center the element to the left edge of the parent */
+  transform: translateX(-50%); /* Offset it back by half its width */
+  /* Ensure the input has a specific width or max-width if needed */
+  width: 80%; /* Example width, adjust as necessary */
 }
 
 .border {
@@ -108,7 +121,10 @@
   opacity: 0;
   animation: fadeInBubble 1s ease forwards;
   animation-delay: 1.5s;
+
 }
+
+
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -179,12 +195,6 @@
   font-size: 14pt;
 }
 
-.green {
-  background-color: #c0e6a8;
-  /* background-color: #ffffff; */
-  padding: 5%;
-  border-radius: 10px;
-}
 
 .tan {
   background-color: #f3e0a3;
@@ -213,7 +223,8 @@
   font-size: 31pt;
 }
 .thin {
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 30pt;
 }
 
 .text-center {
@@ -221,9 +232,16 @@
   align-items: center;
   justify-content: center;
 }
-
+.title{
+  font-size: 30pt;
+  font-weight: 200;
+}
+.underTitle{
+  font-size: 15pt;
+  font-weight: 200;
+}
 .btn2 {
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 10px;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -274,7 +292,6 @@
 }
 .page {
   background-color: #ffffff;
-
   color: #1f1f1e;
 }
 .increaseMargin {
@@ -297,6 +314,7 @@
 }
 .spacing1 {
   letter-spacing: 0px;
+  font-weight: 300;
 }
 .italics {
   font-style: italic;
@@ -339,7 +357,11 @@ font-size: 34pt;
   padding: 5px 10px;
   font-size: 1rem;
 }
-
+.title{
+  font-weight: 200;
+  font-size: 32pt;
+  color:#1f1f1e
+}
 .italics2 {
   font-style: italic;
   font-family: "Playfair Display", serif;
@@ -378,18 +400,17 @@ font-size: 34pt;
   width: 10%;
 }
 
-/* Add your existing styles here */
 
 .text-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Set the height to take the full space of the parent */
+  height: 100%; 
 }
 
 .text-container > div {
-  text-align: left; /* Left-align the text within the centered container */
-  max-width: fit-content; /* Fit the width to its content */
+  text-align: left;
+  max-width: fit-content;
 }
 
 .squiggle {
@@ -477,6 +498,7 @@ font-size: 34pt;
 .paddingDashText {
   padding: 120px;
   margin-bottom: 5%;
+
 }
 .bg2 {
   background-color: #bc4a90;
@@ -503,9 +525,7 @@ font-size: 34pt;
   .topNav {
     font-size: 9pt;
   }
-  .btnScale{
-    font-size: 10pt;
-  }
+
   .para {
     font-size: 11pt;
   }

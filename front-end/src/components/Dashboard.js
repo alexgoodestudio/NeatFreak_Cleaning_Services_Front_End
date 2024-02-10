@@ -12,7 +12,7 @@ function Dashboard() {
         <div className="innerColumn mobileBringLeft">
           <h1 className="display-6">
             <span className="italics">Clean&nbsp;</span>Space,&nbsp;
-            <span className="underline">Happy Mind</span>
+            <span className="">Happy Mind</span>
           </h1>
         </div>
       </div>
@@ -20,16 +20,12 @@ function Dashboard() {
         <div className="slide-in row gx-0">
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
-              <div>
-                <h1 className="display-6">
-                  <span className="italics2">Clean&nbsp;</span>Space,&nbsp;
-                  <span className="">Happy Mind.</span>
-                </h1>
-                <h4 className="thin mt-3">Let us handle the cleaning</h4>
+              <div p-0>
+                <p className="title">Let us handle<br/>the cleaning stuff.</p>
+                <p className="underTitle">Request Your In-Home Estimate Today</p>
                 <div className="btnMarg ">
                   <Link to="/request" className="btn2 btnScale mt-3">
-                    <span className="bold">Request </span>
-                    <span className="spacing1">Estimate</span>
+                    <span className="bold">Request Estimate!</span>
                   </Link>
                 </div>
               </div>
@@ -40,6 +36,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

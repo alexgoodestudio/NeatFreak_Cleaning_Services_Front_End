@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorAlert from "./ErrorAlert";
 import Footer from "./Footer";
 import Video from "./Video";
+import Chatbot from "./Chatbot"
 
 function Subscribe() {
   const history = useNavigate();
@@ -124,6 +125,7 @@ function Subscribe() {
           <Footer />
         </div>
       </div>
+      <Chatbot/>
     </div>
   );
 }

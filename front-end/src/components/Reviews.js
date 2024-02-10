@@ -4,6 +4,7 @@ import "./Dashboard.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import pic from "../components/Images/point3d-commercial-imaging-ltd-dsh1MmzaMcw-unsplash.jpg"
+import Chatbot from "./Chatbot"
 
 function Reviews() {
 
@@ -65,6 +66,7 @@ function Reviews() {
             <Footer />
           </div>
         </div>
+        <Chatbot/>
     </div>
   )
 }

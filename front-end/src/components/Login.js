@@ -11,7 +11,6 @@ const Login = () => {
   const checkPw = (event) => {
     event.preventDefault(); 
     const answer = document.getElementById("password").value.trim();
-
     if (answer === Password) {
       setIsVerified(true);
     } else {
@@ -27,11 +26,10 @@ const Login = () => {
         <form onSubmit={checkPw} className="mt-5 d-flex align-items-center justify-content-center">
           <label htmlFor="password" className=" me-3">Password: </label>
           <input id="password" name="password" type="password" />
-          <button type="submit" className=" btn btn-secondary ms-1">Login</button>
-          {error && <p>{error}</p>}
+          <button type="submit" className=" btn btn-secondary ms-1 me-3">Login</button>
+          {error && <p className="">{error}</p>}
         </form>
       )}
- 
     </>
   );
 };
