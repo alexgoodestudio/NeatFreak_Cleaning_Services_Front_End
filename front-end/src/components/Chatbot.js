@@ -17,10 +17,12 @@ function Chatbot() {
         </button>
         {isOpen && (
           <div className="chatbot-interface">
-            <p> WIP Chat Feature Coming Soon!</p>
+            <p> (WIP) NeatFreak Customer Support!</p>
             <hr></hr>
-            <input className='chatInput' placeholder='Hello'>
-            </input>
+            <div className='chatInput d-flex'>
+            <input className='' placeholder='Hello'/>
+            <button className='btn btn-secondary'>Send</button>
+            </div>
           </div>
         )}
       </div>

@@ -43,10 +43,9 @@
 .chatInput {
   position: absolute;
   bottom: 30px;
-  left: 50%; /* Center the element to the left edge of the parent */
-  transform: translateX(-50%); /* Offset it back by half its width */
-  /* Ensure the input has a specific width or max-width if needed */
-  width: 80%; /* Example width, adjust as necessary */
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 80%;
 }
 
 .border {
