@@ -38,9 +38,32 @@ export async function createEntry(subscriber, signal) {
   return await fetchJson(url, options, subscriber);
 }
 
+// export async function createChat(inputValue, signal){
+//   console.log('CREATE CHAT CALLED')
+//   const url = `${API_BASE_URL}/response`
+//   const options ={
+//     method: "POST",
+//     headers,
+//     body: JSON.stringify({data: inputValue}),
+//     signal
+//   }
+//   return await fetchJson(url, options, inputValue)
+// }
+
 export async function listRequests(signal) {
   const url = `${API_BASE_URL}/request`;
   return await fetchJson(url, { headers, signal });
+}
+
+export async function listResponse(inputData, signal) {
+  const url = `${API_BASE_URL}/responses`;
+  console.log("the input:",inputData,", inputData made to API Call")
+  return await fetchJson(url, { 
+    headers,
+    method: "POST",
+    body: JSON.stringify({ data: inputData }),
+    signal 
+    });
 }
 
 export async function deleteSubscriber(subscriber_id, formData, signal) {

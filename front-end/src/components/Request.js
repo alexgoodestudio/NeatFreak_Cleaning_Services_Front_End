@@ -4,6 +4,7 @@ import { BsCalendar3 } from "react-icons/bs";
 import Image5 from "./Images/9.png";
 import CalendlyEmbed from "./Calendly";
 import Footer from "./Footer"
+import Chatbot from "./Chatbot";
 
 function Request() {
 
@@ -42,6 +43,7 @@ function Request() {
           <Footer />
         </div>
       </div>
+      <Chatbot/>
     </div>
   );
 }

@@ -26,26 +26,29 @@
 
 .chatbot-interface {
   position: absolute;
+  overflow: scroll;
   bottom: 50px; 
   right: 0;
   width: 300px; 
-  height: 400px; 
+  height: 450px; 
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
-  overflow: hidden; 
 }
 
 .chatbot-interface p {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+
 .chatInput {
+  display:block;
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%; 
   transform: translateX(-50%);
-  width: 80%;
+  width: 90%; 
 }
 
 .border {
@@ -346,6 +349,20 @@ font-size: 34pt;
   appearance: auto;
   -webkit-appearance: menulist-button;
   -moz-appearance: menulist-button;
+}
+.borderUser{
+  display: block;
+  border-radius: 5px;
+}
+
+
+.borderChatbot{
+  display: block;
+  border-radius: 5px;
+}
+.time{
+  display: block;
+  font-size: 7pt;
 }
 
 /* Optional: additional styling to make it consistent with your design */

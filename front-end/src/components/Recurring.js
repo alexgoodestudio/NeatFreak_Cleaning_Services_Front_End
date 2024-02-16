@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Image1 from "./Images/Screenshot2024-01-12at10.20.12AM.png"
 import "./Dashboard.css";
 import Footer from "./Footer";
+import Chatbot from "./Chatbot";
 
 function Recurring() {
   return (
@@ -39,6 +40,7 @@ function Recurring() {
         </div>
       </div>
       <Footer/>
+      <Chatbot/>
     </div>
   );
 }
