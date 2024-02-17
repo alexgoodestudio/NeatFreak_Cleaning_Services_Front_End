@@ -49,16 +49,16 @@ function Subscribe() {
         <Video />
           <div className="col-lg-3"></div>
         <div className="col-lg-6">
-        <h5 className="   p-3 mt-4 para space2 lineHeight">
+        <p className="   p-3 mt-5 para space2 lineHeight">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
             newsletter and receive monthly insights straight to your inbox.
             From expert cleaning hacks to eco-friendly solutions, we cover it
             all to help you maintain a sparkling home with ease. Plus, subscribers get first dibs on
             special offers and updates about our services. Sign up now and
             transform the way you clean!
-          </h5>
+          </p>
         
-          <form className=" p-5" onSubmit={handleSubmit}>
+          <form className=" p-3" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />
 
             <label htmlFor="name" className="form-label">

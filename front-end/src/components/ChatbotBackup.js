@@ -32,22 +32,19 @@ function Chatbot() {
       const data = await listResponse(inputData, abortController.signal);
       const responseMessage = { text: data.responses, sender: 'chatbot', time: currentTime }; // Include timestamp
       
+      setPastMessages(pastMessages => [...pastMessages, responseMessage]);
   
       setInputData(''); // Clear the input field
       
       setTimeout(() => {
-        setPastMessages(pastMessages => [...pastMessages, responseMessage]);
         setIsTyping(false);
-
       }, 1200); 
     } catch (error) {
-      setTimeout(() => {
       console.error(error);
       setIsTyping(false);
   
       const errorMessage = { text: "Hmm... I don't think I understand", sender: 'error', time: currentTime }; // Include timestamp
       setPastMessages(pastMessages => [...pastMessages, errorMessage]);
-    }, 1200); 
     }
   };
   
