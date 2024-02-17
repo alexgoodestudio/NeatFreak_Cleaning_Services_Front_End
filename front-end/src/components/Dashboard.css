@@ -58,6 +58,12 @@
   width: 90%; 
 }
 
+.chatbot-header-background{
+  background-color: #e1e9f6;
+  text-align: center;
+  font-size: 12pt;
+}
+
 .border {
   border: solid;
   padding-left: 10px;

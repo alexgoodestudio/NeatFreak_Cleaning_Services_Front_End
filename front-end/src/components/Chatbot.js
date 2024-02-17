@@ -34,7 +34,8 @@ function Chatbot() {
       setPastMessage(inputData)
       setVisible(!visible)
       setResponse(data.responses);
-
+      setInputData(''); 
+      
       setTimeout(() => {
         setIsTyping(false);
       }, 1000); 
@@ -52,10 +53,10 @@ function Chatbot() {
       </button>
       {isOpen && (
         <div className="chatbot-interface">
-          <p> NeatFreak Customer Support</p>
-          <hr />
+          <h5 className='mb-0 pb-2 pt-3 chatbot-header-background'> NeatFreak Customer Support</h5>
+          <hr className='mt-0'/>
           <div className="messages-container">
-          {error && <p className="text-dark alert alert-danger mx-2">{error}</p>}
+          {error && <p className="text-dark alert alert-danger mx-2 my-4">{error}</p>}
           {visible &&( 
           <p className='m-0'>
           <span className="borderUser alert alert-primary m-0 ">
@@ -75,15 +76,13 @@ function Chatbot() {
           )}
           {isTyping && <div className="loading-bubble">...</div>}
           <form className="chatInput d-flex" onSubmit={handleSubmit}>
-            
             <input
               className="form-control"
               type="text"
               onChange={handleChange}
               value={inputData}
               name="message"
-              placeholder="Feature Coming Soon"
-              //Type your message...
+              placeholder="Type your message..."
             />
             
             <button type="submit" className="btn btn-secondary">
