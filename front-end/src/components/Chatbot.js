@@ -54,10 +54,11 @@ function Chatbot() {
         <div className="chatbot-interface">
           <p> NeatFreak Customer Support</p>
           <hr />
-          {error && <p className="text-dark alert alert-danger ">{error}</p>}
+          <div className="messages-container">
+          {error && <p className="text-dark alert alert-danger mx-2">{error}</p>}
           {visible &&( 
-          <p>
-          <span className="borderUser alert alert-primary">
+          <p className='m-0'>
+          <span className="borderUser alert alert-primary m-0 ">
                 <span className="time">{time}</span>
                 {pastMessage}
               </span>
@@ -74,6 +75,7 @@ function Chatbot() {
           )}
           {isTyping && <div className="loading-bubble">...</div>}
           <form className="chatInput d-flex" onSubmit={handleSubmit}>
+            
             <input
               className="form-control"
               type="text"
@@ -83,10 +85,12 @@ function Chatbot() {
               placeholder="Feature Coming Soon"
               //Type your message...
             />
+            
             <button type="submit" className="btn btn-secondary">
               Send
             </button>
           </form>
+          </div>
         </div>
       )}
     </div>

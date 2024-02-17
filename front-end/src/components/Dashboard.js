@@ -20,7 +20,7 @@ function Dashboard() {
         <div className="slide-in row gx-0">
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
-              <div p-0>
+              <div>
                 <p className="title">Let us handle<br/>the <span className="italics2">cleaning</span> stuff.</p>
                 <p className="underTitle">Request Your In-Home Estimate Today</p>
                 <div className="btnMarg ">
