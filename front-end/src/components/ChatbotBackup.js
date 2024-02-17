@@ -5,8 +5,12 @@ import { listResponse } from '../utils/api';
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputData, setInputData] = useState('');
+  const [error, setError] = useState('');
+  const [response, setResponse] = useState('');
+  const [messageSent, setMessageSent] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
-  const [pastMessages, setPastMessages] = useState([])
+  const [visible, setVisible] = useState(false);
+  const [pastMessage, setPastMessage] = useState([])
 
   function toggleChat() {
     setIsOpen(!isOpen);
@@ -23,31 +27,25 @@ function Chatbot() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const abortController = new AbortController();
-    const currentTime = new Date().toLocaleTimeString();
-    const newMessage = { text: inputData, sender: 'user', time: currentTime }; // Include timestamp
+    setMessageSent(true);
     setIsTyping(true);
     try {
-      setPastMessages(pastMessages => [...pastMessages, newMessage]);
-      
       const data = await listResponse(inputData, abortController.signal);
-      const responseMessage = { text: data.responses, sender: 'chatbot', time: currentTime }; // Include timestamp
-      
-      setPastMessages(pastMessages => [...pastMessages, responseMessage]);
-  
-      setInputData(''); // Clear the input field
+      setPastMessage(inputData)
+      setVisible(!visible)
+      setResponse(data.responses);
+      setInputData(''); 
       
       setTimeout(() => {
         setIsTyping(false);
-      }, 1200); 
+      }, 1000); 
     } catch (error) {
+      setError("Hmm... I don't think I understand");
       console.error(error);
-      setIsTyping(false);
-  
-      const errorMessage = { text: "Hmm... I don't think I understand", sender: 'error', time: currentTime }; // Include timestamp
-      setPastMessages(pastMessages => [...pastMessages, errorMessage]);
+      setIsTyping(false); 
     }
   };
-  
+
   return (
     <div className="chatbot-container">
       <button className="chatbot-toggle" onClick={toggleChat}>
@@ -55,20 +53,28 @@ function Chatbot() {
       </button>
       {isOpen && (
         <div className="chatbot-interface">
-          <h5 className='mb-0 pb-2 pt-3 chatbot-header-background'>NeatFreak Customer Support</h5>
+          <h5 className='mb-0 pb-2 pt-3 chatbot-header-background'> NeatFreak Customer Support</h5>
           <hr className='mt-0'/>
-
           <div className="messages-container">
-            {pastMessages.map((message, index) => (
-              <p key={index} className={message.sender === 'user' ? "user-message" : "chatbot-message"}>
-                <span className={message.sender === 'user' ? "borderUser alert alert-primary" : "borderChatbot alert alert-secondary"}>
-                  <span className="time">{message.time}</span>
-                  {message.text}
-                </span>
-              </p>
-            ))}
-            {isTyping && <div className="loading-bubble">...</div>}
-          </div>
+          {error && <p className="text-dark alert alert-danger mx-2 my-4">{error}</p>}
+          {visible &&( 
+          <p className='m-0'>
+          <span className="borderUser alert alert-primary m-0 ">
+                <span className="time">{time}</span>
+                {pastMessage}
+              </span>
+          </p>
+          )}
+          {messageSent && !isTyping && (
+            <p className="">
+              <br />
+              <span className="borderChatbot alert alert-secondary">
+                <span className="time">{time}</span>
+                {response}
+              </span>
+            </p>
+          )}
+          {isTyping && <div className="loading-bubble">...</div>}
           <form className="chatInput d-flex" onSubmit={handleSubmit}>
             <input
               className="form-control"
@@ -78,10 +84,12 @@ function Chatbot() {
               name="message"
               placeholder="Type your message..."
             />
+            
             <button type="submit" className="btn btn-secondary">
               Send
             </button>
           </form>
+          </div>
         </div>
       )}
     </div>

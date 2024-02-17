@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Dashboard.css'; // Ensure this file contains the necessary CSS for the typing/loading effect
 import { listResponse } from '../utils/api';
 
@@ -7,6 +7,11 @@ function Chatbot() {
   const [inputData, setInputData] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [pastMessages, setPastMessages] = useState([])
+  const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [pastMessages]);
 
   function toggleChat() {
     setIsOpen(!isOpen);
@@ -15,6 +20,7 @@ function Chatbot() {
   const now = new Date();
   const currentDateTime = now.toLocaleString().split(',');
   const time = currentDateTime[1];
+  
 
   function handleChange(event) {
     setInputData(event.target.value);
@@ -60,7 +66,6 @@ function Chatbot() {
         <div className="chatbot-interface">
           <h5 className='mb-0 pb-2 pt-3 chatbot-header-background'>NeatFreak Customer Support</h5>
           <hr className='mt-0'/>
-
           <div className="messages-container">
             {pastMessages.map((message, index) => (
               <p key={index} className={message.sender === 'user' ? "user-message" : "chatbot-message"}>
@@ -69,7 +74,9 @@ function Chatbot() {
                   {message.text}
                 </span>
               </p>
+              
             ))}
+            <div ref={messagesEndRef} />
             {isTyping && <div className="loading-bubble">...</div>}
           </div>
           <form className="chatInput d-flex" onSubmit={handleSubmit}>
