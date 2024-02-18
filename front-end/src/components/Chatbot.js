@@ -59,7 +59,7 @@ function Chatbot() {
   
   return (
     <div className="chatbot-container">
-      <button className="chatbot-toggle" onClick={toggleChat}>
+      <button className="chatbot-toggle btn btn-primary" onClick={toggleChat}>
         Chat with us!
       </button>
       {isOpen && (
@@ -88,7 +88,7 @@ function Chatbot() {
               name="message"
               placeholder="Type your message..."
             />
-            <button type="submit" className="btn btn-secondary">
+            <button type="submit" className="btn btn-secondary ms-2">
               Send
             </button>
           </form>

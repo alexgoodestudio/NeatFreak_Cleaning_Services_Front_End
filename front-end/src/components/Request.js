@@ -12,10 +12,10 @@ function Request() {
     <div className="container mt-5 ">
       <div className="row mobilePadding">
         <div className="col-lg-6 ">
-        <BsCalendar3 />
-          <h3 className="fontLight ">
-            <span className="bold">Schedule your in-home estimate today</span>{" "}
-            and take the first step towards a happier, cleaner home!
+        
+          <h3 className="fontLight "><BsCalendar3 className="me-3"/>Schedule your
+            <span className="bold"> in-home estimate</span>{" "}
+            today and take the first step towards a happier, cleaner home!
           </h3>
           <p className="fontLight para mt-4">
             Ready for a cleaner space? We offer easy and quick in-home
