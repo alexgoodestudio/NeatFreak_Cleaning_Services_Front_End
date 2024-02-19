@@ -50,8 +50,7 @@ function Chatbot() {
       setTimeout(() => {
       console.error(error);
       setIsTyping(false);
-  
-      const errorMessage = { text: "Hmm... I don't think I understand", sender: 'error', time: currentTime }; // Include timestamp
+      const errorMessage = { text: "Hmm... I don't think I understand", sender: 'error', time: currentTime }; 
       setPastMessages(pastMessages => [...pastMessages, errorMessage]);
     }, 1200); 
     }

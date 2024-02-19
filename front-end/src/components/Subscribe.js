@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorAlert from "./ErrorAlert";
 import Footer from "./Footer";
 import Video from "./Video";
-import Chatbot from "./Chatbot"
+import Chatbot from "./Chatbot";
 
 function Subscribe() {
   const history = useNavigate();
@@ -20,7 +20,8 @@ function Subscribe() {
     email_address: "",
     service_type: "",
   };
-
+  const [name, setName] = useState("")
+  const [switchState, setSwitchState] = useState(false);
   const [formData, setFormData] = useState(keyValues);
   const [error, setError] = useState(null);
 
@@ -36,30 +37,38 @@ function Subscribe() {
     const abortController = new AbortController();
     try {
       await createEntry(formData, abortController.signal);
-      // Reset formData to initial state after successful submission
+      setSwitchState(true)
+      setName(formData.name)
       setFormData(keyValues);
+      setError("");
     } catch (error) {
       setError(error.message);
     }
   };
 
   return (
-    <div>   
+    <div>
       <div className="row ">
         <Video />
-          <div className="col-lg-3"></div>
+        <div className="col-lg-3"></div>
         <div className="col-lg-6">
-        <p className="   p-3 mt-5 para space2 lineHeight">
+          <p className=" p-3 mt-5 para space2 lineHeight">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
-            newsletter and receive monthly insights straight to your inbox.
-            From expert cleaning hacks to eco-friendly solutions, we cover it
-            all to help you maintain a sparkling home with ease. Plus, subscribers get first dibs on
-            special offers and updates about our services. Sign up now and
-            transform the way you clean!
+            newsletter and receive monthly insights straight to your inbox. From
+            expert cleaning hacks to eco-friendly solutions, we cover it all to
+            help you maintain a sparkling home with ease. Plus, subscribers get
+            first dibs on special offers and updates about our services. Sign up
+            now and transform the way you clean!
           </p>
-        
-          <form className=" p-3" onSubmit={handleSubmit}>
+
+          <form className="" onSubmit={handleSubmit}>
             <ErrorAlert error={error} />
+       { switchState&& <div
+              onChange={handleSubmit}
+              className="alert alert-primary"
+            >
+              {`Welcome, ${name.split(" ")[0]}!`}
+            </div>}
 
             <label htmlFor="name" className="form-label">
               Name:
@@ -115,7 +124,6 @@ function Subscribe() {
               Cancel
             </button>
           </form>
-
         </div>
         <div className="col-lg-3"></div>
       </div>
@@ -125,7 +133,7 @@ function Subscribe() {
           <Footer />
         </div>
       </div>
-      <Chatbot/>
+      <Chatbot />
     </div>
   );
 }

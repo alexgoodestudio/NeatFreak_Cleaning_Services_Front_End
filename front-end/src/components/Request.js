@@ -2,7 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import { BsCalendar3 } from "react-icons/bs";
 import Image5 from "./Images/9.png";
-import CalendlyEmbed from "./Calendly";
+import CalendlyInlineWidget from "./Calendly";
 import Footer from "./Footer"
 import Chatbot from "./Chatbot";
 
@@ -26,7 +26,7 @@ function Request() {
           </p>
           <hr className="mt-4"></hr>
           <div className="mb-5">
-            <CalendlyEmbed />
+            <CalendlyInlineWidget />
           </div>
         </div>
         <div className="col-lg-6">

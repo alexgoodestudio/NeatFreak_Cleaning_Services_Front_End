@@ -4,7 +4,7 @@ function ErrorAlert({ error }) {
   if (error) {
     console.log("Error received in ErrorAlert:", error);
     return (
-      <div className="alert alert-danger m-2">{error}</div>
+      <div className="alert alert-danger">{error}</div>
     );
   }
   return null;
