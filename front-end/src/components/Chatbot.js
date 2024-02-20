@@ -86,6 +86,7 @@ function Chatbot() {
               value={inputData}
               name="message"
               placeholder="Type your message..."
+              autocomplete="off"
             />
             <button type="submit" className="btn btn-secondary ms-2">
               Send
