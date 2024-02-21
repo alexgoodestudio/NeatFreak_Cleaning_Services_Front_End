@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image1 from "./Images/Screenshot2024-01-12at10.20.12AM.png"
+import Image1 from "./Images/card5.png"
 import "./Dashboard.css";
 import Footer from "./Footer";
 import Chatbot from "./Chatbot";
@@ -9,12 +9,11 @@ function Recurring() {
   return (
     <div className=" mt-5 container">
       <div className="row">
-        <div className="col-lg-6 col-12">
-          <h1 className="display-6 ">
+        <div className="col-lg-6 col-12 p-5">
+          <h4>
             <span className="italics">Recurring</span> Cleaning Services
-          </h1>
+          </h4>
           <hr></hr>
-
           <p className="mt-3 body">
             Our Recurring Cleaning service offers weekly, bi-weekly, or monthly
             cleaning schedules to fit your lifestyle. It's designed for those

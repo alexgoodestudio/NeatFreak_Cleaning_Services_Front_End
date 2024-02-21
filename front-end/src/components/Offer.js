@@ -1,9 +1,9 @@
 import React from "react";
 import "./Dashboard.css";
-import Image3 from "./Images/2.png";
-import Image4 from "./Images/1.png";
+import Image3 from "./Images/card3.png";
+import Image4 from "./Images/card5.png";
 import Footer from "./Footer";
-import Image5 from "./Images/5.png"
+import Image5 from "./Images/qwe.png"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Chatbot from "./Chatbot"

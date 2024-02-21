@@ -338,6 +338,9 @@
 .cardTitleFont {
   font-style: italic;
 }
+.italics2{
+  font-style: italic;
+}
 
 .br {
   border-radius: 10px;
@@ -564,11 +567,14 @@ font-size: 34pt;
   .topNav {
     font-size: 9pt;
   }
+  .justify-text {
+      text-align: justify;
+      text-justify: inter-word;
+  }
 
   .para {
     font-size: 11pt;
   }
-
   .vid {
     max-width: 100%;
     height: auto;
