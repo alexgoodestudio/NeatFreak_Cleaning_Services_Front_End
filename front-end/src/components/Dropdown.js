@@ -7,9 +7,9 @@ const Dropdown = () => {
     const navigate = useNavigate();
 
     const handleOurServicesClick = (event) => {
-        event.preventDefault(); // Prevents the default link behavior
-        setIsOpen(!isOpen);
+        event.preventDefault(); 
         navigate('/ourservices');
+        setIsOpen(!isOpen);
     };
 
     const toggleDropdown = () => setIsOpen(!isOpen);
