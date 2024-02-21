@@ -1,5 +1,5 @@
 import React from 'react';
-import myMP4Video from './Images/trim2.mp4'; 
+import myMP4Video from './Images/trim3.mp4'; 
 
 function Video() {
   return (
