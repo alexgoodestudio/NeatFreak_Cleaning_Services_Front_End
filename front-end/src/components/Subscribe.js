@@ -18,7 +18,7 @@ function Subscribe() {
   const keyValues = {
     name: "",
     email_address: "",
-    service_type: "",
+    found_type: "",
   };
   const [name, setName] = useState("")
   const [switchState, setSwitchState] = useState(false);
@@ -95,14 +95,14 @@ function Subscribe() {
             />
 
             <div className="form-group">
-              <label htmlFor="serviceType" className="form-label mt-3 w-100">
+              <label htmlFor="foundType" className="form-label mt-3 w-100">
                 How did you hear about us?
               </label>
               <select
                 className="form-select  "
-                id="serviceType"
-                name="service_type"
-                value={formData.service_type}
+                id="foundType"
+                name="found_type"
+                value={formData.found_type}
                 onChange={handleChange}
               >
                 <option value="Default">select an option</option>

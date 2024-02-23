@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Footer from "./Footer";
-import { listRequests, deleteSubscriber } from '../utils/api';
+import { listSubscribers, deleteSubscriber } from '../utils/api';
 
 const EmployeeHome = () => {
-  const [requests, setRequests] = useState([]);
+  const [subscribers, setSubscribers] = useState([]);
   const [error, setError] = useState(null);
   const [deleteCount, setDeleteCount] = useState(0); // Step 1: Add deletion count state
 
@@ -14,25 +14,25 @@ const EmployeeHome = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await listRequests(); 
-        setRequests(data);
+        const data = await listSubscribers(); 
+        setSubscribers(data);
       } catch (err) {
         setError(err.message);
-      } 
+      }
     };
     fetchData();
-  }, [deleteCount]); // Step 3: Add deleteCount to the dependency array
+  }, [deleteCount]); 
 
-  async function handleDelete(estimate_id) {
+  async function handleDelete(subscriber_id) {
     const abortController = new AbortController();
     const deleteUser = window.confirm("Would you like to delete Subscriber?");
     if (deleteUser) {
       try {
         setError(null);
-        const response = await deleteSubscriber(estimate_id, abortController.signal);
+        const response = await deleteSubscriber(subscriber_id, abortController.signal);
         setDeleteCount(count => count + 1); // Step 2: Increment deletion count after successful delete
         if (!response) {
-          console.log(`Subscriber with ID ${estimate_id} not found or already deleted.`);
+          console.log(`Subscriber with ID ${subscriber_id} not found or already deleted.`);
         }
       } catch (err) {
         setError(err.message);
@@ -45,15 +45,15 @@ const EmployeeHome = () => {
     <div className="container mt-3">
       <div className="row">
         <div className='display-6 mb-3'> Email List</div>
-        {requests.map((request, index) => (
+        {subscribers.map((subscriber, index) => (
           <div className="col-md-12 mb-3" key={index}>
             <div className="card">
               <div className="card-body">                
-                <p className="card-text"><span className='text-bold'>Name:</span> {request.name} </p>
-                <p className="card-text"><span className='text-bold'>Email Address:</span>  {request.email_address} </p>
-                <p className="card-text"><span className='text-bold'>Type:</span>  {request.service_type} </p>
+                <p className="card-text"><span className='text-bold'>Name:</span> {subscriber.name} </p>
+                <p className="card-text"><span className='text-bold'>Email Address:</span>  {subscriber.email_address} </p>
+                <p className="card-text"><span className='text-bold'>Type:</span>  {subscriber.found_type} </p>
   
-                <button onClick={() => handleDelete(request.estimate_id)} className="btn btn-outline-danger ms-2">Delete</button>
+                <button onClick={() => handleDelete(subscriber.subscriber_id)} className="btn btn-outline-danger ms-2">Delete</button>
               </div>
             </div>
           </div>

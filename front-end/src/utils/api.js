@@ -28,7 +28,7 @@ async function fetchJson(url, options, onCancel) {
 
 export async function createEntry(subscriber, signal) {
   console.log("CREATE ENTRY CALLED", subscriber);
-  const url = `${API_BASE_URL}/request`;
+  const url = `${API_BASE_URL}/subscribers`;
   const options = {
     method: "POST",
     headers,
@@ -38,20 +38,9 @@ export async function createEntry(subscriber, signal) {
   return await fetchJson(url, options, subscriber);
 }
 
-// export async function createChat(inputValue, signal){
-//   console.log('CREATE CHAT CALLED')
-//   const url = `${API_BASE_URL}/response`
-//   const options ={
-//     method: "POST",
-//     headers,
-//     body: JSON.stringify({data: inputValue}),
-//     signal
-//   }
-//   return await fetchJson(url, options, inputValue)
-// }
 
-export async function listRequests(signal) {
-  const url = `${API_BASE_URL}/request`;
+export async function listSubscribers(signal) {
+  const url = `${API_BASE_URL}/subscribers`;
   return await fetchJson(url, { headers, signal });
 }
 
@@ -67,7 +56,7 @@ export async function listResponse(inputData, signal) {
 }
 
 export async function deleteSubscriber(subscriber_id, formData, signal) {
-  const url = `${API_BASE_URL}/request/${subscriber_id}`;
+  const url = `${API_BASE_URL}/subscribers/${subscriber_id}`;
   const options = {
     method: "DELETE",
     headers,
@@ -76,7 +65,7 @@ export async function deleteSubscriber(subscriber_id, formData, signal) {
   return await fetchJson(url, options);
 }
 
-export async function readEstimate(subscriberId, signal) {
-  const url = `${API_BASE_URL}/request/${subscriberId}`;
+export async function readSubscriber(subscriberId, signal) {
+  const url = `${API_BASE_URL}/subscribers/${subscriberId}`;
   return await fetchJson(url, { headers, signal }, {});
 }

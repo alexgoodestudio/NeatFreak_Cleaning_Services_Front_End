@@ -2,7 +2,7 @@ import React from "react";
 
 function ErrorAlert({ error }) {
   if (error) {
-    console.log("Error received in ErrorAlert:", error);
+    console.log(":", error);
     return (
       <div className="alert alert-danger">{error}</div>
     );
