@@ -21,9 +21,7 @@ function Request() {
           <p className="fontLight para mt-4">
             Ready for a cleaner space? We offer easy and quick in-home
             estimates that fit into your busy schedule. Just fill out a short
-            form with your contact details and a preferred time for the
-            estimate. I'll be in and out in just 15 minutes, ensuring a fast,
-            efficient process tailored just for you.
+            form with your details and we will be in touch to discuss pricing.
           </p>
           <hr className="mt-4"></hr>
           <div className="mb-5">
@@ -41,7 +39,7 @@ function Request() {
         <div className="col-lg-6">
           <img
             src={Image5}
-            class="bounce-in img-fluid slide-in right-aligned-img pic bounce-in handMargin"
+            class=" img-fluid  right-aligned-img pic handMargin"
             alt="..."
           />
         </div>

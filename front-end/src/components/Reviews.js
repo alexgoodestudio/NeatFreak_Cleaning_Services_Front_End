@@ -11,13 +11,13 @@ function Reviews() {
 
   return (
     <div className="">
-      <div className="row d-flex ms-2 me-2">
-      <div className="col-lg-1 bg3">          </div>
-        <div className="col-lg-4 bordReviews ">
+      <div className="row d-flex ms-2 me-2 p-5">
+      <div className="col-lg-1 ">          </div>
+        <div className="col-lg-5  ">
           <div className="d-flex mt-4">
           </div>
           <div className="px-5">
-            <div className="display-6 mb-2 d-flex"> Reviews</div>
+            <div className="display-3 mb-2 mt-2 d-flex"> Reviews</div>
             {/* <FontAwesomeIcon icon={['far', 'face-smile']} className=" increase2 me-5 d-flex ms-5" /> */}
           <figure className="mt-1">
             <hr></hr>
@@ -61,18 +61,13 @@ function Reviews() {
           </figure>
           </div>
         </div>
-        <div className="col-lg-6 bordReviews">
-        <h1 className="display-6 text-dark mt-4">
-          Neatfreak Cleaning Services
-            </h1>
-            <hr></hr>
-            <p>
-              Proudly Serving Richmond Virginia
-            </p>
-            <img src={pic} className="img-fluid p-0 mb-3 mt-1 "/>
-
+        <div className="col-lg-4 ">
+        <img src={pic} className=" text-center richmond br5 mx-auto d-block  img-fluid  mb-3 mt-5 "/>
+        <p className="text-center">Proudly Serving Richmond, Virginia</p>
         </div>
-        <div className="col-lg-1 bg3">
+        <div className="col-lg-2  ">
+
+
         </div>
       </div>
    

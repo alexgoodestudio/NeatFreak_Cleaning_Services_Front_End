@@ -17,7 +17,6 @@ function EstimateNewForm() {
   };
   const [formData, setFormData] = useState(keyValues);
   // const navigate = useNavigate();
-  const title = "New Estimate";
   const [switchState, setSwitchState] = useState(false);
   const [name, setName] = useState("");
   const [error, setError] = useState(null);
@@ -42,6 +41,7 @@ function EstimateNewForm() {
     const abortController = new AbortController();
     try {
       await createEstimate(formData, abortController.signal);
+      setError("")
       setSwitchState(true);
       setName(formData.name);
       setFormData(keyValues)
@@ -58,7 +58,7 @@ function EstimateNewForm() {
         switchState={switchState}
         formData={formData}
         handleCheckBox={handleCheckBox}
-        error={error ? error.message : null}
+        error={error}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />

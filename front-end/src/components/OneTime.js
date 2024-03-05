@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Image1 from "./Images/qwe.png";
 import "./Dashboard.css";
 import Footer from "./Footer";
+import Chatbot from "./Chatbot";
 
 function OneTime() {
   return (
@@ -30,6 +31,7 @@ function OneTime() {
               <span className="spacing1">Estimate</span>
             </Link>
           </div>    
+          <Chatbot/>
           </div>
       </div>
       <Footer />

@@ -8,11 +8,11 @@ const Dropdown = () => {
 
     const handleOurServicesClick = (event) => {
         event.preventDefault(); 
-        navigate('/ourservices');
         setIsOpen(!isOpen);
-    };
-
-    const toggleDropdown = () => setIsOpen(!isOpen);
+        if (!isOpen) {
+            navigate('/ourservices');
+        }
+    }; 
 
     return (
         <div className="dropdown">
@@ -25,12 +25,13 @@ const Dropdown = () => {
             </Link>
 
             <div className={`dropdown-menu${isOpen ? ' show' : ''}`} aria-labelledby="dropdownMenuButton">
-                <Link className="dropdown-item" to="/onetime" onClick={toggleDropdown}>One-Time Clean</Link>
-                <Link className="dropdown-item" to="/moving" onClick={toggleDropdown}>Move In/Out Clean</Link>
-                <Link className="dropdown-item" to="/recurring" onClick={toggleDropdown}>Recurring Service</Link>
+                <Link className="dropdown-item" to="/onetime" onClick={() => setIsOpen(false)}>One-Time Clean</Link>
+                <Link className="dropdown-item" to="/moving" onClick={() => setIsOpen(false)}>Move In/Out Clean</Link>
+                <Link className="dropdown-item" to="/recurring" onClick={() => setIsOpen(false)}>Recurring Service</Link>
             </div>
         </div>
     );
 };
 
 export default Dropdown;
+

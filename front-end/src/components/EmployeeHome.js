@@ -1,20 +1,21 @@
-import React from 'react';
-import SubscriberTable from './SubscriberTable';
-import EstimateTable from './EstimateTable';
-
+import React from "react";
+import SubscriberTable from "./SubscriberTable";
+import EstimateTable from "./EstimateTable";
 
 const EmployeeHome = () => {
-
   return (
-    <div className=" mt-3 d-flex row">
-        <div className='col-2'></div>
-        <div className='col-4'>
+    <div >
+
+      <div className="  d-flex row p-5">
+        <div className="col-2"></div>
+        <div className="col-lg-4 mt-3 ">
           <EstimateTable />
         </div>
-        <div className='col-4'>
+        <div className="col-lg-4 mt-3 ">
           <SubscriberTable />
         </div>
-        <div className='col-2'></div>
+        <div className="col-lg-2 "></div>
+      </div>
     </div>
   );
 };

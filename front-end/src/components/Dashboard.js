@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image6 from "./Images/Screenshot 2023-12-30 at 11.16.18 PM.png";
 import "./Dashboard.css";
+import Chatbot from "./Chatbot";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -25,7 +26,7 @@ function Dashboard() {
                 <p className="underTitle">Request Your In-Home Estimate Today</p>
                 <div className="btnMarg ">
                   <Link to="/request" className="btn2 btnScale mt-3">
-                    <span className="bold">Request Estimate!</span>
+                    <span className="">Request Estimate!</span>
                   </Link>
                 </div>
               </div>
@@ -35,6 +36,7 @@ function Dashboard() {
             <img src={Image6} className="img-fluid bathroom" alt="..." />
           </div>
         </div>
+        <Chatbot/>
       </div>
 
     </div>

@@ -57,7 +57,7 @@ function Chatbot() {
   
   return (
     <div className="chatbot-container">
-      <button className="chatbot-toggle btn btn-primary" onClick={toggleChat}>
+      <button className="chatbot-toggle btn text-white" onClick={toggleChat}>
         Chat with us!
       </button>
       {isOpen && (

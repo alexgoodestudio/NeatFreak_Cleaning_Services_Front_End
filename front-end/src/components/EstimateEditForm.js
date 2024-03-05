@@ -6,7 +6,6 @@ import { updateEstimate, readEstimate } from "../utils/api";
 function EstimateEditForm() {
     const { estimate_id } = useParams();
     const [error, setError] = useState("");
-    const title = "Edit Estimate";
     const [formData, setFormData] = useState({
         name: "",
         email_address: "",
@@ -53,10 +52,9 @@ function EstimateEditForm() {
                 abortController.signal
             );
 
+            setError("")
             setFormData(updatedData);
-
-            // Redirect the user back to the last page
-            navigate(-1); // Alternatively, you can use navigate("/path/to/last/page");
+            navigate(-1);
 
         } catch (error) {
             setError(error);
