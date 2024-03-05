@@ -13,7 +13,9 @@
   right: 20px;
   z-index: 1050; 
 }
-
+.formMargin{
+  margin-bottom: 3%;
+}
 .chatbot-toggle {
   color: white;
   padding: 10px 20px;
@@ -531,12 +533,18 @@ font-size: 34pt;
   top: 10%;
   transform: translateY(0%);
 }
+
+.bordReviews{
+  border-left: #d5d5d5 solid .7px;
+  border-right: #d5d5d5 solid .7px;
+}
+
 .pic {
   width: 40%;
   top: 25%;
 }
 .marginNav {
-  margin-left: 10%;
+  margin-left: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -545,6 +553,11 @@ font-size: 34pt;
   padding: 120px;
   margin-bottom: 5%;
 
+}
+.bg1{
+  border:#1f1f1e solid 1px;
+  border-radius: 10px;
+  padding: 20px;
 }
 .bg2 {
   background-color: #bc4a90;
@@ -562,6 +575,7 @@ font-size: 34pt;
     /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
     visibility: hidden;
   }
+  
   .mb2{
     margin-bottom: 3%;
   }
@@ -645,7 +659,7 @@ font-size: 34pt;
     visibility: hidden;
   }
   .marginNav {
-    margin-left: 7%;
+    margin-left: 5%;
   }
 
   .link {
@@ -654,6 +668,8 @@ font-size: 34pt;
     font-size: 8pt;
   }
 }
+
+
 
 /* Media query for phones (landscape) */
 @media only screen and (min-width: 601px) and (max-width: 990px) {
@@ -665,3 +681,5 @@ font-size: 34pt;
     scale: 70%;
   }
 }
+
+

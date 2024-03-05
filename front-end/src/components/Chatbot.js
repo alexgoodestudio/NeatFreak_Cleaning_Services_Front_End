@@ -17,11 +17,10 @@ function Chatbot() {
     setIsOpen(!isOpen);
   }
 
-  const now = new Date();
-  const currentDateTime = now.toLocaleString().split(',');
-  const time = currentDateTime[1];
+  // const now = new Date();
+  // const currentDateTime = now.toLocaleString().split(',');
+  // const time = currentDateTime[1];
   
-
   function handleChange(event) {
     setInputData(event.target.value);
   }
@@ -30,16 +29,16 @@ function Chatbot() {
     event.preventDefault();
     const abortController = new AbortController();
     const currentTime = new Date().toLocaleTimeString();
-    const newMessage = { text: inputData, sender: 'user', time: currentTime }; // Include timestamp
+    const newMessage = { text: inputData, sender: 'user', time: currentTime }; 
     setIsTyping(true);
     try {
       setPastMessages(pastMessages => [...pastMessages, newMessage]);
       
       const data = await listResponse(inputData, abortController.signal);
-      const responseMessage = { text: data.responses, sender: 'chatbot', time: currentTime }; // Include timestamp
+      const responseMessage = { text: data.responses, sender: 'chatbot', time: currentTime };
       
   
-      setInputData(''); // Clear the input field
+      setInputData(''); 
       
       setTimeout(() => {
         setPastMessages(pastMessages => [...pastMessages, responseMessage]);

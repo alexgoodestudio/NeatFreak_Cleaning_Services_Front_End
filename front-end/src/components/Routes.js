@@ -9,6 +9,7 @@ import Subscribe from "./Subscribe";
 import OneTime from "./OneTime";
 import Moving from "./Moving";
 import Recurring from "./Recurring";
+import EstimateEditForm from "./EstimateEditForm";
 
 function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ function AppRoutes() {
       <Route path="/reviews" element={<Reviews />} />
       <Route path="/ourservices" element={<Offer />} />
       <Route path="/request" element={<Request />} />
+      <Route path="/request/:estimate_id/edit" element={<EstimateEditForm />} />
       <Route path="/" element={<Dashboard />} />
     </Routes>
   );

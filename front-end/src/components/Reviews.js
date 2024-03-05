@@ -3,23 +3,26 @@ import Footer from "./Footer"
 import "./Dashboard.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import pic from "../components/Images/point3d-commercial-imaging-ltd-dsh1MmzaMcw-unsplash.jpg"
+import pic from "../components/Images/derrick-brooks-dqgVnnRzPio-unsplash.jpg"
 import Chatbot from "./Chatbot"
 
 function Reviews() {
 
 
   return (
-    <div className="container">
+    <div className="">
       <div className="row d-flex ms-2 me-2">
-        <div className="col-lg-6 ">
+      <div className="col-lg-1 bg3">          </div>
+        <div className="col-lg-4 bordReviews ">
           <div className="d-flex mt-4">
-            <FontAwesomeIcon icon={['far', 'face-smile']} className=" increase2 mt-4 me-5 ms-4" />
-            <div className="display-6 mb-2"> We Love Our<span className="italics">&nbsp;Customers</span>!</div>
           </div>
+          <div className="px-5">
+            <div className="display-6 mb-2 d-flex"> Reviews</div>
+            {/* <FontAwesomeIcon icon={['far', 'face-smile']} className=" increase2 me-5 d-flex ms-5" /> */}
           <figure className="mt-1">
             <hr></hr>
-            <blockquote className="blockquote ">
+
+            <blockquote className=" ">
               <p>
                 {" "}
                 "Love NeatFreak Cleaning Services! They use awesome eco-friendly
@@ -33,7 +36,7 @@ function Reviews() {
           </figure>
           <hr></hr>
           <figure >
-            <blockquote className="blockquote">
+            <blockquote className="">
               <p>
                 {" "}
                 "I've been using NeatFreak Cleaning Services for a few months now, and it's been a game changer. Incredibly professional, and they do a thorough job every single time. "
@@ -45,7 +48,7 @@ function Reviews() {
           </figure>
           <hr></hr>
           <figure >
-            <blockquote className="blockquote">
+            <blockquote className="">
               <p>
                 {" "}
                 "I booked a one-time cleaning service after a big party, and they made it spotless. Their attention to detail is impressive, and eco-friendly products makes me feel good about choosing them. Planning to set up a monthly cleaning schedule now. Highly recommend!"
@@ -56,16 +59,27 @@ function Reviews() {
               review by: <cite title="Source Title">Alex G</cite>
             </figcaption>
           </figure>
-        </div>
-        <div className="col-lg-6 mt-lg-5 ">
-          <img src={pic} className="img-fluid br mt-lg-5 ms-lg-5"/>
-        </div>
-      </div>
-        <div className="row">
-          <div className="col-lg-12 scale">
-            <Footer />
           </div>
         </div>
+        <div className="col-lg-6 bordReviews">
+        <h1 className="display-6 text-dark mt-4">
+          Neatfreak Cleaning Services
+            </h1>
+            <hr></hr>
+            <p>
+              Proudly Serving Richmond Virginia
+            </p>
+            <img src={pic} className="img-fluid p-0 mb-3 mt-1 "/>
+
+        </div>
+        <div className="col-lg-1 bg3">
+        </div>
+      </div>
+   
+   
+
+      
+  
         <Chatbot/>
     </div>
   )

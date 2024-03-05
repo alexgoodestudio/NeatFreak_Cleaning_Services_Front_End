@@ -1,55 +1,69 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import EstimateForm from "./EstimateForm";
 import { createEstimate } from "../utils/api";
+// import { useNavigate } from 'react-router-dom';
 
-function EstimateNewForm(){
-    
-    const title ="New Estimate"
-    const [error, setError] =useState(null); 
-    const keyValues={
-        name: "",
-        email: "",
-        phoneNumber:"",
-        numberOfBeds:0,
-        numberOfBaths:0,
-        squareFootage:0,
-        checked:false
+function EstimateNewForm() {
+  const keyValues = {
+    name: "",
+    email_address: "",
+    phone_number: "",
+    address: "",
+    number_of_beds: "",
+    number_of_baths: "",
+    square_footage: "",
+    additional_info: "",
+    checkbox: false,
+  };
+  const [formData, setFormData] = useState(keyValues);
+  // const navigate = useNavigate();
+  const title = "New Estimate";
+  const [switchState, setSwitchState] = useState(false);
+  const [name, setName] = useState("");
+  const [error, setError] = useState(null);
+
+  function handleCheckBox(event) {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.checked,
+    });
+  }
+
+  function handleChange(event) {
+    const { name, value, type, checked } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const abortController = new AbortController();
+    try {
+      await createEstimate(formData, abortController.signal);
+      setSwitchState(true);
+      setName(formData.name);
+      setFormData(keyValues)
+      // navigate(`/estimates?name=${formData.name}`)
+    } catch (error) {
+      setError(error);
     }
-    
-    function handleChange(event){
-        if(event.target.numberOfBaths || numberOfBeds || squareFootage){
-            setFormData({
-                ...keyValues,
-                [event.target.name]: Number(event.target.value)
-            })
-        }else{
-            setFormData({
-                ...keyValues,
-                [event.target.value]: event.target.value
-            })
-        }
-    }
+  };
 
-    const handleSubmit = async(event) =>{
-        event.preventDefault();
-        const abortController = new AbortController();
-        try{
-            await createEstimate(
-                formData,abortController.signal
-                )
-                history.push(`/estimates?name=${formData.name}`)
-        }catch(error){
-            setError(error)
-        }
-    }
-
-    return (
-        <div>
-            <EstimateForm title={title} formData={formData} error={error} setFormData={setEstimate} handleChange={handleChange} handleSubmit={handleSubmit} estimateId={estimate.estimate_id} />
-        </div>
-    )
-
+  return (
+    <div className="">
+      <EstimateForm
+        name={name}
+        switchState={switchState}
+        formData={formData}
+        handleCheckBox={handleCheckBox}
+        error={error ? error.message : null}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
+    </div>
+  );
 }
 
-export default EstimateNewForm
-
+export default EstimateNewForm;

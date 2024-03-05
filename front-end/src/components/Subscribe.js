@@ -61,11 +61,11 @@ function Subscribe() {
             now and transform the way you clean!
           </p>
 
-          <form className="" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="p-4">
             <ErrorAlert error={error} />
        { switchState&& <div
               onChange={handleSubmit}
-              className="alert alert-primary"
+              className="alert alert-primary "
             >
               {`Welcome, ${name.split(" ")[0]}!`}
             </div>}

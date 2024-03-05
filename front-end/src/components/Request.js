@@ -5,6 +5,7 @@ import Image5 from "./Images/9.png";
 import CalendlyInlineWidget from "./Calendly";
 import Footer from "./Footer"
 import Chatbot from "./Chatbot";
+import EstimateNewForm from "./EstimateNewForm"
 
 function Request() {
 
@@ -26,7 +27,15 @@ function Request() {
           </p>
           <hr className="mt-4"></hr>
           <div className="mb-5">
-            <CalendlyInlineWidget />
+            {/* <CalendlyInlineWidget /> */}
+
+            <br/>
+            <EstimateNewForm/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
           </div>
         </div>
         <div className="col-lg-6">

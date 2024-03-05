@@ -1,60 +1,84 @@
-import {React, useState} from "react";
+import React, { useState, useEffect } from "react";
 import EstimateForm from "./EstimateForm";
-import { useParams } from "react-router-dom";
-import { updateEstimate } from "../utils/api";
+import { useParams, useNavigate } from "react-router-dom";
+import { updateEstimate, readEstimate } from "../utils/api";
 
-function EstimateEditForm(){
-    const[error, setError] = useState(null);
-    const [estimate, setEstimate] = useState({})
-    const {estimate_id} = useState(useParams) 
-    const[formData, setFormData]=useState();
-    const title="Edit Estimate"
-    const keyValues={
-        name:"",
-        email:"",
-        phone_number:"",
-        number_of_beds:0,
-        number_of_baths:0,
-        square_footage:0,
-        checked:false
-    }
+function EstimateEditForm() {
+    const { estimate_id } = useParams();
+    const [error, setError] = useState("");
+    const title = "Edit Estimate";
+    const [formData, setFormData] = useState({
+        name: "",
+        email_address: "",
+        phone_number: "",
+        address: "",
+        number_of_beds: "",
+        number_of_baths: "",
+        square_footage: "",
+        additional_info: "",
+        checkbox: false,
+    });
 
-    function handleChange(event){
-        if(event.target.numberOfBaths || numberOfBeds || squareFootage){
-            setFormData({
-                ...keyValues,
-                [event.target.name]: Number(event.target.value)
-            })
-        }else{
-            setFormData({
-                ...keyValues,
-                [event.target.value]: event.target.value
-            })
-        }
-    }
+    // Use useNavigate for navigation
+    const navigate = useNavigate();
 
-    const handleSubmit = async(event) =>{
+    useEffect(() => {
+        readEstimate(estimate_id).then((data) =>
+            setFormData(data[0])
+        );
+    }, [estimate_id]);
+
+    const handleChange = (event) => {
+        const { name, value, type, checked } = event.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: type === "checkbox" ? checked : value,
+        }));
+    };
+    const handleCheckBox = (event) => {
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          checkbox: event.target.checked,
+        }));
+      };
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const abortController = new AbortController();
-        try{
-            await updateEstimate(
+        console.log("handleSubmit FORMDATA", formData);
+        try {
+            const updatedData = await updateEstimate(
                 formData.estimate_id,
                 formData,
                 abortController.signal
-            )
-            history.push(`/estimates?name=${formData.name}`)
-        }catch(error){
-            setError(error)
-        }
+            );
 
-    }
+            setFormData(updatedData);
+
+            // Redirect the user back to the last page
+            navigate(-1); // Alternatively, you can use navigate("/path/to/last/page");
+
+        } catch (error) {
+            setError(error);
+        } finally {
+            abortController.abort();
+        }
+    };
 
     return (
-        <div>
-            <EstimateForm title={title} formData={formData} error={error} setFormData={setEstimate} handleChange={handleChange} handleSubmit={handleSubmit} estimateId={estimate.estimateId}/>
+        <div className="container mt-5 row">
+            <div className="col-lg-6"></div>
+            <div className="col-lg-6">
+                <EstimateForm
+                    formData={formData}
+                    error={error}
+                    handleChange={handleChange}
+                    handleSubmit={handleSubmit}
+                    handleCheckBox={handleCheckBox}
+                />
+            </div>
         </div>
-    )
+    );
 }
 
-export default EstimateEditForm
-
+export default EstimateEditForm;

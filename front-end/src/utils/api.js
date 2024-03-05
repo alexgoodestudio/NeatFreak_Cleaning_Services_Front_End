@@ -70,23 +70,52 @@ export async function readSubscriber(subscriberId, signal) {
   return await fetchJson(url, { headers, signal }, {});
 }
 
-export async function updateEstimate(){
+export async function updateEstimate(estimate_id, formData, signal) {
+  const url = `${API_BASE_URL}/estimates/${estimate_id}`;
+  const options = {
+      headers,
+      method: "PUT",
+      body: JSON.stringify({ data: formData }),
+      signal,
+  };
 
+  // Assuming the API response contains the updated data
+  const response = await fetchJson(url, options);
+  return response.data;  // Adjust this based on your API response structure
 }
 
-export async function readEstimate(){
 
+
+
+export async function readEstimate(estimate_id, signal) {
+  const url = `${API_BASE_URL}/estimates/${estimate_id}`;
+  return await fetchJson(url, { headers, signal }, {});
 }
 
-export async function createEstimate(){
 
+export async function createEstimate(estimate, signal){
+  const url = `${API_BASE_URL}/estimates`;
+    const options ={
+      headers,
+      method:"POST",
+      body:JSON.stringify({data: estimate}),
+      signal
+    }
+  return await fetchJson(url, options, estimate)
 }
 
-export async function cancelEstimate(){
-
+export async function deleteEstimate(estimate_id,formData, signal){
+  const url = `${API_BASE_URL}/estimates/${estimate_id}`;
+  const options = {
+    method: "DELETE",
+    headers,
+    signal,
+  };
+  return await fetchJson(url, options);
 }
 
-export async function listEstimate(){
-
+export async function listEstimates(signal){
+  const url = `${API_BASE_URL}/estimates`;
+  return await fetchJson(url, { headers, signal });
 }
 
