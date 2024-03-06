@@ -30,7 +30,7 @@ function NavBar() {
 
       <div className="d-flex col-sm-6">
         <Link to="/" className="link link-hover marginNav ">Home</Link>
-        <Link to="/request" className="link marginNav link-hover ">Request Estimate</Link>
+        <Link to="/request" className="link marginNav link-hover ">Booking/ Estimates</Link>
 
         <div className="link marginNav mb2 link-hover ">
         <Dropdown/>

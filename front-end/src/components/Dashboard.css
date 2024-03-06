@@ -6,6 +6,15 @@
 .home{
   background-color: #e1e9f6;
 }
+.service-link {
+  text-decoration: none;
+  color: #007bff; /* Use your desired link color */
+  cursor: pointer;
+}
+.fullSize{
+  border-radius: 120px;
+
+}
 
 .chatbot-container {
   position: fixed;
@@ -38,8 +47,8 @@
   position: absolute;
   bottom: 50px; 
   right: 0;
-  width: 340px; 
-  height: 470px; 
+  width: 320px; 
+  height: 450px; 
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
@@ -353,9 +362,8 @@
 .cardTitleFont {
   font-style: italic;
 }
-.italics2{
-  font-style: italic;
-}
+
+
 
 .br {
   border-radius: 10px;
@@ -585,7 +593,12 @@ font-size: 34pt;
     /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
     visibility: hidden;
   }
-  
+  .mobileScale{
+    scale: 90%;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
   .mb2{
     margin-bottom: 3%;
   }

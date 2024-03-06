@@ -17,8 +17,8 @@ function Offer() {
           <h1 className="display-6 ">
             
             <FontAwesomeIcon icon={['far', 'face-smile']} className="ms-3 me-4 increase"/>
-            <span className="italics">Our&nbsp;</span>
-            <span className="">Services</span>
+            <span className="italics">Clean&nbsp;</span>
+            <span className="">Space, Happy Mind</span>
 
           </h1>
           <hr></hr>
@@ -46,14 +46,27 @@ function Offer() {
           </div>
           <div className="col-lg-3 mt-lg-3 mt-1 mb-lg-4 mb-1">
             
-            <div className="card">
-              <div className="card-header">Our Services</div>
-              <ul className="list-group list-group-flush">
-                <li className=" list-group-item">One Time Clean</li>
-                <li className=" list-group-item">Moving In/ Moving Out</li>
-                <li className=" list-group-item">Recurring Service</li>
-              </ul>
-            </div>
+          <div className="card">
+  <div className="card-header">Our Services</div>
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">
+      <Link to="/onetime" className="service-link">
+        One Time Clean
+      </Link>
+    </li>
+    <li className="list-group-item">
+      <Link to="/moving" className="service-link">
+        Moving In/ Moving Out
+      </Link>
+    </li>
+    <li className="list-group-item">
+      <Link to="/recurring" className="service-link">
+        Recurring Service
+      </Link>
+    </li>
+  </ul>
+</div>
+
           </div>
         </div>
       </div>

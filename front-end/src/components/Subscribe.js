@@ -47,12 +47,14 @@ function Subscribe() {
   };
 
   return (
-    <div>
+    <div >
       <div className="row ">
+
         <Video />
+
         <div className="col-lg-3"></div>
         <div className="col-lg-6">
-          <p className=" p-3 mt-5 para space2 lineHeight">
+          <p className=" p-3 mt-lg-3">
             Stay ahead in the game of cleanliness! Subscribe to our exclusive
             newsletter and receive monthly insights straight to your inbox. From
             expert cleaning hacks to eco-friendly solutions, we cover it all to
@@ -125,8 +127,8 @@ function Subscribe() {
             </button>
           </form>
         </div>
-        <div className="col-lg-3"></div>
       </div>
+        <div className="col-lg-3"></div>
 
       <div className="row">
         <div className="col-lg-12 scaleDown">
