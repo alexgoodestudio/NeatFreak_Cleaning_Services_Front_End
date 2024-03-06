@@ -13,8 +13,8 @@ function Offer() {
   return (
     <div>
       <div className="container fade-in  mt-5 ">
-        <div className="row mobilePadding">
-          <h1 className="display-6 ">
+        <div className="row ">
+          <h1 className="display-6">
             
             <FontAwesomeIcon icon={['far', 'face-smile']} className="ms-3 me-4 increase"/>
             <span className="italics">Clean&nbsp;</span>
