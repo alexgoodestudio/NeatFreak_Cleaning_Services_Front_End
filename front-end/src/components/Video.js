@@ -3,8 +3,8 @@ import myMP4Video from './Images/trim4.mp4';
 
 function Video() {
   return (
-    <div className=' br5 '>
-      <video className=' image-container p-lg-5 fullSize mobileScale' autoPlay muted loop preload="metadata" playsInline>
+    <div className=' '>
+      <video className=' image-container p-lg-5 ' autoPlay muted loop preload="metadata" playsInline>
         <source src={myMP4Video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

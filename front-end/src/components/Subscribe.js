@@ -48,7 +48,7 @@ function Subscribe() {
 
   return (
     <div >
-      <div className="row ">
+      <div className="row">
 
         <Video />
 

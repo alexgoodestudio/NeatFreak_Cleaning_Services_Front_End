@@ -1,19 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image6 from "./Images/Screenshot 2023-12-30 at 11.16.18 PM.png";
+import Image6 from "./Images/a.png";
 import "./Dashboard.css";
 import Chatbot from "./Chatbot";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import Image7 from "./Images/img7.jpg"
 
 
 function Dashboard() {
 
-
-
-
   return (
     <div>
+
       <div>
         <div className="slide-in row gx-0">
           <div className="col-xl-6 paddingDashText">
