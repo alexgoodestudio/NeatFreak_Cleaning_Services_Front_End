@@ -587,17 +587,25 @@ font-size: 34pt;
   background-color: #e1e9f6;
   
 }
+.reduce3 {
+  font-size: 28pt;
+}
 
 @media only screen and (max-width: 600px) {
   .pic {
     /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
     visibility: hidden;
   }
+
   .mobileScale{
     scale: 90%;
     margin-top: 10px;
     border-radius: 20px;
   }
+  .reduce2 {
+    font-size: 16pt;
+  }
+
 
   .mb2{
     margin-bottom: 3%;

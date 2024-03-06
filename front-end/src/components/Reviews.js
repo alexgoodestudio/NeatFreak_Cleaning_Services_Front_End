@@ -10,16 +10,20 @@ function Reviews() {
     <div className="">
       <div className="row d-flex ms-2 me-2 p-lg-5">
         <div className="display-6 mb-4 mt-2 text-lg-center ">
-          <span className="d-inline-block">
+          <span className="d-inline-block reduce2 reduce3">
             See What Our <span className="italics">Customers</span> Are Saying
           </span>
         </div>
 
         <hr className=""></hr>
-        <div className="col-lg-1 "> </div>
-        <div className="col-lg-5">
+        <div className="col-lg-3 "> </div>
+        <div className="col-lg-6">
           <div className="d-flex mt-4"></div>
           <div className="px-lg-5">
+          <img
+            src={pic}
+            className=" text-center richmond br5 mx-auto d-block  img-fluid  mb-5 mt-1 "
+          />
             <figure className="mt-1">
               <blockquote className=" ">
                 <p>
@@ -71,14 +75,10 @@ function Reviews() {
             </figure>
           </div>
         </div>
-        <div className="col-lg-4 ">
-          <img
-            src={pic}
-            className=" text-center richmond br5 mx-auto d-block  img-fluid  mb-3 mt-2 "
-          />
-          <p className="text-center">Proudly Serving Richmond, Virginia</p>
+        <p className="text-center mt-5">Proudly Serving Richmond, Virginia</p>
+
+        <div className="col-lg-3 ">
         </div>
-        <div className="col-lg-2 "></div>
       </div>
       <Chatbot />
     </div>
