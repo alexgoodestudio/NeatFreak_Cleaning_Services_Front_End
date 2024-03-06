@@ -9,20 +9,20 @@ function Reviews() {
   return (
     <div className="">
       <div className="row d-flex ms-2 me-2 p-lg-5">
-        <div className="display-6 mb-4 mt-2 text-lg-center ">
+        <div className="display-6 mt-2 text-lg-center ">
           <span className="d-inline-block reduce2 reduce3">
             See What Our <span className="italics">Customers</span> Are Saying
           </span>
+        <hr className=""></hr>
         </div>
 
-        <hr className=""></hr>
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">
           <div className="d-flex mt-4"></div>
           <div className="px-lg-5">
           <img
             src={pic}
-            className=" text-center richmond br5 mx-auto d-block  img-fluid  mb-5 mt-1 "
+            className=" mb-5 text-center richmond br5 mx-auto d-block  img-fluid  mb-2  "
           />
             <figure className="mt-1">
               <blockquote className=" ">
@@ -74,8 +74,8 @@ function Reviews() {
               </figcaption>
             </figure>
           </div>
-        </div>
         <p className="text-center mt-5">Proudly Serving Richmond, Virginia</p>
+        </div>
 
         <div className="col-lg-3 ">
         </div>

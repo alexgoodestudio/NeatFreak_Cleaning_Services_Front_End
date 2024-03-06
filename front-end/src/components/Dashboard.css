@@ -13,7 +13,6 @@
 }
 .fullSize{
   border-radius: 120px;
-
 }
 
 .chatbot-container {
@@ -55,6 +54,7 @@
   display: flex;
   flex-direction: column;
 }
+
 
 .messages-container {
   flex: 1;
@@ -590,6 +590,7 @@ font-size: 34pt;
 .reduce3 {
   font-size: 28pt;
 }
+
 
 @media only screen and (max-width: 600px) {
   .pic {
