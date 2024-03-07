@@ -10,7 +10,7 @@ function Recurring() {
     <div className=" mt-5 container">
       <div className="row p-1">
       <div className="col-lg-6 col-12 ">
-        <img src={Image1} className="img-fluid br mt-4   br3" alt="..." />
+        <img src={Image1} className="img-fluid mobileScale br mt-4   br3" alt="..." />
         </div>
 
         <div className="col-lg-6 col-12 p-3">

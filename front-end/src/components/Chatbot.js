@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Dashboard.css'; // Ensure this file contains the necessary CSS for the typing/loading effect
+import './Dashboard.css'; 
 import { listResponse } from '../utils/api';
 
 function Chatbot() {
@@ -57,7 +57,7 @@ function Chatbot() {
   
   return (
     <div className="chatbot-container">
-      <button className="chatbot-toggle btn text-white" onClick={toggleChat}>
+      <button className="chatbot-toggle chatbotButton text-white" onClick={toggleChat}>
         Chat with us!
       </button>
       {isOpen && (
@@ -87,7 +87,7 @@ function Chatbot() {
               placeholder="Type your message..."
               autocomplete="off"
             />
-            <button type="submit" className="btn btn-secondary ms-2">
+            <button type="submit" className="btn btn-secondary  ms-2">
               Send
             </button>
           </form>

@@ -10,9 +10,9 @@ function OneTime() {
     <div className=" mt-5 container">
       <div className="row">
         <div className="col-lg-6 col-12">
-          <img src={Image1} className="img-fluid br3 mt-3 " alt="..." />
+          <img src={Image1} className="img-fluid mobileScale br3 mt-3 " alt="..." />
         </div>
-        <div className="col-lg-6 col-12 mt-2 ">
+        <div className="col-lg-6 col-12 mt-2 p-4">
           <h4>Need to <span className="italics2">refresh</span> your home?</h4>
           <hr></hr>
         <p className="text-justify body ">

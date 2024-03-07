@@ -20,9 +20,11 @@
   bottom: 20px;
   right: 50px;
   z-index: 1050; 
-  background-color:#3eb5d2;
+
   border-radius: 5px;
 }
+
+
 .formMargin{
   margin-bottom: 3%;
 }
@@ -34,6 +36,7 @@
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   z-index: 2;
+  background-color:#3eb5d2;
 }
 .br5{
   border-radius: 15%;
@@ -591,11 +594,16 @@ font-size: 34pt;
   font-size: 28pt;
 }
 
-
 @media only screen and (max-width: 600px) {
+  
   .pic {
-    /* Styling for screens between 601px and 900px wide (common for phones in landscape) */
     visibility: hidden;
+  }
+
+  .chatbotButton{
+    display: none;
+    visibility: hidden;
+    opacity: 0%;
   }
 
   .mobileScale{
@@ -603,10 +611,10 @@ font-size: 34pt;
     margin-top: 10px;
     border-radius: 20px;
   }
+
   .reduce2 {
     font-size: 16pt;
   }
-
 
   .mb2{
     margin-bottom: 3%;
@@ -667,9 +675,6 @@ font-size: 34pt;
   .footerText {
     font-size: 70%;
   }
-
-  
-  
 
   .mobilePadding {
     padding-left: 20px;

@@ -10,7 +10,7 @@ function Moving() {
     <div className=" mt-5 container">
       <div className="row">
         <div className="col-lg-6 col-12">
-          <img src={Image1} className=" w-100 img-fluid br2 my-3" alt="..." />
+          <img src={Image1} className=" w-100 img-fluid br2 mobileScale" alt="..." />
           <div className="row"></div>
         </div>
         <div className="col-lg-6  p-5">
