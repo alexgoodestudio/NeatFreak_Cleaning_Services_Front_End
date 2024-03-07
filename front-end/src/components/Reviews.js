@@ -13,17 +13,18 @@ function Reviews() {
           <span className="d-inline-block reduce2 reduce3">
             See What Our <span className="italics">Customers</span> Are Saying
           </span>
-        <hr className=""></hr>
+        <hr className="mb-lg-5 mb-4"></hr>
         </div>
 
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">
-          <div className="d-flex mt-4"></div>
-          <div className="px-lg-5">
+        
           <img
             src={pic}
-            className=" mb-5 text-center richmond br5 mx-auto d-block  img-fluid  mb-2  "
+            className=" mb-lg-5 text-center richmond br5 mx-auto d-block img-fluid  mb-4  "
           />
+         
+          <div className="px-lg-5">
             <figure className="mt-1">
               <blockquote className=" ">
                 <p>
@@ -74,6 +75,7 @@ function Reviews() {
               </figcaption>
             </figure>
           </div>
+   
         <p className="text-center mt-5">Proudly Serving Richmond, Virginia</p>
         </div>
 
