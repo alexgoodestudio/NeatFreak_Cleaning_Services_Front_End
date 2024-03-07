@@ -33,7 +33,9 @@ function Dashboard() {
             <img src={Image6} className="img-fluid bathroom" alt="..." />
           </div>
         </div>
+        <div className="chatbotButton">
         <Chatbot />
+        </div>
       </div>
     </div>
   );
