@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import EstimateForm from "./EstimateForm";
 import { createEstimate } from "../utils/api";
-// import { useNavigate } from 'react-router-dom';
 
 function EstimateNewForm() {
   const keyValues = {
@@ -16,7 +15,6 @@ function EstimateNewForm() {
     checkbox: false,
   };
   const [formData, setFormData] = useState(keyValues);
-  // const navigate = useNavigate();
   const [switchState, setSwitchState] = useState(false);
   const [name, setName] = useState("");
   const [error, setError] = useState(null);

@@ -18,11 +18,6 @@ function Reviews() {
 
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">
-        
-          <img
-            src={pic}
-            className=" mb-lg-5 text-center richmond br5 mx-auto d-block img-fluid  mb-4  "
-          />
          
           <div className="px-lg-5">
             <figure className="mt-1">
