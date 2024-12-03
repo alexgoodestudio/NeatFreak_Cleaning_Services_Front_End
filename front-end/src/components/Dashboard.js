@@ -13,7 +13,9 @@ function Dashboard() {
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
               <div>
+                
                 <p className="title">
+                  
                   Let us handle
                   <br />
                   the <span className="italics2">cleaning</span> stuff.

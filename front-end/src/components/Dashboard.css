@@ -592,6 +592,9 @@ font-size: 34pt;
 .reduce3 {
   font-size: 28pt;
 }
+.rounded {
+  border-radius: 0.25rem !important;
+}
 
 @media only screen and (max-width: 600px) {
   
