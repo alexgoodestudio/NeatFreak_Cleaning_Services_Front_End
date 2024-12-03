@@ -24,7 +24,7 @@ function Offer() {
           <hr></hr>
 
           <div className="col-lg-8">
-            <div className="col-lg-9">
+            <div className="col-lg-12">
               {" "}
               <p className=" body para pe-2  blue ">
                 At <span className="bold">NeatFreak,</span> we specialize in
@@ -45,7 +45,7 @@ function Offer() {
                 your life.
               </p>
             </div>
-            <div className="col-lg-4"></div>
+           
           </div>
           <div className="col-lg-1"></div>
           <div className="col-lg-3 p-3  mt-lg-3 mt-1 mb-lg-4 mb-1">

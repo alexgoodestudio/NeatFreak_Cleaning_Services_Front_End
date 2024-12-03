@@ -15,8 +15,7 @@ function Moving() {
         </div>
         <div className="col-lg-6  px-4 py-2">
           <h4>
-            Need help with <span className="italics">Moving </span> In/ Out
-            Cleaning?
+            <span className="italics">Need help moving?</span> 
           </h4>
           <hr className="mb-4"></hr>
           <p className=" body">

@@ -7,6 +7,7 @@ const EmployeeHome = () => {
     <div >
 
       <div className="  d-flex row p-5">
+        
         <div className="col-lg-6 mt-3 ">
           <EstimateTable />
         </div>

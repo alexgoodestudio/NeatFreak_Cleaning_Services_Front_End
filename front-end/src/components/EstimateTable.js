@@ -46,7 +46,7 @@ function EstimateTable() {
 
   return (
     <div className="conmtainer">
-      <div className="display-6 my-3">Requesting Estimate</div>
+      <div className="display-6 my-3">Requesting an Estimate or Appointment</div>
       {estimates.map((estimate, index) => (
         <div className="card mb-3" key={index}>
           <div className="card-body">

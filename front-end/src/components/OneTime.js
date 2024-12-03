@@ -16,7 +16,7 @@ function OneTime() {
           <h4>Need to <span className="italics2">refresh</span> your home?</h4>
           <hr></hr>
         <p className="text-justify body ">
-            Our <span className="bold">One-Time Clean</span> service is ideal for those who need a single,
+            Our <span className="">One-Time Clean</span> service is ideal for those who need a single,
             thorough cleaning to refresh their home. It's perfect for special
             occasions, seasonal cleaning, or just to give your space a reset.
             This comprehensive service includes a detailed cleaning of all
