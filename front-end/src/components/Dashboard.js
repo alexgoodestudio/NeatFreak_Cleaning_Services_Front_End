@@ -9,6 +9,7 @@ function Dashboard() {
   return (
     <div>
       <div>
+     
         <div className="slide-in row gx-0">
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
@@ -21,7 +22,8 @@ function Dashboard() {
                   the <span className="italics2">cleaning</span> stuff.
                 </p>
                 <p className="underTitle">
-                  Request Your In-Home Estimate Today
+                 
+                  {/* Request Your In-Home Estimate Today */}
                 </p>
                 <div className="btnMarg ">
                   <Link to="/request" className="btn2 btnScale mt-3">

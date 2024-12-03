@@ -13,10 +13,14 @@ function NavBar() {
 
   return (
     <div className="nav row">
-      <div className="row bg3 ">
-        <div className="col-12  text-black topNav text-center">
-        <h6 className="mt-2 mb-2 pt-1 pb-2 topNav space ">Cleaning Services in <span className="italics">Richmond, Virginia</span></h6>
+      <div className="row bg3  mb-2 pt-2 pb-1 topNav space">
+      <div className="col-4  text-black"></div>
+
+        <div className="col-4  text-black topNav  ">
+        <h6 className=" text-center">Clean Space, Happy Mind &nbsp;<span className="italics"> | Richmond, Virginia</span></h6>
         </div>
+        <div className="col-4 text-center text-black">(804) 482-0516</div>
+
       </div>
       <div className="row mt-3">
       <div className="col-sm-6  align-items-center">
@@ -30,7 +34,7 @@ function NavBar() {
 
       <div className="d-flex col-sm-6">
         <Link to="/" className="link link-hover marginNav ">Home</Link>
-        <Link to="/request" className="link marginNav link-hover ">Book | Estimate</Link>
+        <Link to="/request" className="link marginNav link-hover "> Contact</Link>
 
         <div className="link marginNav mb2 link-hover ">
         <Dropdown/>

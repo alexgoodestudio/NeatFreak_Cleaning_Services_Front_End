@@ -14,6 +14,10 @@
   border-radius: 120px;
 }
 
+.bg4{
+  border: #000000;
+}
+
 .chatbot-container {
   position: fixed;
   bottom: 20px;
@@ -531,8 +535,13 @@ font-size: 34pt;
 }
 
 .space {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
+
+.element {
+  border-radius: 15px; 
+}
+
 .space2 {
   text-align: justify;
   text-justify: inter-word;

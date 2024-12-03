@@ -9,11 +9,11 @@ function OneTime() {
   return (
     <div className=" mt-lg-5 container">
       <div className="row">
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-5 col-12">
           <img src={Image1} className="img-fluid mt-lg-3 mobileScale br3  " alt="..." />
         </div>
-        <div className="col-lg-6 col-12 mt-2 px-lg-5 px-4">
-          <h4>Need to <span className="italics2">refresh</span> your home?</h4>
+        <div className="col-lg-7 col-12 mt-2 px-lg-5 px-4">
+          <h4><span className="italics2">Refresh Your Home</span> </h4>
           <hr></hr>
         <p className="text-justify body ">
             Our <span className="">One-Time Clean</span> service is ideal for those who need a single,
@@ -27,7 +27,7 @@ function OneTime() {
           </p>    
           <div className="btnMarg ">
             <Link to="/request" className="btn3 btnScale mt-3">
-              <span className="bold">Request </span>
+              <span className="">Request </span>
               <span className="spacing1">Estimate</span>
             </Link>
           </div>    

@@ -9,13 +9,13 @@ function Recurring() {
   return (
     <div className=" mt-lg-5 container">
       <div className="row">
-      <div className="col-lg-6 col-12 ">
+      <div className="col-lg-5 col-12 ">
         <img src={Image1} className="img-fluid mobileScale br mt-lg-3   br3" alt="..." />
         </div>
 
-        <div className="col-lg-6 col-12 py-2 px-lg-5 px-4">
+        <div className="col-lg-7 col-12 py-2 px-lg-5 px-4">
           <h4>
-            <span className="italics">Recurring</span> Cleaning Services
+            <span className="italics">Recurring Cleaning Services</span> 
           </h4>
           <hr></hr>
           <p className="mt-3 body">
@@ -33,7 +33,7 @@ function Recurring() {
           </p>
           <div className="btnMarg ">
             <Link to="/request" className="btn3 btnScale mt-3">
-              <span className="bold">Request </span>
+              <span className="">Request </span>
               <span className="spacing1">Estimate</span>
             </Link>
           </div>

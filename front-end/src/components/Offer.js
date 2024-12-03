@@ -18,8 +18,8 @@ function Offer() {
               icon={["far", "face-smile"]}
               className="ms-3 me-4 increase"
             /> */}
-            <span className="italics">Clean&nbsp;</span>
-            <span className="">Space, Happy Mind</span>
+            <span className="italics">Our&nbsp;</span>
+            <span className="">Services</span>
           </h1>
           <hr></hr>
 

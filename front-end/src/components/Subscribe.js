@@ -48,19 +48,27 @@ function Subscribe() {
 
   return (
     <div >
-      <div className="row">
+            <div className="row my-5">
+            <div className="col-lg-1"></div>
 
-        <Video />
+    <div className="col-lg-10">
+      <div ><Video /></div>
+    </div>
+    <div className="col-lg-1"></div>
+
+    </div>
+      <div className="row">
+        
 
         <div className="col-lg-3"></div>
-        <div className="col-lg-6">
-          <p className=" p-3 mt-lg-3">
-            Stay ahead in the game of cleanliness! Subscribe to our exclusive
-            newsletter and receive monthly insights straight to your inbox. From
-            expert cleaning hacks to eco-friendly solutions, we cover it all to
-            help you maintain a sparkling home with ease. Plus, subscribers get
+        <div className="col-lg-6  p-3 mt-lg-3">
+        <h3>Subscribe</h3>
+
+          <p className="">
+            Subscribe to our
+            newsletter and receive monthly insights straight to your inbox. Subscribers get
             first dibs on special offers and updates about our services. Sign up
-            now and transform the way you clean!
+            now!
           </p>
 
           <form onSubmit={handleSubmit} className="p-4">

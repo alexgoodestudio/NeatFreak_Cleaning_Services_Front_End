@@ -9,11 +9,11 @@ function Moving() {
   return (
     <div className=" mt-5 container">
       <div className="row">
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-5 col-12">
           <img src={Image1} className=" w-100 img-fluid br2" alt="..." />
           <div className="row"></div>
         </div>
-        <div className="col-lg-6  px-4 py-2">
+        <div className="col-lg-7  px-4 py-2">
           <h4>
             <span className="italics">Need help moving?</span> 
           </h4>
@@ -30,7 +30,7 @@ function Moving() {
           </p>
           <div className="btnMarg ">
             <Link to="/request" className="btn3 btnScale mt-2">
-              <span className="bold">Request </span>
+              <span className="">Request </span>
               <span className="spacing1">Estimate</span>
             </Link>
           </div>
