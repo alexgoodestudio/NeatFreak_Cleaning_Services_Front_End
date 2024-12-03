@@ -20,7 +20,7 @@ function Subscribe() {
     email_address: "",
     found_type: "",
   };
-  const [name, setName] = useState("")
+  const [name, setName] = useState("");
   const [switchState, setSwitchState] = useState(false);
   const [formData, setFormData] = useState(keyValues);
   const [error, setError] = useState(null);
@@ -37,48 +37,46 @@ function Subscribe() {
     const abortController = new AbortController();
     try {
       await createEntry(formData, abortController.signal);
-      setSwitchState(true)
-      setName(formData.name)
+      setSwitchState(true);
+      setName(formData.name);
       setFormData(keyValues);
       setError("");
     } catch (error) {
       setError(error.message);
     }
   };
-
   return (
-    <div >
-            <div className="row my-5">
-            <div className="col-lg-1"></div>
+    <div>
+      <div className="row my-5">
+        <div className="col-lg-2"></div>
 
-    <div className="col-lg-10">
-      <div ><Video /></div>
-    </div>
-    <div className="col-lg-1"></div>
+        <div className="col-lg-8">
+        <h1 className="italics display-5 mb-3">Subscribe</h1>
+        <hr></hr>
 
-    </div>
+          <div>
+            {/* <Video /> */}
+          </div>
+        </div>
+        <div className="col-lg-2"></div>
+      </div>
       <div className="row">
-        
-
-        <div className="col-lg-3"></div>
-        <div className="col-lg-6  p-3 mt-lg-3">
-        <h3>Subscribe</h3>
+        <div className="col-lg-2"></div>
+        <div className="col-lg-8  p-3 mt-lg-3">
 
           <p className="">
-            Subscribe to our
-            newsletter and receive monthly insights straight to your inbox. Subscribers get
-            first dibs on special offers and updates about our services. Sign up
-            now!
+            Subscribe to our newsletter and receive monthly insights straight to
+            your inbox. Subscribers get first dibs on special offers and updates
+            about our services. Sign up now!
           </p>
 
           <form onSubmit={handleSubmit} className="p-4">
             <ErrorAlert error={error} />
-       { switchState&& <div
-              onChange={handleSubmit}
-              className="alert alert-primary "
-            >
-              {`Welcome, ${name.split(" ")[0]}!`}
-            </div>}
+            {switchState && (
+              <div onChange={handleSubmit} className="alert alert-primary ">
+                {`Welcome, ${name.split(" ")[0]}!`}
+              </div>
+            )}
 
             <label htmlFor="name" className="form-label">
               Name:
@@ -136,7 +134,7 @@ function Subscribe() {
           </form>
         </div>
       </div>
-        <div className="col-lg-3"></div>
+      <div className="col-lg-2"></div>
 
       <div className="row">
         <div className="col-lg-12 scaleDown">

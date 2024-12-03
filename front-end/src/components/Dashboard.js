@@ -27,7 +27,7 @@ function Dashboard() {
                 </p>
                 <div className="btnMarg ">
                   <Link to="/request" className="btn2 btnScale mt-3">
-                    <span className="">Request Estimate!</span>
+                    <span className="">Request a Free Estimate!</span>
                   </Link>
                 </div>
               </div>

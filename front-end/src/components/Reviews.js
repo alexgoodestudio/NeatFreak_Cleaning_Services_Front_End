@@ -9,18 +9,17 @@ function Reviews() {
   return (
     <div className="">
       <div className="row d-flex ms-2 me-2 p-lg-5">
-        <div className="display-6 mt-2 text-lg-center ">
-          <span className="d-inline-block reduce2 reduce3">
-            See What Our <span className="italics">Customers</span> Are Saying
+        <div className="display-5 mt-2  ">
+          <span className="d-inline-block ">
+            <span className="italics">Why Hire Us</span> 
           </span>
-        <hr className="mb-lg-5 mb-4"></hr>
+        <hr className="mb-lg-5 mb-3"></hr>
         </div>
-
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">
          
           <div className="px-lg-5">
-            <figure className="mt-1">
+            <figure className="mt-5">
               <blockquote className=" ">
                 <p>
                   {" "}
@@ -52,11 +51,10 @@ function Reviews() {
               <blockquote className="">
                 <p>
                   {" "}
-                  "I booked a one-time cleaning service after a big party, and
+                  "I booked a one-time cleaning service after a party, and
                   they made it spotless. Their attention to detail is
-                  impressive, and eco-friendly products makes me feel good about
-                  choosing them. Planning to set up a monthly cleaning schedule
-                  now. Highly recommend!"
+                  impressive. Planning to set up a monthly cleaning schedule
+                  now."
                   <Link
                     to="/login"
                     className="link marginNav text-light link-hover "
@@ -71,7 +69,6 @@ function Reviews() {
             </figure>
           </div>
    
-        <p className="text-center mt-5">Proudly Serving Richmond, Virginia</p>
         </div>
 
         <div className="col-lg-3 ">

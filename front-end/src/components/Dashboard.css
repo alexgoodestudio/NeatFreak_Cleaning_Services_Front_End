@@ -499,7 +499,7 @@ font-size: 34pt;
 }
 
 .logo {
-  width: 22%;
+  width: 16%;
   margin-top: 1%;
   margin-left: 2%;
   margin-bottom: 2%;
@@ -535,11 +535,11 @@ font-size: 34pt;
 }
 
 .space {
-  letter-spacing: 1.5px;
+  letter-spacing: .8px;
 }
 
 .element {
-  border-radius: 15px; 
+  border-radius: 20px; 
 }
 
 .space2 {

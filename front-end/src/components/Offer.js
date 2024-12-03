@@ -11,22 +11,22 @@ import Chatbot from "./Chatbot";
 function Offer() {
   return (
     <div>
-      <div className="container fade-in  mt-5 ">
+      <div className="container fade-in mt-5 ">
         <div className="row ">
-          <h1 className="display-6">
+          <h1 className="display-5">
             {/* <FontAwesomeIcon
               icon={["far", "face-smile"]}
               className="ms-3 me-4 increase"
             /> */}
-            <span className="italics">Our&nbsp;</span>
-            <span className="">Services</span>
+            <span className="italics">Our Services</span>
+
           </h1>
           <hr></hr>
 
-          <div className="col-lg-8">
+          <div className="col-lg-9">
             <div className="col-lg-12">
               {" "}
-              <p className=" body para pe-2  blue ">
+              <p className=" body  blue ">
                 At <span className="bold">NeatFreak,</span> we specialize in
                 providing top-tier house cleaning that caters to the unique
                 needs of each client, transforming your space into a pristine,
@@ -47,7 +47,6 @@ function Offer() {
             </div>
            
           </div>
-          <div className="col-lg-1"></div>
           <div className="col-lg-3 p-3  mt-lg-3 mt-1 mb-lg-4 mb-1">
             <div className="card">
               <div className="card-header">Our Services</div>

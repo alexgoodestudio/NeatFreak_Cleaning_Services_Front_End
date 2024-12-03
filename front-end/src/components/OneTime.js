@@ -26,10 +26,8 @@ function OneTime() {
             your family.
           </p>    
           <div className="btnMarg ">
-            <Link to="/request" className="btn3 btnScale mt-3">
-              <span className="">Request </span>
-              <span className="spacing1">Estimate</span>
-            </Link>
+          <Link to="/request" className="btn3 btnScale"> Request a Free Estimate!</Link>
+
           </div>    
           <Chatbot/>
           </div>
