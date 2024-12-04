@@ -17,7 +17,7 @@ function Reviews() {
             <hr ></hr>
           </div>
           <div>
-          <p className="body bg3 border p-sm-4">
+          <p className="body bg3 border requestBox p-sm-4">
             Choosing NeatFreak Cleaning Services means more than just having a
             clean home—it’s about reclaiming your time and peace of mind. We’re
             passionate about what we do, using eco-friendly products that are
