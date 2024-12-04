@@ -13,7 +13,7 @@ function Services() {
     <div>
       <div className="container fade-in mt-5 ">
         <div className="row ">
-          <h1 className="display-6">
+          <h1 className="display-5">
 
             <span className="italics">Our Services</span>
 

@@ -95,7 +95,7 @@
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .bold {
@@ -445,7 +445,7 @@ font-size: 34pt;
 }
 
 .logoWidth {
-  width: 22%;
+  width: 18%;
   margin-top: 5%;
 }
 .btnMarg{
@@ -661,10 +661,7 @@ font-size: 34pt;
     scale: 70%;
   }
 
-  .logoWidth {
-    width: 70%;
-    margin-top: 5%;
-  }
+
 
   .text-container {
     display: flex;

@@ -51,7 +51,7 @@ function Subscribe() {
         <div className="col-lg-2"></div>
 
         <div className="col-lg-8">
-        <h1 className="italics display-5 mb-3">Subscribe</h1>
+        <h1 className="italics display-5 mt-4 mb-3">Subscribe</h1>
         <hr></hr>
 
           <div>

@@ -15,7 +15,7 @@ function Recurring() {
 
         <div className="col-lg-7 col-12 py-2 px-lg-5 px-4">
           <h4>
-            <span className="italics">Recurring Cleaning Services</span> 
+            <span className=" px-2 italics">Recurring Cleaning Services</span> 
           </h4>
           <hr></hr>
           <p className="mt-3 body">
@@ -32,7 +32,7 @@ function Recurring() {
             cleaning products.
           </p>
           <div className="btnMarg ">
-            <Link to="/request" className="btn3 btnScale"> Request a Free Estimate!</Link>
+            <Link to="/request" className="btn btn-outline-secondary"> Request a Free Estimate!</Link>
           </div>
         </div>
       </div>

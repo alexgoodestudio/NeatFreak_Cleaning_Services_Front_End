@@ -11,14 +11,13 @@ function Reviews() {
       <div className="row d-flex ms-2 me-2 p-lg-5">
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">
-          <div className="display-5">
-            <span className="d-inline-block ">
-              <span className="italics">Why Hire Us</span>
-            </span>
-            <hr className="mb-lg-5 mb-3"></hr>
+          <div className="display-5 mt-5">
+              <span className="italics ">Why Hire Us</span>
+       
+            <hr ></hr>
           </div>
-<div className="">
-          <p className="body bg3 border p-lg-4  p-sm-2">
+          <div>
+          <p className="body bg3 border p-sm-4">
             Choosing NeatFreak Cleaning Services means more than just having a
             clean home—it’s about reclaiming your time and peace of mind. We’re
             passionate about what we do, using eco-friendly products that are
@@ -30,7 +29,7 @@ function Reviews() {
             NeatFreak, we don’t just clean—we create a home you’ll love coming
             back to.
           </p>
-          {/* <div className="px-lg-3 ">
+          <div className="px-lg-3 ">
             <figure className="mt-5">
               <blockquote className=" ">
                 <p>
@@ -77,7 +76,7 @@ function Reviews() {
                 review by: <cite title="Source Title">Alex G</cite>
               </figcaption>
             </figure>
-          </div> */}
+          </div>
           
           </div>
 

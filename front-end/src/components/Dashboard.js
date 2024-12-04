@@ -19,14 +19,17 @@ function Dashboard() {
                   
                   Let us handle
                   <br />
+                  <div className="">
                   the <span className="italics2">cleaning</span> stuff.
+                  </div>
                 </p>
                 <p className="underTitle">
+                
                  
                   {/* Request Your In-Home Estimate Today */}
                 </p>
                 <div className="btnMarg ">
-                  <Link to="/request" className="btn2 btnScale mt-3">
+                  <Link to="/request" className="btn btn-outline-secondary btnScale mt-3">
                     <span className="">Request a Free Estimate!</span>
                   </Link>
                 </div>

@@ -13,7 +13,7 @@ function OneTime() {
           <img src={Image1} className="img-fluid mt-lg-3 mobileScale br3  " alt="..." />
         </div>
         <div className="col-lg-7 col-12 mt-2 px-lg-5 px-4">
-          <h4><span className="italics2">Refresh Your Home</span> </h4>
+          <h4><span className=" px-2 italics2">Refresh Your Home</span> </h4>
           <hr></hr>
         <p className="text-justify body ">
             Our <span className="">One-Time Clean</span> service is ideal for those who need a single,
@@ -26,7 +26,7 @@ function OneTime() {
             your family.
           </p>    
           <div className="btnMarg ">
-          <Link to="/request" className="btn3 btnScale"> Request a Free Estimate!</Link>
+          <Link to="/request" className="btn btn-outline-secondary "> Request a Free Estimate!</Link>
 
           </div>    
           <Chatbot/>
