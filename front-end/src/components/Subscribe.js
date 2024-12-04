@@ -64,7 +64,7 @@ function Subscribe() {
         <div className="col-lg-2"></div>
         <div className="col-lg-8">
 
-          <p className="">
+          <p className="body">
             Subscribe to our newsletter and receive monthly insights straight to
             your inbox. Subscribers get first dibs on special offers and updates
             about our services. Sign up now!

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Chatbot from "./Chatbot";
 
-function Offer() {
+function Services() {
   return (
     <div>
       <div className="container fade-in mt-5 ">
@@ -46,7 +46,7 @@ function Offer() {
            
           </div>
           <div className="col-lg-3 p-3  mt-lg-3 mt-1 mb-lg-4 mb-1">
-            <div className="card">
+            {/* <div className="card">
               <div className="card-header">Our Services</div>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item ">
@@ -65,7 +65,7 @@ function Offer() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -148,4 +148,4 @@ function Offer() {
   );
 }
 
-export default Offer;
+export default Services;

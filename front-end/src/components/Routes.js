@@ -1,6 +1,6 @@
 import React from "react";
 import Request from "./Request"
-import Offer from "./Offer";
+import Services from "./Services";
 import Dashboard from "./Dashboard";
 import Reviews from "./Reviews";
 import Login from "./Login";
@@ -20,7 +20,7 @@ function AppRoutes() {
       <Route path="/subscribe" element={<Subscribe />} />
       <Route path="/login" element={<Login />} />
       <Route path="/reviews" element={<Reviews />} />
-      <Route path="/ourservices" element={<Offer />} />
+      <Route path="/ourservices" element={<Services />} />
       <Route path="/request" element={<Request />} />
       <Route path="/request/:estimate_id/edit" element={<EstimateEditForm />} />
       <Route path="/" element={<Dashboard />} />

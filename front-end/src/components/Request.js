@@ -18,7 +18,7 @@ function Request() {
             Schedule an appointment? Request an estimate? Get
             started here and take the first step towards a happier, cleaner home!
           </h3>
-          <p className="fontLight para mt-4">
+          <p className="body fontLight para mt-4">
             Ready for a cleaner space? We offer easy 
             estimates that fit into your busy schedule. Just fill out a short
             form with your details and we will be in touch to discuss pricing.
