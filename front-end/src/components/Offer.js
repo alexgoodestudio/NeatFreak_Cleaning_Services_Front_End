@@ -13,11 +13,8 @@ function Offer() {
     <div>
       <div className="container fade-in mt-5 ">
         <div className="row ">
-          <h1 className="display-5">
-            {/* <FontAwesomeIcon
-              icon={["far", "face-smile"]}
-              className="ms-3 me-4 increase"
-            /> */}
+          <h1 className="display-6">
+
             <span className="italics">Our Services</span>
 
           </h1>
@@ -25,6 +22,7 @@ function Offer() {
 
           <div className="col-lg-9">
             <div className="col-lg-12">
+              
               {" "}
               <p className=" body  blue ">
                 At <span className="bold">NeatFreak,</span> we specialize in
@@ -71,13 +69,19 @@ function Offer() {
           </div>
         </div>
       </div>
+{/* -------- */}
 
       <div className=" w-100">
         <div className="container pb-5">
+          
           <div className=" row  pt-3">
+            
             <div className="col-lg-9  displayFlex">
+              
+              
               <div className="col-lg-4 col-12  p-2 d-flex">
                 <div className="card  w-100 d-flex">
+                  
                   <img src={Image5} className="card-img-top" alt="..." />
                   <div className="card-body cardBody1 ">
                     <h5 className="card-title  mb-3">One-Time Clean</h5>

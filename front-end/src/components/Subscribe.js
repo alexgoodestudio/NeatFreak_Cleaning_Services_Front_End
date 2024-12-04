@@ -46,8 +46,8 @@ function Subscribe() {
     }
   };
   return (
-    <div>
-      <div className="row my-5">
+    <div className="mx-4">
+      <div className="row my-4">
         <div className="col-lg-2"></div>
 
         <div className="col-lg-8">
@@ -62,7 +62,7 @@ function Subscribe() {
       </div>
       <div className="row">
         <div className="col-lg-2"></div>
-        <div className="col-lg-8  p-3 mt-lg-3">
+        <div className="col-lg-8">
 
           <p className="">
             Subscribe to our newsletter and receive monthly insights straight to
