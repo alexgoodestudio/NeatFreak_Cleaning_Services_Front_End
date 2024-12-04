@@ -534,6 +534,11 @@ font-size: 34pt;
   margin-bottom: 2%;
 }
 
+.requestBox{
+  box-shadow: 10px 5px 5px rgb(235, 235, 235);
+
+}
+
 .space {
   letter-spacing: .8px;
 }
