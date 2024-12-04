@@ -9,7 +9,7 @@ function Footer() {
                 <img src={Logo} className="logoWidth" alt="..." />
               </div>
             <div className=" pb-5 d-flex footerText justify-content-center align-items-center ">
-                Richmond, VA | (804) 661-2740 | support@getneatfreakclean.com
+                Richmond, VA | support@getneatfreakclean.com
             </div>
         </div>
     )
