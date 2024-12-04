@@ -19,7 +19,7 @@ function EstimateForm({
       <ErrorAlert error={error && error.message} />
       {switchState && (
         <div onChange={handleSubmit} className="alert alert-primary">
-          {"Got it!"}
+          {`Thank you, ${formData.name.split(" ")[0]}! We will be reaching out shortly.`}
         </div>
       )}
       <form onSubmit={handleSubmit}>
