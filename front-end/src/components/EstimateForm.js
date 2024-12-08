@@ -1,6 +1,6 @@
 import React from "react";
 import ErrorAlert from "./ErrorAlert";
-
+import { readEstimate } from "../utils/api";
 function EstimateForm({
   formData,
   switchState,
@@ -14,12 +14,17 @@ function EstimateForm({
     return null; 
   }
 
+  // I need to figure out how to use readEstimate API Call to place name in Alert
+  // look at EstimateEditForm for starting point with useEffect API call
+  // need to figure out best way to retrieve estimateId
+
+
   return (
     <div>
       <ErrorAlert error={error && error.message} />
       {switchState && (
-        <div onChange={handleSubmit} className="alert alert-primary">
-          {`Thank you, ${formData.name.split(" ")[0]}! We will be reaching out shortly.`}
+        <div className="alert alert-primary">
+          {`Thank you! We will be in touch as soon as possible.`}
         </div>
       )}
       <form onSubmit={handleSubmit}>
