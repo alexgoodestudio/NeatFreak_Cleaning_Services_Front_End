@@ -16,7 +16,7 @@ function EstimateNewForm() {
   };
   const [formData, setFormData] = useState(keyValues);
   const [switchState, setSwitchState] = useState(false);
-  const [name, setName] = useState("");
+  const [name, setName] = useState(""); // Temporarily store name here
   const [error, setError] = useState(null);
 
   function handleCheckBox(event) {
@@ -39,18 +39,17 @@ function EstimateNewForm() {
     const abortController = new AbortController();
     try {
       await createEstimate(formData, abortController.signal);
-      setError("")
+      setError(""); // reset error on success
       setSwitchState(true);
-      setName(formData.name);
-      setFormData(keyValues)
-      // navigate(`/estimates?name=${formData.name}`)
+      setName(formData.name); // store the name 
+      setFormData(keyValues); // reset form fields
     } catch (error) {
       setError(error);
     }
   };
 
   return (
-    <div className="">
+    <div>
       <EstimateForm
         name={name}
         switchState={switchState}

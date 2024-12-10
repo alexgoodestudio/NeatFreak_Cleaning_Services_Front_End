@@ -1,6 +1,8 @@
 import React from "react";
 import ErrorAlert from "./ErrorAlert";
-import { readEstimate } from "../utils/api";
+
+//child component to EstimateNewForm
+
 function EstimateForm({
   formData,
   switchState,
@@ -8,6 +10,7 @@ function EstimateForm({
   handleCheckBox,
   handleChange,
   handleSubmit,
+  name
 }) {
 
   if (!formData) {
@@ -24,7 +27,7 @@ function EstimateForm({
       <ErrorAlert error={error && error.message} />
       {switchState && (
         <div className="alert alert-primary">
-          {`Thank you! We will be in touch as soon as possible.`}
+          {`Thank you ${name.split(" ")[0]}! We will be in touch as soon as possible.`}
         </div>
       )}
       <form onSubmit={handleSubmit}>

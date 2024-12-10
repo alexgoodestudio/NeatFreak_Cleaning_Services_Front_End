@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Dashboard.css";
 
-const Dropdown = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate();
+const Dropdown = ({ isOpen, setIsOpen }) => {
 
     const handleOurServicesClick = (event) => {
-        event.preventDefault(); 
-        setIsOpen(!isOpen);
-        if (!isOpen) {
-            navigate('/ourservices');
-        }
-    }; 
+        event.preventDefault();
+        setIsOpen(!isOpen); // Toggle dropdown state
+    };
 
     return (
         <div className="dropdown">
@@ -34,4 +29,3 @@ const Dropdown = () => {
 };
 
 export default Dropdown;
-

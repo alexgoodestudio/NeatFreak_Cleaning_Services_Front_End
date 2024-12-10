@@ -10,13 +10,11 @@ import Chatbot from "./Chatbot";
 
 function Services() {
   return (
-    <div>
-      <div className="container fade-in mt-5 ">
+    <div className="p-3">
+      <div className="container fade-in mt-5">
         <div className="row ">
           <h1 className="display-5">
-
             <span className="italics">Our Services</span>
-
           </h1>
           <hr></hr>
 
