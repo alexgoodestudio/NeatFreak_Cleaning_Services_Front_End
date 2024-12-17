@@ -5,7 +5,6 @@ import Image4 from "./Images/card5.png";
 import Footer from "./Footer";
 import Image5 from "./Images/qwe.png";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Chatbot from "./Chatbot";
 
 function Services() {
