@@ -127,17 +127,8 @@ function EstimateForm({
           name="additional_info"
         />
 
-        <input
-          type="checkbox"
-          id="checkbox"
-          name="checkbox"
-          onChange={handleCheckBox}
-          checked={formData.checkbox}
-        />
 
-        <label htmlFor="checkbox" className="ms-2 form-label">
-          May we contact you?
-        </label>
+
 
         <button type="submit" className="btn btn-outline-primary d-flex mt-4">
           Submit
