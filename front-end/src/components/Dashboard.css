@@ -6,12 +6,6 @@
   background-color: #e1e9f6;
 }
 
-
-.service-link {
-  text-decoration: none;
-  color: #007bff; /* Use your desired link color */
-  cursor: pointer;
-}
 .fullSize{
   border-radius: 120px;
 }
@@ -25,12 +19,12 @@
 }
 
 .phone-link {
-  color: inherit; /* Matches text color */
-  text-decoration: none; /* Removes underline */
+  color: inherit; 
+  text-decoration: none; 
 }
 
 .phone-link:hover {
-  text-decoration: underline; /* Optional hover effect */
+  text-decoration: underline; 
 }
 
 .chatbot-container {
@@ -458,7 +452,7 @@ font-size: 34pt;
 
 
 .title{
-  font-size: 34pt;
+  font-size: 32pt;
   font-weight: 400;
   color:#000000;
 }
@@ -565,7 +559,6 @@ font-size: 34pt;
 }
 .requestBox{
   box-shadow: 10px 5px 5px rgb(235, 235, 235);
-
 }
 
 .space {

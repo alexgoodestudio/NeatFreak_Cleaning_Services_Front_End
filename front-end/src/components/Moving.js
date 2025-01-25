@@ -29,7 +29,7 @@ function Moving() {
             securing deposit returns for rentals.
           </p>
           <div className="btnMarg ">
-          <Link to="/request" className="btn btn-outline-secondary requestBox"> Request a Free Estimate!</Link>
+          <Link to="/request" className="btn btn-outline-primary"> Request a Free Estimate!</Link>
 
           </div>
           <Chatbot />

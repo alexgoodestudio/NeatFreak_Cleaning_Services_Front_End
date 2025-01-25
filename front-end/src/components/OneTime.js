@@ -25,8 +25,8 @@ function OneTime() {
             just a clean home but also one that's safe and healthy for you and
             your family.
           </p>    
-          <div className="btnMarg ">
-          <Link to="/request" className="btn btn-outline-secondary requestBox"> Request a Free Estimate!</Link>
+          <div className="btnMarg">
+          <Link to="/request" className="btn btn-estimate"> Request a <span className="bold">Free</span> Estimate!</Link>
 
           </div>    
           <Chatbot/>

@@ -23,12 +23,11 @@ function Dashboard() {
                 </p>
                 <p className="underTitle">
                 
-                 
-                  {/* Request Your In-Home Estimate Today */}
+              
                 </p>
                 <div className="btnMarg">
-                  <Link to={`request`} className="btn btn-outline-secondary p-2 btnScale mt-3">
-                    <span className="">Request a <span className="bold ">Free</span> Estimate!</span>
+                  <Link to={`request`} className="btn btn-outline-secondary br p-2 btnScale mt-3">
+                    <span className="">Request a Free Estimate!</span>
                   </Link>
                 </div>
               </div>
