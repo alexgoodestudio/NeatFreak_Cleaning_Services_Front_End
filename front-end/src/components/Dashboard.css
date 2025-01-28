@@ -632,11 +632,11 @@ font-size: 34pt;
     visibility: hidden;
   }
 
-  .chatbotButton{
+  /* .chatbotButton{
     display: none;
     visibility: hidden;
     opacity: 0%;
-  }
+  } */
 
   .mobileScale{
     scale: 90%;
